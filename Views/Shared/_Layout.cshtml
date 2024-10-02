@@ -69,28 +69,23 @@
                             <div class="drop-menu">
                                 <div class="drop-content">
                                     <ul>
-                                        <li>
-                                            <a>Tim mạch</a>
-                                        </li>
-                                        <li>
-                                            <a>Nhi khoa</a>
-                                        </li>
-                                        <li>
-                                            <a>Tiêu hóa</a>
-                                        </li>
+                                        @for (var i = 0; i < ViewBag.listKB.Count / 2; i++)
+                                        {
+                                            <li>
+                                                <a>@ViewBag.listKB[i][1]</a>
+                                            </li>
+                                        }
                                     </ul>
                                     <ul>
-                                        <li>
-                                            <a>Da Liễu</a>
-                                        </li>
-                                        <li>
-                                            <a>Dinh Dưỡng</a>
-                                        </li>
-                                        <li>
-                                            <a>Răng hàm mặt</a>
-                                        </li>
+                                        @for (var i = ViewBag.listKB.Count / 2; i < ViewBag.listKB.Count; i++)
+                                        {
+                                            <li>
+                                                <a>@ViewBag.listKB[i][1]</a>
+                                            </li>
+                                        }
                                     </ul>
                                 </div>
+
                             </div>
                         </li>
                         <li class="fm-nav-item">

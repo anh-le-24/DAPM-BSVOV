@@ -16,7 +16,9 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         DataModel db = new DataModel();
+        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
         
+
         return View();
     }
     public IActionResult Article()

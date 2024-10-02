@@ -15,6 +15,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        DataModel db = new DataModel();
+        
         return View();
     }
     public IActionResult Article()

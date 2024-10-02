@@ -7,9 +7,9 @@ using System.Data.SqlClient;
 using Microsoft.Data.SqlClient;
 
 
-namespace DemoFirst.Models
+namespace DoAnCNPM.Models
 {
-    public class DataModels
+    public class DataModel
     {
         private string connecttionStrings = "workstation id=VOVBACSI.mssql.somee.com;packet size=4096;user id=LuongDat_SQLLogin_1;pwd=123456789;data source=VOVBACSI.mssql.somee.com;persist security info=False;initial catalog=VOVBACSI;TrustServerCertificate=True";
         public ArrayList get(String sql)

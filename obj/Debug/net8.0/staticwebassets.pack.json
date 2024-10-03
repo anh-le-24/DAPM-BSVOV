@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets/images/bg_blue_home.jpg"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_login.jpg",
+      "PackagePath": "staticwebassets/images/bg_login.jpg"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs1.jpeg",
       "PackagePath": "staticwebassets/images/bs1.jpeg"
     },
@@ -95,6 +99,10 @@
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_vov.png",
       "PackagePath": "staticwebassets/images/logo_vov.png"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_vov1.png",
+      "PackagePath": "staticwebassets/images/logo_vov1.png"
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde1.png",

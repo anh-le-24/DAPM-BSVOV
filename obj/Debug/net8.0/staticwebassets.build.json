@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XGT66vhDXJACitOMAnTC6Zq0ty+hI2N0fU0Z9dZnnL8=",
+  "Hash": "vWeG3q49LWfQ8S+KKZAbCcmPUlxKvEscXE9kN1syuQA=",
   "Source": "DoAnCNPM",
   "BasePath": "_content/DoAnCNPM",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/bg_blue_home.jpg"
+    },
+    {
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_login.jpg",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "images/bg_login.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/bg_login.jpg"
     },
     {
       "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg-next-home.png",
@@ -490,6 +509,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/logo_vov.png"
+    },
+    {
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_vov1.png",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "images/logo_vov1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/logo_vov1.png"
     },
     {
       "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde1.png",

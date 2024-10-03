@@ -6,6 +6,7 @@ namespace DoAnCNPM.Controllers;
 
 public class HomeController : Controller
 {
+    
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
@@ -18,27 +19,37 @@ public class HomeController : Controller
         DataModel db = new DataModel();
         ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
         
-
         return View();
     }
     public IActionResult Article()
     {
+        DataModel db = new DataModel();
+        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+
         return View();
     }
     public IActionResult Login()
     {
+        DataModel db = new DataModel();
+        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
         return View();
     }
     public IActionResult Register()
     {
+        DataModel db = new DataModel();
+        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
         return View();
     }
      public IActionResult PersonalPage()
     {
+        DataModel db = new DataModel();
+        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
         return View();
     }
      public IActionResult ExamineHistory()
     {
+        DataModel db = new DataModel();
+        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
         return View();
     }
 

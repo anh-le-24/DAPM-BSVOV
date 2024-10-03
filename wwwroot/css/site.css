@@ -751,7 +751,7 @@ font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  max-height: 100vh;
 }
 .side-image{
   background-position: center;
@@ -774,6 +774,7 @@ font-size: 16px;
   padding: 0px;
   box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.3);
   padding-left: 0 !important;
+  margin: 50px 0;
 }
 
 .right{
@@ -789,7 +790,6 @@ position: relative;
   align-items: center;
   width: 90%;
   box-sizing: border-box;
-  border: 1px solid #ccc;
   padding: 20px 10px;
   border-radius: 10px;
 }
@@ -813,6 +813,7 @@ position: relative;
   background: #6fbc9f;
   }
 
+
 .input-field{
   display: flex;
   width: 70%;
@@ -822,34 +823,39 @@ position: relative;
   padding: 0 5px 0 5px;
 }
 .input-info{
-  height: 50px;
   min-width: 100%;
   background: transparent;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   outline: none;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #40414a;
+  border: 1px solid #018efa;
+  border-radius: 20px;
+  padding: 5px 10px;
 }
 .input-box .input-field label{
   position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 18px;
+  top: 6px;
+  left: 30px;
+  font-size: 16px;
   pointer-events: none;
   transition: .5s;
+  color: #ccc;
 }
 .input-field input:focus ~ label
  {
-  top: -10px;
-  font-size: 15px;
-
+  top: -20px;
+  left: 10px;
+  font-size: 16px;
+  color: #018efa;
 }
 .input-field input:valid ~ label
 {
- top: -10px;
- font-size: 13px;
- color: #5d5076;
+ top: -20px;
+ left: 10px;
+ font-size: 15px;
+ color: #1673ff;
 }
 .input-field .input:focus, .input-field .input:valid{
   border-bottom: 1px solid #51be9d;
@@ -860,7 +866,7 @@ position: relative;
   border: none;
   outline: none;
   height: 45px;
-  border-radius: 10px;
+  border-radius: 30px;
   font-weight: 700;
   transition: .4s;
   background: #51be9d;

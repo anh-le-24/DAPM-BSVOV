@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vWeG3q49LWfQ8S+KKZAbCcmPUlxKvEscXE9kN1syuQA=",
+  "Hash": "WvD40EW6TyYgG1ZTz9jqtNh6DCxcRCpu9qw5qlWVy4I=",
   "Source": "DoAnCNPM",
   "BasePath": "_content/DoAnCNPM",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/projectbundle/DoAnCNPM.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Personal.css",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "css/Personal.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/Personal.css"
     },
     {
       "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/site.css",

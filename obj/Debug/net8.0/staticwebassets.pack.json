@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/DoAnCNPM.bundle.scp.css"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Personal.css",
+      "PackagePath": "staticwebassets/css/Personal.css"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

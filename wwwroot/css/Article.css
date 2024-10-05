@@ -38,7 +38,7 @@
 }
 
 
-.title-content h2{
+.title-content_arti h2{
     font-size: 35px;
     line-height: 1.2;
     position: relative;
@@ -49,7 +49,7 @@
     color: #a12e35;
   }
 
-  .title-content h2::after {
+  .title-content_arti h2::after {
     content: "";
     position: absolute;
     left: 40%;
@@ -60,4 +60,68 @@
     }
 .content-article{
     margin: 10px 20px;
+}
+
+
+/* ------ FILLTER DOCTOR ----- */
+
+.doctor-card {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 200px;
+}
+.doctor-card p{
+  white-space: nowrap;
+  max-height: max-content;
+}
+.doctor-card h5{
+  font-weight: bold;
+}
+.btn-search{
+  width: 100%;
+  background: #51be9d;
+  padding:  5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+
+
+.doctor-img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.filter-section {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.search_doc{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 60px;
+}
+.btn-subex{
+  background: #0076c0;
+  background-size: auto 15px;
+  font-size: 14px;
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn-subex:hover{
+  background-color: #51be9d;
 }

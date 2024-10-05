@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/DoAnCNPM.bundle.scp.css"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Article.css",
+      "PackagePath": "staticwebassets/css/Article.css"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Personal.css",
       "PackagePath": "staticwebassets/css/Personal.css"
     },
@@ -25,12 +29,20 @@
       "PackagePath": "staticwebassets/images/bg-next-home.png"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_article.jpg",
+      "PackagePath": "staticwebassets/images/bg_article.jpg"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_blue_home.jpg",
       "PackagePath": "staticwebassets/images/bg_blue_home.jpg"
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_login.jpg",
       "PackagePath": "staticwebassets/images/bg_login.jpg"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bia_person.jpg",
+      "PackagePath": "staticwebassets/images/bia_person.jpg"
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs1.jpeg",

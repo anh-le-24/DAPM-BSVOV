@@ -11,15 +11,14 @@
 }
 .container-wrapper {
     position: relative;
-    margin-top: -200px; 
+    margin-top: -250px; 
 }
 .form-personal {
-    background-color: rgba(136, 161, 215, 0.195);
+    background-color: rgba(86, 138, 249, 0.124);
     backdrop-filter: blur(40px);
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     padding: 20px;
-
 }
 
 .card {
@@ -30,6 +29,18 @@
 }
 .card-body {
     padding: 2rem;
+}
+
+.card-body h3{
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
+    background-color:#2285e2
+    
+}
+.card-body span{
+    font-size: 30px;
 }
 .profile-initials {
     width: 120px;
@@ -69,7 +80,7 @@
 }
 
 .btn-changepass{
-    padding: 10px 30px;  
+    padding: 5px 15px;  
     background-color: white;
     border: 2px solid #007bff;
     border-radius: 10px;

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
 }
 
 html {
@@ -821,6 +822,7 @@ position: relative;
   align-items: center;
   position: relative;
   padding: 0 5px 0 5px;
+  margin-bottom: 20px;
 }
 .input-info{
   min-width: 100%;
@@ -828,7 +830,6 @@ position: relative;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   outline: none;
-  margin-bottom: 25px;
   color: #40414a;
   border: 1px solid #018efa;
   border-radius: 20px;
@@ -848,14 +849,16 @@ position: relative;
   top: -20px;
   left: 10px;
   font-size: 16px;
-  color: #018efa;
+  font-weight: bold;
+  color: #4d4c4c;
 }
 .input-field input:valid ~ label
 {
  top: -20px;
  left: 10px;
- font-size: 15px;
- color: #1673ff;
+ font-size: 13px;
+ font-weight: 800;
+ color: #6a6565;
 }
 .input-field .input:focus, .input-field .input:valid{
   border-bottom: 1px solid #51be9d;
@@ -873,15 +876,10 @@ position: relative;
   color: white;
   margin-top: 20px;
 }
-.submit:hover{
-  background: white;
-  border: 2px solid #51be9d;
-  color: black;
-}
+
 .signin{
   text-align: center;
   font-size: small;
-  margin-top: 25px;
 }
 span a{
   text-decoration: none;

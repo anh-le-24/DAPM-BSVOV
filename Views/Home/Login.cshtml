@@ -14,18 +14,27 @@
             <div class="col-6 right">
                 <div class="input-box">                    
                    <h2>Đăng nhập</h2>
-                        <div class="input-field">
-                        <input type="n" class="input-info" id="sdt" required="vdavdasda" autocomplete="off">
-                        <label for="sdt">Số điện thoại</label> 
-                    </div> 
-                   <div class="input-field">
-                        <input type="password" class="input-info" id="pass" required="">
-                        <label for="pass">Mật khẩu</label>
-                    </div> 
-                   <div class="input-field">
-                        <input type="submit" class="submit" value="Đăng nhập">
-                   </div> 
+                    <form class="needs-validation input-box" novalidate>
 
+                        <div class="input-field">
+                            <input type="text" class="input-info" id="sdt" required >
+                            <label for="sdt">Số điện thoại</label> 
+                             <div class="invalid-feedback">
+                                * Vui lòng nhập số điện thoại
+                            </div>
+                        </div> 
+                       
+                        <div class="input-field has-validation">
+                            <input type="password" class="input-info" id="pass"  required="">
+                            <label for="pass">Mật khẩu</label>
+                            <div class="invalid-feedback">
+                                * Vui lòng nhập mật khẩu
+                            </div>
+                        </div> 
+                        <div class="input-field">
+                            <input type="submit" class="submit" value="Đăng nhập">
+                        </div> 
+                    </form>
                     <div class="signin">
                         <span>
                             Bạn chưa có tài khoản? 
@@ -34,11 +43,14 @@
                             </a>
                         </span>
                    </div>
+                   
                 </div>  
             </div>
         </div>
     </div>
 </div>
+
+
 
 
 <script>
@@ -48,4 +60,25 @@
             block: "start"
         });
     };
+
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+        }, false)
+    })
+    })()
 </script>
+

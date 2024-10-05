@@ -16,33 +16,49 @@
                 <div class="input-box">                    
                    <h2>Đăng ký</h2>
 
-                   <div class="input-field">
-                        <input type="text" class="input-info" id="sdt" required="" autocomplete="off">
-                        <label for="sdt">Số điện thoại</label> 
-                    </div> 
+                    <form class="needs-validation input-box" novalidate>
                     <div class="input-field">
-                        <input type="text" class="input-info" id="username" required="">
-                        <label for="username">Tên người dùng</label>
-                    </div> 
-                   <div class="input-field">
-                        <input type="password" class="input-info" id="pass" required="">
-                        <label for="pass">Mật khẩu</label>
-                    </div> 
-                    <div class="input-field">
-                        <input type="password" class="input-info" id="repass" required="">
-                        <label for="repass">Nhập lại mật khẩu</label>
-                    </div> 
-                   <div class="input-field">
-                        <input type="submit" class="submit" value="Đăng ký">
-                   </div> 
-                   <div class="signin">
-                    <span>
-                        Bạn đã có tài khoản? 
-                        <a asp-controller="Home" asp-action="Login">
-                            Đăng nhập
-                        </a>
-                    </span>
+                            <input type="text" class="input-info" id="sdt" required="" autocomplete="off">
+                            <label for="sdt">Số điện thoại</label> 
+                            <div class="invalid-feedback">
+                                * Vui lòng nhập số điện thoại
+                            </div>
+                        </div> 
+                        <div class="input-field">
+                            <input type="text" class="input-info" id="username" required="">
+                            <label for="username">Tên người dùng</label>
+                            <div class="invalid-feedback">
+                                * Vui lòng nhập tên
+                            </div>
+                        </div> 
+                        <div class="input-field">
+                            <input type="password" class="input-info" id="pass" required="">
+                            <label for="pass">Mật khẩu</label>
+                            <div class="invalid-feedback">
+                                * Vui lòng nhập mật khẩu
+                            </div>
+                        </div> 
+                        <div class="input-field">
+                            <input type="password" class="input-info" id="repass" required="">
+                            <label for="repass">Nhập lại mật khẩu</label>
+                            <div class="invalid-feedback">
+                                * Vui lòng nhập lại mật khẩu
+                            </div>
+                        </div> 
+                        <div class="input-field">
+                            <input type="submit" class="submit" value="Đăng ký">
+                        </div> 
+                        <div class="signin">
+                        <span>
+                            Bạn đã có tài khoản? 
+                            <a asp-controller="Home" asp-action="Login">
+                                Đăng nhập
+                            </a>
+                        </span>
                    </div>
+                   </form>
+
+                   
                 </div>  
             </div>
         </div>
@@ -57,4 +73,24 @@
             block: "start"
         });
     };
+
+     // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+        }, false)
+    })
+    })()
 </script>

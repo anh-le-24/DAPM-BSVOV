@@ -34,6 +34,13 @@ public class HomeController : Controller
         ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
         return View();
     }
+    public IActionResult FillterDoctor()
+    {
+        DataModel db = new DataModel();
+        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        
+        return View();
+    }
     public IActionResult Register()
     {
         DataModel db = new DataModel();

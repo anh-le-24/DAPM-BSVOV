@@ -41,6 +41,13 @@ public class HomeController : Controller
         
         return View();
     }
+    public IActionResult DetailDoctor()
+    {
+        DataModel db = new DataModel();
+        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        
+        return View();
+    }
     public IActionResult Register()
     {
         DataModel db = new DataModel();

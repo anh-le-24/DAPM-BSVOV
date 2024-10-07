@@ -85,19 +85,22 @@
                             </div>
                             <div class="drop-menu">
                                 <div class="drop-content">
+                                    @{
+                                        int count = (int)Math.Ceiling(ViewBag.listKB.Count / 2.0); 
+                                    }
                                     <ul>
-                                        @for (var i = 0; i < ViewBag.listKB.Count / 2; i++)
+                                        @for (var i = 0; i < Math.Ceiling(ViewBag.listKB.Count / 2.0); i++) 
                                         {
                                             <li>
-                                                <a>@ViewBag.listKB[i][1]</a>
+                                                <a style="@(i == (int)Math.Ceiling(ViewBag.listKB.Count / 2.0) - 1 ? "border-bottom:none;" : "")">@ViewBag.listKB[i][1]</a>
                                             </li>
                                         }
                                     </ul>
                                     <ul>
-                                        @for (var i = ViewBag.listKB.Count / 2; i < ViewBag.listKB.Count; i++)
+                                        @for (var i = (int)Math.Ceiling(ViewBag.listKB.Count / 2.0); i < ViewBag.listKB.Count; i++) 
                                         {
                                             <li>
-                                                <a>@ViewBag.listKB[i][1]</a>
+                                                <a style="@(i == ViewBag.listKB.Count - 1 ? "border-bottom:none;" : "")">@ViewBag.listKB[i][1]</a>
                                             </li>
                                         }
                                     </ul>

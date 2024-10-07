@@ -745,14 +745,13 @@ font-size: 16px;
 /* ---------- CUSTOMERS --------- */
 
 .wrapper{
-  
   margin: 10px 0;
 }
 .main{
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 100vh;
+  
 }
 .side-image{
   background-position: center;
@@ -769,7 +768,7 @@ font-size: 16px;
 .form-login{
   display: flex;
   width:  80%;
-  height:550px;
+  min-height:550px;
   border-radius: 10px;
   background: #fff;
   padding: 0px;
@@ -890,4 +889,8 @@ span a{
 span a:hover{
   text-decoration: underline;
   color: #000;
+}
+
+.invalid-feedback, .valid-feedback{
+  margin-left: 30px;
 }

@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/luongdat/DAPM-BSVOV
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/luongdat/DAPM-BSVOV/Views/Home/AccountBank.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BY2NvdW50QmFuay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/luongdat/DAPM-BSVOV/Views/Home/Article.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BcnRpY2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

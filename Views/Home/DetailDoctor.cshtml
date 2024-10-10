@@ -2,3 +2,142 @@
 @{
     ViewData["Title"] = "Thông tin bác sĩ";
 }
+
+<link rel="stylesheet" href="~/css/Article.css" asp-append-version="true">
+
+<div class="container">
+    <div class="bread-flow">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="FillterDoctor">Tìm bác sĩ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Thông tin bác sĩ</li>
+            </ol>
+        </nav>
+    </div>
+    
+    <div class="div-doc">
+        <div class="row">
+            <div class="col-md-5" style="background-color: #fbfbfb;">
+                <div class="title-doc">
+                    <img src="~/images/info-doc.JPG" alt="Bác sĩ Bùi Ngọc Uyên Chi" class="doctor-image mb-3">
+                    <div class="avar-doc">
+                        <h2 class="text-primary">Bác sĩ chuyên khoa II,</h2>
+                        <h3 class="fm-text">Bùi Ngọc Uyên Chi</h3>
+                        <button class="custom-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 13 13" fill="none">
+                                <g clip-path="url(#clip0_15_49)">
+                                <path d="M5.99998 12.65H3.09999C2.27517 12.65 1.48413 12.3224 0.900894 11.7391C0.317656 11.1559 -0.0100098 10.3649 -0.0100098 9.54004V3.87C-0.0100098 3.04517 0.317656 2.25414 0.900894 1.6709C1.48413 1.08766 2.27517 0.76001 3.09999 0.76001H8.76999C9.59481 0.76001 10.3858 1.08766 10.9691 1.6709C11.5523 2.25414 11.88 3.04517 11.88 3.87V7.02002H11.27V3.87C11.27 3.20695 11.0066 2.57107 10.5378 2.10223C10.0689 1.63339 9.43303 1.37 8.76999 1.37H3.09999C2.43695 1.37 1.80107 1.63339 1.33223 2.10223C0.863389 2.57107 0.599991 3.20695 0.599991 3.87V9.54004C0.599991 10.2031 0.863389 10.8389 1.33223 11.3077C1.80107 11.7766 2.43695 12.04 3.09999 12.04H5.98999L5.99998 12.65Z" fill="white"/>
+                                <path d="M3.93001 0H3.32001V2.58H3.93001V0Z" fill="white"/>
+                                <path d="M8.58 0H7.97V2.58H8.58V0Z" fill="white"/>
+                                <path d="M11.59 4.28003H0.309998V4.89003H11.59V4.28003Z" fill="white"/>
+                                <path d="M4.35001 6.71002H3.32001V7.74002H4.35001V6.71002Z" fill="white"/>
+                                <path d="M4.35001 8.63H3.32001V9.66H4.35001V8.63Z" fill="white"/>
+                                <path d="M6.51 6.71002H5.48V7.74002H6.51V6.71002Z" fill="white"/>
+                                <path d="M9.65001 12.65H7.65001V10.9L10.9 7.63L12.72 9.76001L9.65001 12.65ZM8.28 12.04H9.41L11.87 9.71997L10.87 8.53003L8.28 11.15V12.04Z" fill="white"/>
+                                <path d="M10.0533 8.91308L9.61856 9.34094L11.1126 10.8591L11.5473 10.4313L10.0533 8.91308Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_15_49">
+                                    <rect width="12.72" height="12.66" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Đăng ký khám
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="fm-text">Giới thiệu</h4>                    
+                    <p>
+                        BS Chuyên khoa II Bùi Uyên Ngọc Chi có 22 năm kinh nghiệm chuyên ngành Gây mê Hồi sức, Bác từng giữ chức vụ Trưởng khoa GMHS BV Hạnh Phúc, BV Phương Nam. Thành viên các Hội GMHS Việt nam, Hội Hồi sức - Cấp cứu - Chống độc Việt Nam, Hiệp Hội nghiên cứu Đau thế giới. Đồng thời còn là trưởng chương ASC - JCI - BV Hạnh Phúc & Trưởng nhóm GMHS - Bệnh viện Nuôi con bằng sữa mẹ xuất sắc - BV Hạnh Phúc. Hiện bác là trưởng khoa GMPT - BV Vinmec Central Park.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div style="margin-top: 40px;">
+                    <h4 class="fm-text">Chuyên môn</h4>
+                    <p >Trưởng khoa Gây mê Phẫu thuật</p>
+                    <div class="line-ver"></div>
+                </div>
+
+                <div>
+                    <h4 class="fm-text">Nơi làm việc</h4>
+                    <p>Khoa Gây mê Phẫu thuật - Bệnh viện Đa khoa Quốc tế Vinmec Central Park</p>
+                    <div class="line-ver"></div>
+                </div>
+                <div>
+                    <h4 class="fm-text">Dịch vụ</h4>
+                    <ul>
+                        <li>Gây mê/ Gây tê trong các phẫu thuật các chuyên khoa</li>
+                        <li>Giảm đau chuyên đa</li>
+                        <li>Giảm đau cấp tính cho những bệnh nhân sau phẫu thuật</li>
+                        <li>Điều trị đau do Zona</li>
+                        <li>Giảm đau mạn tính một số trường hợp</li>
+                        <li>Điều trị chăm sóc giảm nhẹ cho bệnh nhân ung thư</li>
+                    </ul>
+                    <div class="line-ver"></div>
+                </div>
+                <div class="mt-4">
+                    <h4 class="fm-text-drop" data-bs-toggle="collapse" data-bs-target="#quaTrinhDaoTao" role="button">
+                        Quá trình đào tạo
+                        
+                    </h4>
+                    <div class="collapse" id="quaTrinhDaoTao">
+                        <!-- Nội dung quá trình đào tạo -->
+                        <ul>
+                            <li>2003-2006: Bệnh viện Đại học Y Dược - BS Nội Trú GMHS</li>
+                            <li>2006-2010: Trường Đại học Y Dược - BV ĐH Y Dược TPHCM - BV Nhi Đồng 2: Giảng viên – BS điều trị</li>
+                            <li>2010-2023: Bệnh viện Hạnh Phúc - Trưởng khoa GMHS</li>
+                            <li>2023-2024: Bệnh viện Phương Nam - Trưởng khoa GMHS</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <h4 class="fm-text-drop" data-bs-toggle="collapse" data-bs-target="#kinhNghiemLamViec" role="button">
+                        Kinh nghiệm làm việc
+                    </h4>
+                    <div class="collapse" id="kinhNghiemLamViec">
+                        <ul>
+                            <li>2003-2006: Bệnh viện Đại học Y Dược - BS Nội Trú GMHS</li>
+                            <li>2006-2010: Trường Đại học Y Dược - BV ĐH Y Dược TPHCM - BV Nhi Đồng 2: Giảng viên – BS điều trị</li>
+                            <li>2010-2023: Bệnh viện Hạnh Phúc - Trưởng khoa GMHS</li>
+                            <li>2023-2024: Bệnh viện Phương Nam - Trưởng khoa GMHS</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="fm-text-drop" data-bs-toggle="collapse" data-bs-target="#CongTrinhNC" role="button">
+                        Công trình nghiên cứu
+                    </h4>
+                    <div class="collapse" id="CongTrinhNC">
+                        <ul>
+                            <li>2003-2006: Bệnh viện Đại học Y Dược - BS Nội Trú GMHS</li>
+                            <li>2006-2010: Trường Đại học Y Dược - BV ĐH Y Dược TPHCM - BV Nhi Đồng 2: Giảng viên – BS điều trị</li>
+                            <li>2010-2023: Bệnh viện Hạnh Phúc - Trưởng khoa GMHS</li>
+                            <li>2023-2024: Bệnh viện Phương Nam - Trưởng khoa GMHS</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="fm-text-drop" data-bs-toggle="collapse" data-bs-target="#ThanhVien" role="button">
+                        Thành viên của tổ chức
+                    </h4>
+                    <div class="collapse" id="ThanhVien">
+                        <ul>
+                            <li>2003-2006: Bệnh viện Đại học Y Dược - BS Nội Trú GMHS</li>
+                            <li>2006-2010: Trường Đại học Y Dược - BV ĐH Y Dược TPHCM - BV Nhi Đồng 2: Giảng viên – BS điều trị</li>
+                            <li>2010-2023: Bệnh viện Hạnh Phúc - Trưởng khoa GMHS</li>
+                            <li>2023-2024: Bệnh viện Phương Nam - Trưởng khoa GMHS</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</div>

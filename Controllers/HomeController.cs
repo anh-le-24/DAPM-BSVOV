@@ -67,6 +67,12 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult AccountBank()
+    {
+        DataModel db = new DataModel();
+        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        return View();
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

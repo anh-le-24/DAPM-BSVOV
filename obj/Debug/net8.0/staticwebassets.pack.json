@@ -109,6 +109,14 @@
       "PackagePath": "staticwebassets/images/ic_search.png"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/info-doc.JPG",
+      "PackagePath": "staticwebassets/images/info-doc.JPG"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo-vnpay.png",
+      "PackagePath": "staticwebassets/images/logo-vnpay.png"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_footer.png",
       "PackagePath": "staticwebassets/images/logo_footer.png"
     },

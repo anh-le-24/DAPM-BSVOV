@@ -218,7 +218,8 @@ font-size: 16px;
   }
 
 .fm-footer{
-  padding: 40px;
+  padding: 20px;
+  margin-top: 20px;
 }
 .contentfooter{
   display: flex;
@@ -489,6 +490,9 @@ font-size: 16px;
     opacity: 1;
     transform: translateY(0px);
   }
+}
+.footer{
+  margin-top: 20px;
 }
 .item-icon img{
   width: 60px;

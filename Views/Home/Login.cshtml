@@ -14,10 +14,10 @@
             <div class="col-6 right">
                 <div class="input-box">                    
                    <h2>Đăng nhập</h2>
-                    <form class="needs-validation input-box" novalidate>
+                    <form class="needs-validation input-box" action="~/home/LoginProcess" method="post">
 
                         <div class="input-field">
-                            <input type="text" class="input-info" id="sdt" required >
+                            <input type="text" class="input-info" id="sdt" required name="sdt">
                             <label for="sdt">Số điện thoại</label> 
                              <div class="invalid-feedback">
                                 * Vui lòng nhập số điện thoại
@@ -31,7 +31,7 @@
                         </div> 
                        
                         <div class="input-field has-validation">
-                            <input type="password" class="input-info" id="pass"  required="">
+                            <input type="password" class="input-info" id="pass"  required name="password">
                             <label for="pass">Mật khẩu</label>
                             <div class="invalid-feedback">
                                 * Vui lòng nhập mật khẩu

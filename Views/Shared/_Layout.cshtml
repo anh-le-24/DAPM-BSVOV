@@ -30,8 +30,8 @@
                 <a class="navbar-brand" asp-controller="Home" asp-action="Index">
                     <img src="~/images/logo_vov1.png" style="width: 80px; height: 45px; cursor: pointer;" title="Trang chủ"/>
                 </a>
-                <div id ="nav-right">
-
+                
+                <div id ="nav-right">                    
                     @* ------ Search-------- *@
                     <div class="item-right group">
                         <img src="~/images/ic_search.png" class="ic-search"/>
@@ -40,25 +40,35 @@
                     <img class="item-right scale" src="~/images/ic_bell.png" style="width: 50px;" title="Thông báo"/>
                     <div class="h-separator"></div>
                     <div class="fm-nav-item">
-                        <a class="item-right scale" asp-controller="Home" asp-action="PersonalPage">
+                        @if (ViewBag.TaiKhoan != null)
+                        {
+                            <a class="item-right scale" asp-controller="Home" asp-action="PersonalPage">
                             <img src="~/images/ic_avatar.png" style="width: 50px;" title="Trang cá nhân"/>
-                        </a>
-                        <div class="drop-menu" style="right: 10px; top: 60px">
-                            <div class="drop-content" style="padding: 0;">
-                                <ul>
-                                    <li>
-                                        <a asp-controller="Home" asp-action="Login">
-                                            Đăng nhập
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a asp-controller="Home" asp-action="Register">
-                                            Đăng ký
-                                        </a>
-                                    </li>
-                                </ul>
+                            </a>
+                        }
+                        else
+                        {
+                            <a class="item-right scale">
+                            <img src="~/images/ic_avatar.png" style="width: 50px;" title="Trang cá nhân"/>
+                            </a>
+                            <div class="drop-menu" style="right: 10px; top: 60px">
+                                <div class="drop-content" style="padding: 0;">
+                                    <ul>
+                                        <li>
+                                            <a asp-controller="Home" asp-action="Login">
+                                                Đăng nhập
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Home" asp-action="Register">
+                                                Đăng ký
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
+                        }
+                        
                     </div>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"

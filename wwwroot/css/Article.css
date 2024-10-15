@@ -92,7 +92,7 @@
   padding: 20px;
   margin-bottom: 20px;
   height: 200px;
-  
+  background-color: white;
 }
 .content-doctor{
   display: flex;
@@ -245,6 +245,8 @@ margin-top: 20px;
 /* ------- Account Bank --------- */
 .sodu{
   background-color: #2285e2;
+  width: 100%;
+  margin-bottom: 10px;
 }
 .sodu h3{  
   font-weight: bold;
@@ -305,3 +307,37 @@ margin-top: 20px;
   height: 4px;
   background: #a12e35;
   }
+
+  /* ----------- BOOK Examine ---------- */
+  .book-form{
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    
+  }
+  
+  
+  .form-label.required::after {
+    content: " *";
+    color: red;
+}
+
+.fee label{
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(217, 7, 7);
+}
+.fee span{
+  font-weight: bold;
+  font-size: 30px;
+}
+.btn-send-book{
+  background: #51be9d;
+  padding: 15px 60px;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+}

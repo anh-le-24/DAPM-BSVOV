@@ -16,71 +16,63 @@
                 <div class="input-box">
                    <h2>Đăng ký</h2>
 
-                    <form class="needs-validation input-box" novalidate>
-                    <div class="input-field">
-                            <input type="text" class="input-info" id="sdt" required="" autocomplete="off">
+                   <form class="needs-validation input-box" novalidate id="registrationForm" action="~/Home/RegisterProcess" method="post">
+                        <div class="input-field">
+                            <input type="text" class="input-info" id="sdt" autocomplete="off" required="" name="sdt">
                             <label for="sdt">Số điện thoại</label>
-                            <div class="invalid-feedback">
-                                * Vui lòng nhập số điện thoại
-                            </div>
+                            <div class="invalid-feedback">* Vui lòng nhập số điện thoại hợp lệ</div>
                             <div class="valid-feedback">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
                                 </svg>
                             </div>
                         </div>
+
                         <div class="input-field">
-                            <input type="text" class="input-info" id="username" required="">
+                            <input type="text" class="input-info" id="username" required="" name="TenND">
                             <label for="username">Tên người dùng</label>
                             <div class="invalid-feedback">
-                                * Vui lòng nhập tên
+                                * Vui lòng nhập tên.
                             </div>
                             <div class="valid-feedback">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
                                 </svg>
                             </div>
                         </div>
+
                         <div class="input-field">
-                            <input type="password" class="input-info" id="pass" required="">
+                            <input type="password" class="input-info" id="pass" required="" name="Password">
                             <label for="pass">Mật khẩu</label>
-                            <div class="invalid-feedback">
-                                * Vui lòng nhập mật khẩu
-                            </div>
+                            <div class="invalid-feedback">* Phải gồm (chữ hoa, chữ thường, số và ký tự đặc biệt).</div>
                             <div class="valid-feedback">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
                                 </svg>
                             </div>
                         </div>
+
                         <div class="input-field">
                             <input type="password" class="input-info" id="repass" required="">
                             <label for="repass">Nhập lại mật khẩu</label>
                             <div class="invalid-feedback">
-                                * Vui lòng nhập lại mật khẩu
+                                * Mật khẩu không khớp.
                             </div>
                             <div class="valid-feedback">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
                                 </svg>
                             </div>
                         </div>
+
                         <div class="input-field">
                             <input type="submit" class="submit" value="Đăng ký">
                         </div>
-                        <div class="signin">
-                        <span>
-                            Bạn đã có tài khoản?
-                            <a asp-controller="Home" asp-action="Login">
-                                Đăng nhập
-                            </a>
-                        </span>
-                   </div>
-                   </form>
+                    </form>
 
 
                 </div>
@@ -89,32 +81,3 @@
     </div>
 </div>
 
-
-<script>
-    window.onload = function() {
-        document.getElementById("loginForm").scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
-    };
-
-     // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (() => {
-    'use strict'
-
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('.needs-validation')
-
-    // Loop over them and prevent submission
-    Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-        if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-        }
-
-        form.classList.add('was-validated')
-        }, false)
-    })
-    })()
-</script>

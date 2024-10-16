@@ -30,8 +30,18 @@
                 <a class="navbar-brand" asp-controller="Home" asp-action="Index">
                     <img src="~/images/logo_vov1.png" style="width: 80px; height: 45px; cursor: pointer;" title="Trang chủ"/>
                 </a>
+                @using Microsoft.AspNetCore.Http
                 
-                <div id ="nav-right">                    
+                <div id ="nav-right">     
+                    @if (ViewBag.TaiKhoan != null)
+                    {
+                        <p>Xin chào, @ViewBag.TaiKhoan!</p>
+                    }
+                    else
+                    {
+                        <p>Bạn chưa đăng nhập. <a href="/Home/Login">Đăng nhập</a></p>
+                    }
+               
                     @* ------ Search-------- *@
                     <div class="item-right group">
                         <img src="~/images/ic_search.png" class="ic-search"/>
@@ -45,6 +55,22 @@
                             <a class="item-right scale" asp-controller="Home" asp-action="PersonalPage">
                             <img src="~/images/ic_avatar.png" style="width: 50px;" title="Trang cá nhân"/>
                             </a>
+                            <div class="drop-menu" style="right: 10px; top: 60px">
+                                <div class="drop-content" style="padding: 0;">
+                                    <ul>
+                                        <li>
+                                            <a asp-controller="Home" asp-action="PersonalPage">
+                                                Trang cá nhân
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Đăng xuất
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         }
                         else
                         {

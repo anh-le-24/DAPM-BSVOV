@@ -1,3 +1,4 @@
+@using System.Collections
 
 @{
     ViewData["Title"] = "Trang cá nhân";
@@ -33,18 +34,25 @@
             <div class="col-md-4">
                 <div class="card h-100" style="padding: 0;">
                     <div class="card-body text-center" style="padding: 0;">
-                        <div style="padding: 25px;">
-                            <img src="~/images/ic_avatar.png" class="img-fluid rounded-circle profile-picture mb-3" alt="Profile Picture">
-                            <h2 class="card-subtitle mb-2 text-muted">Lương Đạt</h2>
-                            <p class="card-text"style="font-weight: bold; font-size: 20px">Mã giới thiệu: 0470185</p>
-                            <button class="btn-changepass">Đổi mật khẩu</button>
-                        </div>
-                        <h3 style="color: white;">
-                             Số dư:
-                            <span style="color: #fff003;">
-                                200.000 đ
-                            </span>
-                        </h3>
+                         @if (ViewBag.UserInfo != null)
+                            {
+                                var user = ViewBag.UserInfo as ArrayList;
+                                if (user != null && user.Count > 1)
+                                {
+                                    <div style="padding: 25px;">
+                                        <img src="~/images/ic_avatar.png" class="img-fluid rounded-circle profile-picture mb-3" alt="Profile Picture">
+                                        <h2 class="card-subtitle mb-2 text-muted">@user[1]</h2>
+                                        <p class="card-text"style="font-weight: bold; font-size: 20px">Mã giới thiệu: @user[10]</p>
+                                        <button class="btn-changepass">Đổi mật khẩu</button>
+                                    </div>
+                                    <h3 style="color: white;">
+                                        Số dư:
+                                        <span style="color: #fff003;">
+                                            @user[9]
+                                        </span>
+                                    </h3>
+                                }
+                            }
                     </div>
                 </div>
             </div>
@@ -53,31 +61,43 @@
                     <div class="card-body ">
                         <h2 class="card-title">Thông tin cá nhân</h2>
                         <form>
-                            <div class="mb-3">
-                                <label for="fullName" class="form-label">Họ và tên:</label>
-                                <input type="text" class="form-control" id="fullName" value="Lương Đạt">
-                            </div>
-                            <div class="mb-3">
-                                <label for="birthYear" class="form-label">Năm sinh:</label>
-                                <input type="text" class="form-control" id="birthYear" value="2004">
-                            </div>
-                            <div class="mb-3">
-                                <label for="gender" class="form-label">Giới tính:</label>
-                                <select class="form-select" id="gender">
-                                    <option selected>Nam</option>
-                                    <option>Nữ</option>
-                                    <option>Khác</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="address" class="form-label">Địa chỉ:</label>
-                                <input type="text" class="form-control" id="address" value="TP Hồ Chí Minh">
-                            </div>
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Số điện thoại:</label>
-                                <input type="tel" class="form-control" id="phone" value="0879416003">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Cập nhật</button>
+                            @if (ViewBag.UserInfo != null)
+                            {
+                                var user = ViewBag.UserInfo as ArrayList;
+                                if (user != null && user.Count > 1)
+                                {
+                                    <div class="mb-3">
+                                        <label for="fullName" class="form-label">Họ và tên:</label>
+                                        <input type="text" class="form-control" id="fullName" value= "@user[1]">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email:</label>
+                                        <input type="text" class="form-control" id="email" value="@user[3]">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="birthYear" class="form-label">Năm sinh:</label>
+                                        
+                                        <input type="date" class="form-control" id="birthYear"  onfocus="this.value = formatDate(birthYear)">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="gender" class="form-label">Giới tính:</label>
+                                        <select class="form-select" id="gender">
+                                            <option selected>@user[7]</option>
+                                            <option>Nữ</option>
+                                            <option>Khác</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="address" class="form-label">Địa chỉ:</label>
+                                        <input type="text" class="form-control" id="address" value="@user[5]">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Số điện thoại:</label>
+                                        <input type="tel" class="form-control" id="phone" value="@user[4]">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                                }
+                            }
                         </form>
                     </div>
                 </div>
@@ -86,4 +106,17 @@
     </div>
 </div>
 
+<script>
+    
 
+    function formatDate(dateStr) {
+        const date = new Date(dateStr);
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0'); // Tháng bắt đầu từ 0
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+    }
+
+
+    document.getElementById('birthYear').value = formatDate(rawDate);
+</scrip>

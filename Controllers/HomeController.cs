@@ -64,6 +64,41 @@ public class HomeController : Controller
             return RedirectToAction("Login", "Home");
         }
     }
+
+     // -------- REGISTER ----------//
+    public IActionResult Register()
+    {
+        DataModel db = new DataModel();
+        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        return View();
+    }
+    [HttpPost]
+    public IActionResult RegisterProcess(string TenND, string Password, string sdt)
+    {
+        DataModel db = new DataModel();
+
+        // Thực thi stored procedure và nhận kết quả
+        var list = db.get($"EXEC REGISTER N'{TenND}', '{Password}', '{sdt}'");
+
+        if (list.Count > 0 && list[0] is ArrayList arrayList && arrayList.Count >= 2)
+        {
+            // Lấy thông tin người dùng (ví dụ: TenND)
+            string userName = arrayList[0]?.ToString() ?? "Unknown";
+
+            // Lưu vào session
+            HttpContext.Session.SetString("taikhoan", userName);
+
+            // Chuyển hướng về trang chủ
+            return RedirectToAction("Index", "Home");
+        }
+        else
+        {
+            // Trường hợp lỗi: quay lại trang đăng ký
+            ViewBag.Error = "Đăng ký không thành công. Vui lòng thử lại.";
+            return RedirectToAction("Register", "Home");
+        }
+    }
+
     public IActionResult FillterDoctor()
     {
         DataModel db = new DataModel();
@@ -85,17 +120,23 @@ public class HomeController : Controller
         
         return View();
     }
-    public IActionResult Register()
-    {
-        DataModel db = new DataModel();
-        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
-        return View();
-    }
+
      public IActionResult PersonalPage()
     {
 
         DataModel db = new DataModel();
         ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        var taikhoan = HttpContext.Session.GetString("taikhoan");
+        ViewData["TaiKhoan"] = taikhoan;
+
+        if (!string.IsNullOrEmpty(taikhoan))
+        {
+            var result = db.get("SELECT * from NGUOIDUNG where manD=" + taikhoan);
+            if (result != null && result.Count > 0)
+            {
+                ViewBag.UserInfo = result[0]; // Lấy dòng đầu tiên của kết quả
+            }
+        }
         return View();
     }
 

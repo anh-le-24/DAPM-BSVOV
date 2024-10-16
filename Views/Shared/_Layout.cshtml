@@ -33,15 +33,6 @@
                 @using Microsoft.AspNetCore.Http
                 
                 <div id ="nav-right">     
-                    @if (ViewBag.TaiKhoan != null)
-                    {
-                        <p>Xin chào, @ViewBag.TaiKhoan!</p>
-                    }
-                    else
-                    {
-                        <p>Bạn chưa đăng nhập. <a href="/Home/Login">Đăng nhập</a></p>
-                    }
-               
                     @* ------ Search-------- *@
                     <div class="item-right group">
                         <img src="~/images/ic_search.png" class="ic-search"/>
@@ -64,7 +55,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a asp-controller="Home" asp-action="Logout" >
                                                 Đăng xuất
                                             </a>
                                         </li>

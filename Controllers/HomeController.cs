@@ -98,6 +98,15 @@ public class HomeController : Controller
             return RedirectToAction("Register", "Home");
         }
     }
+    // ------- Action đăng xuất------- //
+    public IActionResult Logout()
+    {
+        // Xóa toàn bộ session
+        HttpContext.Session.Clear();
+
+        return RedirectToAction("Index", "Home");
+    }
+
 
     public IActionResult FillterDoctor()
     {

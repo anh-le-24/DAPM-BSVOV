@@ -60,40 +60,45 @@
                 <div class="card h-100 ">
                     <div class="card-body ">
                         <h2 class="card-title">Thông tin cá nhân</h2>
-                        <form>
+                        <form asp-controller="Home" asp-action="UpdateUserInfo" method="post" enctype="multipart/form-data">
                             @if (ViewBag.UserInfo != null)
                             {
                                 var user = ViewBag.UserInfo as ArrayList;
                                 if (user != null && user.Count > 1)
                                 {
+                                    <input type="text" class="form-control" id="fullName" value="@user[0]" name="MaND" style="display: none;">
                                     <div class="mb-3">
                                         <label for="fullName" class="form-label">Họ và tên:</label>
-                                        <input type="text" class="form-control" id="fullName" value= "@user[1]">
+                                        <input type="text" class="form-control" id="fullName" value="@user[1]" name="TenND">
                                     </div>
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email:</label>
-                                        <input type="text" class="form-control" id="email" value="@user[3]">
+                                        <input type="text" class="form-control" id="email" value="@user[3]" name="Email">
                                     </div>
+                                    
+                                    DateTime birthDate = Convert.ToDateTime(user[6]); // Chuyển đổi sang DateTime
+                                    var formattedDate = birthDate.ToString("yyyy-MM-dd"); // Định dạng
+
                                     <div class="mb-3">
                                         <label for="birthYear" class="form-label">Năm sinh:</label>
-                                        
-                                        <input type="date" class="form-control" id="birthYear"  onfocus="this.value = formatDate(birthYear)">
+                                        <input type="date" class="form-control" id="birthYear" name="NamSinh" value="@formattedDate" />
                                     </div>
                                     <div class="mb-3">
                                         <label for="gender" class="form-label">Giới tính:</label>
-                                        <select class="form-select" id="gender">
+                                        <select class="form-select" id="gender" name="GioiTinh">
                                             <option selected>@user[7]</option>
+                                            <option>Nam</option>
                                             <option>Nữ</option>
                                             <option>Khác</option>
                                         </select>
                                     </div>
                                     <div class="mb-3">
                                         <label for="address" class="form-label">Địa chỉ:</label>
-                                        <input type="text" class="form-control" id="address" value="@user[5]">
+                                        <input type="text" class="form-control" id="address" value="@user[5]" name="DiaChi">
                                     </div>
                                     <div class="mb-3">
                                         <label for="phone" class="form-label">Số điện thoại:</label>
-                                        <input type="tel" class="form-control" id="phone" value="@user[4]">
+                                        <input type="tel" class="form-control" id="phone" value="@user[4]" name="SDT">
                                     </div>
                                     <button type="submit" class="btn btn-primary">Cập nhật</button>
                                 }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 namespace DoAnCNPM.Controllers;
 using System.Collections;
+using Microsoft.AspNetCore.Identity;
 
 public class HomeController : Controller
 {
@@ -130,6 +131,7 @@ public class HomeController : Controller
         return View();
     }
 
+    // ----- PERSONAL PAGE ------//
      public IActionResult PersonalPage()
     {
 
@@ -147,6 +149,20 @@ public class HomeController : Controller
             }
         }
         return View();
+    }
+    [HttpPost]
+    public IActionResult UpdateUserInfo(string MaND, string TenND, string Email, 
+                                        string NamSinh, string GioiTinh, 
+                                        string DiaChi)
+    {
+        DataModel db = new DataModel();
+        int manD = int.Parse(MaND);
+        DateTime parsedDate = DateTime.Parse(NamSinh); 
+        string formattedDate = parsedDate.ToString("yyyy-MM-dd");
+
+        db.get($"EXEC UpdateUserInfo {manD}, N'{TenND}', '{Email}', '{formattedDate}', N'{GioiTinh}', N'{DiaChi}' ");
+
+        return RedirectToAction("PersonalPage", "Home");
     }
 
     public IActionResult BookExamine()

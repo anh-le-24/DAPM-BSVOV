@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADMIN VOV</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 300px; /* Kích thước sidebar */
+            background-color: #B7E0FF;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .sidebar .logo {
+            font-size: 30px;/* Kích thước chữ logo */
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .sidebar .search {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .sidebar .search input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #B7E0FF; /* Đặt màu viền giống màu nền sidebar */
+            border-radius: 5px;
+            font-size: 16px;/* Kích thước chữ trong ô tìm kiếm */
+            
+        }
+        .sidebar .search i {
+            margin-left: -30px;
+            color: #aaa;
+        }
+        .sidebar .menu {
+            list-style: none;
+            padding: 0;
+            flex-grow: 1; /* Đảm bảo menu chiếm hết không gian còn lại */
+        }
+        .sidebar .menu li {
+            margin-bottom: 40px; /* Tăng khoảng cách giữa các mục */
+        }
+        .sidebar .menu li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            font-size: 18px;/* Kích thước chữ trong menu */
+            padding: 10px; /* Thêm padding để dễ click */
+            border-radius: 5px; /* Bo tròn góc cho hiệu ứng hover */
+            transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi mượt */
+        }
+        .sidebar .menu li a:hover {
+            background-color: #f0f0f0;
+        }
+        .sidebar .menu li a.active {
+            background-color: #ff6b6b; /* Màu nền nổi bật */
+            color: #fff; /* Màu chữ cho trạng thái đang được chọn */
+            border-radius: 5px; /* Tuỳ chọn: Bo tròn các góc */
+        }
+        .sidebar .menu li a.active i {
+            color: #fff; /* Đảm bảo màu biểu tượng tương phản với nền */
+        }
+        .sidebar .menu li a i {
+            margin-right: 10px;
+        }
+        .sidebar .profile {
+            display: flex;
+            align-items: center;
+            margin-top: auto; /* Đẩy profile xuống dưới cùng */
+        }
+        .sidebar .profile img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .sidebar .profile .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar .profile .info span {
+             font-size: 16px; /* Kích thước chữ trong thông tin profile */
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .main-content .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .main-content .header h1 {
+            font-size: 28px; /* Kích thước chữ tiêu đề chính */
+            font-weight: 700;
+        }
+        .main-content .header .actions {
+            display: flex;
+            align-items: center;
+        }
+        .main-content .header .actions button {
+            background-color: #ff6b6b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 16px; /* Kích thước chữ trong nút */
+        }
+        .main-content .header .actions button i {
+            margin-right: 5px;
+        }
+        .main-content .table {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .main-content .table h3 {
+            font-size: 20px; /* Kích thước chữ tiêu đề bảng */
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .main-content .table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .main-content .table table th, 
+        .main-content .table table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+            font-size: 16px; /* Kích thước chữ trong bảng */
+        }
+        .main-content .table table th {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                LOGO
+            </div>
+            <div class="search">
+                <input placeholder="Tìm kiếm" type="text"/>
+                <i class="fas fa-search"></i>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        Quản lý tài khoản người dùng
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-file-medical"></i>
+                        Quản lý hồ sơ y tế
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-calendar-alt"></i>
+                        Quản lý lịch khám
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-money-check-alt"></i>
+                        Quản lý thanh toán
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user-md"></i>
+                        Quản lý lương bác sĩ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        Thống kê
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hospital"></i>
+                        Quản lý thông tin bệnh viện
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-list"></i>
+                        Quản lý danh mục 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-history"></i>
+                        Quản lý lịch sử cuộc gọi
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-comments"></i>
+                        Đánh giá và phản hồi của bệnh nhân
+                    </a>
+                </li>
+            </ul>
+            <div class="profile">
+                <img alt="Profile Picture" src="https://storage.googleapis.com/a1aa/image/Z3O1xzrRvh7qCNwXzW8rgzX5GTAGmTY1SxY3SxUHT56cbn5E.jpg" />
+                <div class="info">
+                    <span>ADMIN</span>
+                    <span>ADMIN@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h1>Welcome Back</h1>
+                <div class="actions">
+                    <button>
+                        <i class="fas fa-sync-alt"></i>
+                        Refresh all
+                    </button>
+                    <button>
+                        <i class="fas fa-plus"></i>
+                        Add New
+                    </button>
+                </div>
+            </div>
+            <!-- Thêm nội dung chính ở đây -->
+        </div>
+    </div>
+</body>
+</html>

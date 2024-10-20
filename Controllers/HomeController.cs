@@ -23,20 +23,25 @@ public class HomeController : Controller
         _session = httpContextAccessor.HttpContext.Session;
     }
 
-    public IActionResult Index()
-    {
+    public IActionResult LayoutShare(){
         var taikhoan = _session.GetString("taikhoan");
         ViewData["TaiKhoan"] = taikhoan;
 
         DataModel db = new DataModel();
         ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
-        
+
+        return View();
+    }
+
+    public IActionResult Index()
+    {
+        LayoutShare();
+
         return View();
     }
     public IActionResult Article()
     {
-        DataModel db = new DataModel();
-        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        LayoutShare();
 
         return View();
     }
@@ -44,8 +49,7 @@ public class HomeController : Controller
     // ---------- ĐĂNG NHẬP ------------//
     public IActionResult Login()
     {
-        DataModel db = new DataModel();
-        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        LayoutShare();
         return View();
     }
     [HttpPost]
@@ -69,8 +73,7 @@ public class HomeController : Controller
      // -------- REGISTER ----------//
     public IActionResult Register()
     {
-        DataModel db = new DataModel();
-        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        LayoutShare();
         return View();
     }
     [HttpPost]
@@ -78,23 +81,17 @@ public class HomeController : Controller
     {
         DataModel db = new DataModel();
 
-        // Thực thi stored procedure và nhận kết quả
         var list = db.get($"EXEC REGISTER N'{TenND}', '{Password}', '{sdt}'");
 
         if (list.Count > 0 && list[0] is ArrayList arrayList && arrayList.Count >= 2)
         {
-            // Lấy thông tin người dùng (ví dụ: TenND)
             string userName = arrayList[0]?.ToString() ?? "Unknown";
-
-            // Lưu vào session
             HttpContext.Session.SetString("taikhoan", userName);
 
-            // Chuyển hướng về trang chủ
             return RedirectToAction("Index", "Home");
         }
         else
         {
-            // Trường hợp lỗi: quay lại trang đăng ký
             ViewBag.Error = "Đăng ký không thành công. Vui lòng thử lại.";
             return RedirectToAction("Register", "Home");
         }
@@ -111,22 +108,19 @@ public class HomeController : Controller
 
     public IActionResult FillterDoctor()
     {
-        DataModel db = new DataModel();
-        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        LayoutShare();
         
         return View();
     }
     public IActionResult DetailDoctor()
     {
-        DataModel db = new DataModel();
-        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        LayoutShare();
         
         return View();
     }
     public IActionResult ListDoctor()
     {
-        DataModel db = new DataModel();
-        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        LayoutShare();
         
         return View();
     }
@@ -134,9 +128,8 @@ public class HomeController : Controller
     // ----- PERSONAL PAGE ------//
      public IActionResult PersonalPage()
     {
-
+        LayoutShare();
         DataModel db = new DataModel();
-        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
         var taikhoan = HttpContext.Session.GetString("taikhoan");
         ViewData["TaiKhoan"] = taikhoan;
 
@@ -167,22 +160,20 @@ public class HomeController : Controller
 
     public IActionResult BookExamine()
     {
-        DataModel db = new DataModel();
-        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        LayoutShare();
         return View();
     }
 
      public IActionResult ExamineHistory()
     {
-        DataModel db = new DataModel();
-        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        LayoutShare();
         return View();
     }
 
     public IActionResult AccountBank()
     {
-        DataModel db = new DataModel();
-        ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
+        LayoutShare();
+        
         return View();
     }
     

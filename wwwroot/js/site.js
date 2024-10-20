@@ -70,3 +70,8 @@ window.onload = function() {
     }, false);
 
 })();
+
+function hideVerifyForm() {
+    document.getElementById('verifyForm').style.display = 'none';
+    document.getElementById('loginForm').style.display = 'block';
+}

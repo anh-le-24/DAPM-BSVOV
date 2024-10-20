@@ -140,52 +140,59 @@
                                 <a class="nav-link hover-underline" asp-controller="Home" asp-action="Article">Hướng dẫn sử dụng</a>
                             </div>
                         </li>
-                        <li class="fm-nav-item">
-                            <div>
-                                <a class="nav-link hover-underline ic-drop">
-                                    Tài khoản
-                                    <span class="caret"></span>
-                                </a>
-                            </div>
-                            <div class="drop-menu">
-                                <div class="drop-content">
-                                    <ul>
-                                        <li>
-                                            <a asp-controller="Home" asp-action="PersonalPage">Thông tin cá nhân</a>
-                                        </li>
-                                        <li>
-                                            <a asp-controller="Home" asp-action="ExamineHistory">Lịch sử khám</a>
-                                        </li>
-                                        <li>
-                                            <a >Danh sách bác sĩ đang chờ </a>
-                                        </li>
-                                    </ul>
+                        @if (ViewBag.TaiKhoan != null)
+                        {
+                            <li class="fm-nav-item">
+                                <div>
+                                    <a class="nav-link hover-underline ic-drop">
+                                        Tài khoản
+                                        <span class="caret"></span>
+                                    </a>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="fm-nav-item">
-                            <div>
-                                <a class="nav-link hover-underline ic-drop" asp-area="" asp-controller="Home" asp-action="Privacy">
-                                    Giao dịch
-                                    <span class="caret"></span>
-                                </a>
-                            </div>
-                            <div class="drop-menu">
-                                <div class="drop-content">
-                                    <ul>
-                                        <li>
-                                            <a asp-controller="Home" asp-action="AccountBank">Số dư và nạp tiền</a>
-                                        </li>
-                                        <li>
-                                            <a>Thống kê phí khám</a>
-                                        </li>
-                                        <li>
-                                            <a>Chuyển tiền</a>
-                                        </li>
-                                    </ul>
+                                
+                                <div class="drop-menu">
+                                    <div class="drop-content">
+                                        <ul>
+                                            <li>
+                                                <a asp-controller="Home" asp-action="PersonalPage">Thông tin cá nhân</a>
+                                            </li>
+                                            <li>
+                                                <a asp-controller="Home" asp-action="ExamineHistory">Lịch sử khám</a>
+                                            </li>
+                                            <li>
+                                                <a >Danh sách bác sĩ đang chờ </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
+                        }
+                        @if (ViewBag.TaiKhoan != null)
+                        {
+                            <li class="fm-nav-item">
+                                <div>
+                                    <a class="nav-link hover-underline ic-drop" asp-area="" asp-controller="Home" asp-action="Privacy">
+                                        Giao dịch
+                                        <span class="caret"></span>
+                                    </a>
+                                </div>
+                                <div class="drop-menu">
+                                    <div class="drop-content">
+                                        <ul>
+                                            <li>
+                                                <a asp-controller="Home" asp-action="AccountBank">Số dư và nạp tiền</a>
+                                            </li>
+                                            <li>
+                                                <a>Thống kê phí khám</a>
+                                            </li>
+                                            <li>
+                                                <a>Chuyển tiền</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        }
                         <li class="fm-nav-item">
                             <a class="nav-link hover-underline" asp-area="" asp-controller="Home" asp-action="Article">Về VOVBacSi24</a>
                         </li>

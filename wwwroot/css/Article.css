@@ -341,3 +341,127 @@ margin-top: 20px;
   display: inline-block;
   cursor: pointer;
 }
+
+/* ------- VERIFY NUMBER ------- */
+.form-verify{
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.form-card {
+  width: 400px;
+  height: 450px;
+  border-radius: 1.2rem;
+  background-color: #fff;
+  padding: 1.3rem;
+  color: #212121;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.134);;
+}
+
+.form-card-title h2{
+  font-size: 30px;
+  line-height: 1.2;
+  position: relative;
+  padding-bottom: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-card-title h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #6fbc9f;
+  }
+
+.form-card-prompt {
+  margin-bottom: 2rem;
+  font-size: 16px;
+}
+
+.form-card-input {
+  all: unset;
+}
+
+.form-card-input-wrapper {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.form-card-input {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1rem;
+  text-align: start;
+  transform: translateX(85px);
+  position: absolute;
+  z-index: 3;
+  background-color: transparent;
+}
+
+.form-card-input-bg {
+  content: '';
+  width: 240px;
+  height: 60px;
+  margin: auto;
+  inset: 0;
+  bottom: 10px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 12px;
+  background-color: rgba(206, 206, 206, 0.664);
+}
+
+.form-card-submit {
+  width: 250px;
+  margin-bottom: 10px;
+  color: white;
+  border: none;
+  background-color: #51be9d;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.8rem;
+  padding: 0.8rem 2rem;
+  transition: 200ms ease-in-out;
+}
+
+.form-card-submit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.form-card-return{
+  width: 150px;
+  color: #212121;
+  border: none;
+  background-color: white;
+  border: 2px solid #51be9d;
+  font-size: 1rem;
+  border-radius: 0.8rem;
+  padding: 0.5rem 2rem;
+  transition: 200ms ease-in-out;
+}
+.form-card-return:hover{
+  color: white;
+  background-color: #6fbc9f;
+}
+.call-again {
+  color: #5e5e5e;
+  font-size: 14px;
+}
+

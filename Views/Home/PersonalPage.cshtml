@@ -75,14 +75,23 @@
                                         <label for="email" class="form-label">Email:</label>
                                         <input type="text" class="form-control" id="email" value="@user[3]" name="Email">
                                     </div>
-                                    
-                                    DateTime birthDate = Convert.ToDateTime(user[6]); // Chuyển đổi sang DateTime
-                                    var formattedDate = birthDate.ToString("yyyy-MM-dd"); // Định dạng
+                                    @if (user[6] != null && DateTime.TryParse(user[6].ToString(), out DateTime birthDate))
+                                    {
+                                        var formattedDate = birthDate.ToString("yyyy-MM-dd"); // Định dạng yyyy-MM-dd
 
-                                    <div class="mb-3">
-                                        <label for="birthYear" class="form-label">Năm sinh:</label>
-                                        <input type="date" class="form-control" id="birthYear" name="NamSinh" value="@formattedDate" />
-                                    </div>
+                                        <div class="mb-3">
+                                            <label for="birthYear" class="form-label">Năm sinh:</label>
+                                            <input type="date" class="form-control" id="birthYear" name="NamSinh" value="@formattedDate" />
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="mb-3">
+                                            <label for="birthYear" class="form-label">Năm sinh:</label>
+                                            <input type="date" class="form-control" id="birthYear" name="NamSinh" />
+                                        </div>
+                                    }
+
                                     <div class="mb-3">
                                         <label for="gender" class="form-label">Giới tính:</label>
                                         <select class="form-select" id="gender" name="GioiTinh">

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0068ab">
-    <title>@ViewData["Title"] - DoAnCNPM</title>
+    <title>VOV Bác sĩ</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/DoAnCNPM.styles.css" asp-append-version="true" />
@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
     <link href="~/images/favicon.ico" type="image/x-icon" rel="icon"/>
 </head>
+
+
 <body>
     <header>
         <nav class="navbar fisrt-nav"> 
             <div class="container-fluid">
                 <div class="fm-fisrt-nav">
-                    <a class="text-white point">
+                    <a class="text-white point" >
                         Dành cho bác sĩ
                     </a>
                 </div>
@@ -25,19 +27,66 @@
         </nav>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom " style="padding-bottom: 0;">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/images/logo_vov.png" style="width: 80px; height: 45px; cursor: pointer;" title="Trang chủ"/>
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo_vov1.png" style="width: 80px; height: 45px; cursor: pointer;" title="Trang chủ"/>
                 </a>
-                <div id ="nav-right">
+                @using Microsoft.AspNetCore.Http
+                
+                <div id ="nav-right">     
+                    @* ------ Search-------- *@
                     <div class="item-right group">
                         <img src="~/images/ic_search.png" class="ic-search"/>
                         <input type="text" name="q" id="search-input" value="" placeholder="Tìm kiếm..." autocomplete="off">
                     </div>
                     <img class="item-right scale" src="~/images/ic_bell.png" style="width: 50px;" title="Thông báo"/>
                     <div class="h-separator"></div>
-                    <a class="item-right scale">
-                        <img src="~/images/ic_avatar.png" style="width: 50px;" title="Trang cá nhân"/>
-                    </a>
+                    <div class="fm-nav-item">
+                        @if (ViewBag.TaiKhoan != null)
+                        {
+                            <a class="item-right scale" asp-controller="Home" asp-action="PersonalPage">
+                            <img src="~/images/ic_avatar.png" style="width: 50px;" title="Trang cá nhân"/>
+                            </a>
+                            <div class="drop-menu" style="right: 10px; top: 60px">
+                                <div class="drop-content" style="padding: 0;">
+                                    <ul>
+                                        <li>
+                                            <a asp-controller="Home" asp-action="PersonalPage">
+                                                Trang cá nhân
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Home" asp-action="Logout" >
+                                                Đăng xuất
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <a class="item-right scale">
+                            <img src="~/images/ic_avatar.png" style="width: 50px;" title="Trang cá nhân"/>
+                            </a>
+                            <div class="drop-menu" style="right: 10px; top: 60px">
+                                <div class="drop-content" style="padding: 0;">
+                                    <ul>
+                                        <li>
+                                            <a asp-controller="Home" asp-action="Login">
+                                                Đăng nhập
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Home" asp-action="Register">
+                                                Đăng ký
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        }
+                        
+                    </div>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation" style="background-color: #1e8ed3;">
@@ -51,99 +100,104 @@
                     <ul class="navbar-nav flex-grow-1 justify-content-around" style="margin: auto 50px">
                         <li class="fm-nav-item">
                             <div>
-                                <a class="nav-link hover-underline" asp-area="" asp-controller="Home" asp-action="Privacy">Cấp cứu</a>
+                                <a class="nav-link hover-underline" asp-controller="Home" asp-action="Article">Cấp cứu</a>
                             </div>
                         </li>
                         <li class="fm-nav-item ">
                             <div>
-                                <a class="nav-link hover-underline ic-drop" asp-area="" asp-controller="Home" asp-action="Privacy">
+                                <a class="nav-link hover-underline ic-drop">
                                     Chuyên khoa
                                     <span class="caret"></span>
                                 </a>
                             </div>
                             <div class="drop-menu">
                                 <div class="drop-content">
+                                    @{
+                                        int count = (int)Math.Ceiling(ViewBag.listKB.Count / 2.0); 
+                                    }
                                     <ul>
-                                        <li>
-                                            <a>Tim mạch</a>
-                                        </li>
-                                        <li>
-                                            <a>Nhi khoa</a>
-                                        </li>
-                                        <li>
-                                            <a>Tiêu hóa</a>
-                                        </li>
+                                        @for (var i = 0; i < Math.Ceiling(ViewBag.listKB.Count / 2.0); i++) 
+                                        {
+                                            <li>
+                                                <a style="@(i == (int)Math.Ceiling(ViewBag.listKB.Count / 2.0) - 1 ? "border-bottom:none;" : "")">@ViewBag.listKB[i][1]</a>
+                                            </li>
+                                        }
                                     </ul>
                                     <ul>
-                                        <li>
-                                            <a>Da Liễu</a>
-                                        </li>
-                                        <li>
-                                            <a>Dinh Dưỡng</a>
-                                        </li>
-                                        <li>
-                                            <a>Răng hàm mặt</a>
-                                        </li>
+                                        @for (var i = (int)Math.Ceiling(ViewBag.listKB.Count / 2.0); i < ViewBag.listKB.Count; i++) 
+                                        {
+                                            <li>
+                                                <a style="@(i == ViewBag.listKB.Count - 1 ? "border-bottom:none;" : "")">@ViewBag.listKB[i][1]</a>
+                                            </li>
+                                        }
                                     </ul>
                                 </div>
+
                             </div>
                         </li>
                         <li class="fm-nav-item">
                             <div>
-                                <a class="nav-link hover-underline" asp-area="" asp-controller="Home" asp-action="Privacy">Hướng dẫn sử dụng</a>
+                                <a class="nav-link hover-underline" asp-controller="Home" asp-action="Article">Hướng dẫn sử dụng</a>
                             </div>
                         </li>
-                        <li class="fm-nav-item">
-                            <div>
-                                <a class="nav-link hover-underline ic-drop">
-                                    Tài khoản
-                                    <span class="caret"></span>
-                                </a>
-                            </div>
-                            <div class="drop-menu">
-                                <div class="drop-content">
-                                    <ul>
-                                        <li>
-                                            <a>Thông tin cá nhân</a>
-                                        </li>
-                                        <li>
-                                            <a>Lịch sử khám</a>
-                                        </li>
-                                        <li>
-                                            <a>Danh sách bác sĩ đang chờ </a>
-                                        </li>
-                                    </ul>
+                        @if (ViewBag.TaiKhoan != null)
+                        {
+                            <li class="fm-nav-item">
+                                <div>
+                                    <a class="nav-link hover-underline ic-drop">
+                                        Tài khoản
+                                        <span class="caret"></span>
+                                    </a>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="fm-nav-item">
-                            <div>
-                                <a class="nav-link hover-underline ic-drop" asp-area="" asp-controller="Home" asp-action="Privacy">
-                                    Giao dịch
-                                    <span class="caret"></span>
-                                </a>
-                            </div>
-                            <div class="drop-menu">
-                                <div class="drop-content">
-                                    <ul>
-                                        <li>
-                                            <a>Số dư và nạp tiền</a>
-                                        </li>
-                                        <li>
-                                            <a>Thống kê phí khám</a>
-                                        </li>
-                                        <li>
-                                            <a>Chuyển tiền</a>
-                                        </li>
-                                    </ul>
+                                
+                                <div class="drop-menu">
+                                    <div class="drop-content">
+                                        <ul>
+                                            <li>
+                                                <a asp-controller="Home" asp-action="PersonalPage">Thông tin cá nhân</a>
+                                            </li>
+                                            <li>
+                                                <a asp-controller="Home" asp-action="ExamineHistory">Lịch sử khám</a>
+                                            </li>
+                                            <li>
+                                                <a >Danh sách bác sĩ đang chờ </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
+                            </li>
+                        }
+                        @if (ViewBag.TaiKhoan != null)
+                        {
+                            <li class="fm-nav-item">
+                                <div>
+                                    <a class="nav-link hover-underline ic-drop" asp-area="" asp-controller="Home" asp-action="Privacy">
+                                        Giao dịch
+                                        <span class="caret"></span>
+                                    </a>
+                                </div>
+                                <div class="drop-menu">
+                                    <div class="drop-content">
+                                        <ul>
+                                            <li>
+                                                <a asp-controller="Home" asp-action="AccountBank">Số dư và nạp tiền</a>
+                                            </li>
+                                            <li>
+                                                <a>Thống kê phí khám</a>
+                                            </li>
+                                            <li>
+                                                <a>Chuyển tiền</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+                        <li class="fm-nav-item">
+                            <a class="nav-link hover-underline" asp-area="" asp-controller="Home" asp-action="Article">Về VOVBacSi24</a>
                         </li>
                         <li class="fm-nav-item">
-                            <a class="nav-link hover-underline" asp-area="" asp-controller="Home" asp-action="Introduce">Về VOVBacSi24</a>
-                        </li>
-                        <li class="fm-nav-item">
-                            <a class="nav-link hover-underline"  asp-area="" asp-controller="Home" asp-action="Privacy">Chuyên trang sức khỏe</a>
+                            <a class="nav-link hover-underline"  asp-area="" asp-controller="Home" asp-action="Article">Chuyên trang sức khỏe</a>
                         </li>
                     </ul>
                 </div>
@@ -154,12 +208,14 @@
         @RenderBody()
     </div>
 
-    <footer class="fm-footer " style="">
+    <footer class="fm-footer ">
         <div class="container-sm contentfooter">
             <div class="cols-5 item-footer">
                 <div class="text-footer">
                     <h2>Hệ thống VOVBacSi24</h2>
-                    <img src="~/images/logo_footer.png" style="width: 70%;"/>
+                    <a asp-controller="Home" asp-action="Index">
+                        <img src="~/images/logo_footer.png" style="width: 70%;"/>
+                    </a>
                     <div class="content cleafix">
                         <p><span class="glyphicon glyphicon-map-marker"></span><span class="text">Toà nhà CT1AB Mễ Trì Plaza <br>Nam Từ Liêm - Hà Nội</span></p>
                         <p><span class="glyphicon glyphicon-earphone"></span><span class="text">

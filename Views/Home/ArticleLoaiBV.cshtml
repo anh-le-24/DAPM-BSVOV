@@ -1,11 +1,13 @@
 @{
-    ViewData["Title"] = "Thông tin";
+    ViewData["Title"] = "@ViewBag.ListBV[0][9]";
 }
+
+
 <link rel="stylesheet" href="~/css/Article.css" asp-append-version="true">
 
 
 <div class="cover_list_news">
-    <div class="name_cate_cover animcc">Bài viết</div>
+    <div class="name_cate_cover animcc">@ViewBag.ListBV[0][9]</div>
     <img src="~/images/bg_article.jpg" alt="Cấp cứu">
 </div>
 
@@ -15,6 +17,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="~/Home/ListArticleLoaiBV?MaLBV=@ViewBag.ListBV[0][6]">@ViewBag.ListBV[0][9]</a></li>
                 <li class="breadcrumb-item active" aria-current="page">@ViewBag.ListBV[0][1]</li>
             </ol>
         </nav>

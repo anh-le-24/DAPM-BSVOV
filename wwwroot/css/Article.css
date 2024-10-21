@@ -244,7 +244,7 @@ margin-top: 20px;
 
 /* ------- Account Bank --------- */
 .sodu{
-  background-color: #2285e2;
+  background-color: #0068ab;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -252,7 +252,7 @@ margin-top: 20px;
   font-weight: bold;
   padding: 20px;
   font-size: 30px;
-  background-color: #2285e2;
+  background-color: #0068ab;
   color: white;
 }
 .center{
@@ -315,7 +315,17 @@ margin-top: 20px;
     padding: 20px;
     
   }
-  
+  .book-form h4{
+    font-weight: bold;
+    font-size: 30px;
+
+  }
+  .boder-ex{
+    border-radius: 10px;
+    border: 1px solid #b6b6b6;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
   
   .form-label.required::after {
     content: " *";
@@ -465,3 +475,28 @@ margin-top: 20px;
   font-size: 14px;
 }
 
+/* ------ LIST ARTICLE ------ */
+.list_Arti{
+  min-height: 400px;
+}
+.title-arti{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: start;
+  background-color: white;
+  clear: both;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+.title-arti a{
+  margin-left: 50px;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #3f3f3f !important;
+}
+.title-arti a:hover{
+  color: #076fbf !important;
+}

@@ -9,7 +9,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 namespace DoAnCNPM.Controllers;
 using System.Collections;
+using System.Data;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Data.SqlClient;
 
 public class HomeController : Controller
 {
@@ -39,12 +41,58 @@ public class HomeController : Controller
 
         return View();
     }
-    public IActionResult Article()
+    public IActionResult Article(string MaBV)
     {
         LayoutShare();
 
+        DataModel db = new DataModel();
+
+        // Tạo danh sách tham số
+        var parameters = new List<SqlParameter>
+        {
+            new SqlParameter("@MaBV", SqlDbType.Int) { Value = int.Parse(MaBV) }
+        };
+
+        // Sử dụng tham số hóa để tránh lỗi
+        ViewBag.ListBV = db.getid("EXEC getBaiVietByIDMaKhoaBenh @MaBV", parameters);
+
         return View();
     }
+    public IActionResult ListArticleLoaiBV(string MaLBV)
+    {
+        LayoutShare();
+
+        DataModel db = new DataModel();
+
+        // Tạo danh sách tham số
+        var parameters = new List<SqlParameter>
+        {
+            new SqlParameter("@MaLBV", SqlDbType.Int) { Value = int.Parse(MaLBV) }
+        };
+
+        // Sử dụng tham số hóa để tránh lỗi
+        ViewBag.ListLBV = db.getid("EXEC getBaiVietByIDMaLoai @MaLBV", parameters);
+
+        return View();
+    }
+    public IActionResult ArticleLoaiBV(string MaBV)
+    {
+        LayoutShare();
+
+        DataModel db = new DataModel();
+
+        // Tạo danh sách tham số
+        var parameters = new List<SqlParameter>
+        {
+            new SqlParameter("@MaBV", SqlDbType.Int) { Value = int.Parse(MaBV) }
+        };
+
+        // Sử dụng tham số hóa để tránh lỗi
+        ViewBag.ListBV = db.getid("EXEC getBaiVietByID @MaBV", parameters);
+
+        return View();
+    }
+
     
     // ---------- ĐĂNG NHẬP ------------//
     public IActionResult Login()

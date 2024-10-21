@@ -100,7 +100,7 @@
                     <ul class="navbar-nav flex-grow-1 justify-content-around" style="margin: auto 50px">
                         <li class="fm-nav-item">
                             <div>
-                                <a class="nav-link hover-underline" asp-controller="Home" asp-action="Article">Cấp cứu</a>
+                                <a class="nav-link hover-underline" href="~/Home/ListArticleLoaiBV?MaLBV=3">Cấp cứu</a>
                             </div>
                         </li>
                         <li class="fm-nav-item ">
@@ -113,38 +113,47 @@
                             <div class="drop-menu">
                                 <div class="drop-content">
                                     @{
-                                        int count = (int)Math.Ceiling(ViewBag.listKB.Count / 2.0); 
+                                        // Ép kiểu dữ liệu của ViewBag.listKB thành List<List<string>>
+                                        int count = (int)Math.Ceiling(ViewBag.listKB.Count / 2.0);
                                     }
                                     <ul>
-                                        @for (var i = 0; i < Math.Ceiling(ViewBag.listKB.Count / 2.0); i++) 
+                                        @for (var i = 0; i < count; i++)
                                         {
                                             <li>
-                                                <a style="@(i == (int)Math.Ceiling(ViewBag.listKB.Count / 2.0) - 1 ? "border-bottom:none;" : "")">@ViewBag.listKB[i][1]</a>
+                                                <a href="~/Home/Article?MaBV=@int.Parse(ViewBag.listKB[i][0])" 
+                                                style="@(i == count - 1 ? "border-bottom:none;" : "")">
+                                                    @ViewBag.listKB[i][1]
+                                                </a>
                                             </li>
                                         }
                                     </ul>
                                     <ul>
-                                        @for (var i = (int)Math.Ceiling(ViewBag.listKB.Count / 2.0); i < ViewBag.listKB.Count; i++) 
+                                        @for (var i = count; i < ViewBag.listKB.Count; i++)
                                         {
                                             <li>
-                                                <a style="@(i == ViewBag.listKB.Count - 1 ? "border-bottom:none;" : "")">@ViewBag.listKB[i][1]</a>
+                                                <a href="~/Home/Article?MaBV=@int.Parse(ViewBag.listKB[i][0])" 
+                                                style="@(i == ViewBag.listKB.Count - 1 ? "border-bottom:none;" : "")">
+                                                    @ViewBag.listKB[i][1]
+                                                </a>
                                             </li>
                                         }
                                     </ul>
                                 </div>
-
                             </div>
+
+                            
                         </li>
+                        
                         <li class="fm-nav-item">
                             <div>
-                                <a class="nav-link hover-underline" asp-controller="Home" asp-action="Article">Hướng dẫn sử dụng</a>
+                                <a href="~/Home/ListArticleLoaiBV?MaLBV=2" class="nav-link hover-underline">Hướng dẫn sử dụng</a>
                             </div>
                         </li>
                         @if (ViewBag.TaiKhoan != null)
                         {
                             <li class="fm-nav-item">
                                 <div>
-                                    <a class="nav-link hover-underline ic-drop">
+                                    <a class="nav-link hover-underline ic-drop" style="color: #a12e35;">
                                         Tài khoản
                                         <span class="caret"></span>
                                     </a>
@@ -171,7 +180,7 @@
                         {
                             <li class="fm-nav-item">
                                 <div>
-                                    <a class="nav-link hover-underline ic-drop" asp-area="" asp-controller="Home" asp-action="Privacy">
+                                    <a class="nav-link hover-underline ic-drop" style="color: #a12e35;">
                                         Giao dịch
                                         <span class="caret"></span>
                                     </a>
@@ -194,10 +203,10 @@
                             </li>
                         }
                         <li class="fm-nav-item">
-                            <a class="nav-link hover-underline" asp-area="" asp-controller="Home" asp-action="Article">Về VOVBacSi24</a>
+                            <a class="nav-link hover-underline" href="~/Home/ListArticleLoaiBV?MaLBV=1">Về VOVBacSi24</a>
                         </li>
                         <li class="fm-nav-item">
-                            <a class="nav-link hover-underline"  asp-area="" asp-controller="Home" asp-action="Article">Chuyên trang sức khỏe</a>
+                            <a class="nav-link hover-underline"   href="~/Home/ListArticleLoaiBV?MaLBV=4">Chuyên trang sức khỏe</a>
                         </li>
                     </ul>
                 </div>

@@ -29,84 +29,90 @@
         </h3>
     </div>  
     <form class="book-form">
+        
         <div class="title-content">
             <h2>
                 Chi tiết lịch hẹn
             </h2>
         </div>
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <label for="doctor" class="form-label">Bác sĩ</label>
-                <select class="form-select" id="doctor" disabled>
-                    <option selected disabled value="">Bùi Ngọc Uyên Chi</option>
-                </select>
+        <h4 class="mb-3">Thông tin bác sĩ</h4>
+        <div class="boder-ex">
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="doctor" class="form-label">Bác sĩ</label>
+                    <select class="form-select" id="doctor" disabled>
+                        <option selected disabled value="">Bùi Ngọc Uyên Chi</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="hospital" class="form-label ">Bệnh viện/phòng khám</label>
+                    <select class="form-select" id="hospital" required disabled>
+                        <option selected disabled value="">bệnh viện bạch mai</option>
+                    </select>
+                </div>  
+                <div class="col-md-4">
+                    <label for="department" class="form-label">Chuyên khoa</label>
+                    <select class="form-select" id="department" required disabled>
+                        <option selected disabled value="">Răng - Hàm - Mặt</option>
+                    </select>
+                </div>
             </div>
-            <div class="col-md-4">
-                <label for="hospital" class="form-label ">Bệnh viện/phòng khám</label>
-                <select class="form-select" id="hospital" required disabled>
-                    <option selected disabled value="">bệnh viện bạch mai</option>
-                </select>
-            </div>  
-            <div class="col-md-4">
-                <label for="department" class="form-label">Chuyên khoa</label>
-                <select class="form-select" id="department" required disabled>
-                    <option selected disabled value="">Răng - Hàm - Mặt</option>
-                </select>
-            </div>
-        </div>
 
-        <div class="mb-3 fee">
-            <label for="department" class="form-label">Phí khám:</label>
-            <span>200.000</span>
-            <span>đ</span>
+            <div class="mb-3 fee">
+                <label for="department" class="form-label">Phí khám:</label>
+                <span>200.000</span>
+                <span>đ</span>
+            </div>
         </div>
 
         <h4 class="mb-3">Thông tin khách hàng</h4>
-
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label for="fullName" class="form-label required">Họ và tên</label>
-                <input type="text" class="form-control" id="fullName" placeholder="Họ và tên" required>
-            </div>
-            <div class="col-md-6">
-                <label class="form-label required">Giới tính</label>
-                <div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-                        <label class="form-check-label" for="male">Nam</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                        <label class="form-check-label" for="female">Nữ</label>
+        <div class="boder-ex">
+            <div class="row mb-3 ">
+                <div class="col-md-6">
+                    <label for="fullName" class="form-label required">Họ và tên</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Họ và tên" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label required">Giới tính</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label" for="male">Nam</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label" for="female">Nữ</label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label for="phone" class="form-label required">Số điện thoại</label>
-                <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" required>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="phone" class="form-label required">Số điện thoại</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Nhập email">
+                </div>
             </div>
-            <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Nhập email">
+
+            <div class="mb-3">
+                <label for="dob" class="form-label required">Ngày tháng năm sinh</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="reason" class="form-label required">Lý do khám</label>
+                <textarea class="form-control" id="reason" rows="3" placeholder="Triệu chứng của bạn" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="dob" class="form-label">Hình ảnh bệnh</label>
+                <input type="file" class="form-control" id="dob" required>
             </div>
         </div>
-
-        <div class="mb-3">
-            <label for="dob" class="form-label required">Ngày tháng năm sinh</label>
-            <input type="date" class="form-control" id="dob" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="reason" class="form-label required">Lý do khám</label>
-            <textarea class="form-control" id="reason" rows="3" placeholder="Triệu chứng của bạn" required></textarea>
-        </div>
-         <div class="mb-3">
-            <label for="dob" class="form-label">Hình ảnh bệnh</label>
-            <input type="file" class="form-control" id="dob" required>
-        </div>
+        
         <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="termsAgreement" required>
             <label class="form-check-label" for="termsAgreement">Tôi đã đọc và xác nhận <a href="#">Điều khoản dịch vụ</a> của Bệnh viện .</label>
@@ -114,5 +120,6 @@
         <div class="center" >
             <button type="submit" class="btn-send-book">Đặt lịch khám</button>
         </div>
+        
     </form>
 </div>

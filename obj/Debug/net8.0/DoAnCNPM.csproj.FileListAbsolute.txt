@@ -28,6 +28,39 @@
 /Users/luongdat/Documents/Demo ASP.net/DoAnCNPM/obj/Debug/net8.0/DoAnCNPM.pdb
 /Users/luongdat/Documents/Demo ASP.net/DoAnCNPM/obj/Debug/net8.0/DoAnCNPM.genruntimeconfig.cache
 /Users/luongdat/Documents/Demo ASP.net/DoAnCNPM/obj/Debug/net8.0/ref/DoAnCNPM.dll
+<<<<<<< HEAD
+D:\DAPM\DoAnCNPM\bin\Debug\net8.0\appsettings.Development.json
+D:\DAPM\DoAnCNPM\bin\Debug\net8.0\appsettings.json
+D:\DAPM\DoAnCNPM\bin\Debug\net8.0\DoAnCNPM.staticwebassets.runtime.json
+D:\DAPM\DoAnCNPM\bin\Debug\net8.0\DoAnCNPM.exe
+D:\DAPM\DoAnCNPM\bin\Debug\net8.0\DoAnCNPM.deps.json
+D:\DAPM\DoAnCNPM\bin\Debug\net8.0\DoAnCNPM.runtimeconfig.json
+D:\DAPM\DoAnCNPM\bin\Debug\net8.0\DoAnCNPM.dll
+D:\DAPM\DoAnCNPM\bin\Debug\net8.0\DoAnCNPM.pdb
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.GeneratedMSBuildEditorConfig.editorconfig
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.AssemblyInfoInputs.cache
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.AssemblyInfo.cs
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.csproj.CoreCompileInputs.cache
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.MvcApplicationPartsAssemblyInfo.cache
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.RazorAssemblyInfo.cache
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.RazorAssemblyInfo.cs
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\staticwebassets.build.json
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\staticwebassets.development.json
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\staticwebassets\msbuild.DoAnCNPM.Microsoft.AspNetCore.StaticWebAssets.props
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\staticwebassets\msbuild.build.DoAnCNPM.props
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.DoAnCNPM.props
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.DoAnCNPM.props
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\staticwebassets.pack.json
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\scopedcss\bundle\DoAnCNPM.styles.css
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\scopedcss\projectbundle\DoAnCNPM.bundle.scp.css
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.dll
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\refint\DoAnCNPM.dll
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.pdb
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.genruntimeconfig.cache
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\ref\DoAnCNPM.dll
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.sourcelink.json
+=======
 D:/DAPM/DoAnCNPM/bin/Debug/net8.0/appsettings.Development.json
 D:/DAPM/DoAnCNPM/bin/Debug/net8.0/appsettings.json
 D:/DAPM/DoAnCNPM/bin/Debug/net8.0/DoAnCNPM.staticwebassets.runtime.json
@@ -128,3 +161,4 @@ D:/DAPM/DoAnCNPM/obj/Debug/net8.0/ref/DoAnCNPM.dll
 /Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.pdb
 /Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.genruntimeconfig.cache
 /Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/ref/DoAnCNPM.dll
+>>>>>>> main

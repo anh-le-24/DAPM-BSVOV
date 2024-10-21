@@ -39,7 +39,11 @@ public class HomeController : Controller
 
         return View();
     }
+<<<<<<< HEAD
+    public IActionResult Home()
+=======
     public IActionResult Article()
+>>>>>>> main
     {
         LayoutShare();
 

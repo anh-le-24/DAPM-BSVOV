@@ -5,8 +5,21 @@
       "PackagePath": "staticwebassets/DoAnCNPM.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
+      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\css\\bacsi.css",
+      "PackagePath": "staticwebassets\\css\\bacsi.css"
+    },
+    {
+      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+=======
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Article.css",
       "PackagePath": "staticwebassets/css/Article.css"
+>>>>>>> main
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Personal.css",

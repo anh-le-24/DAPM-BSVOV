@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "Hash": "YFsO78o3+TOgKNvY7+8gk8Jo3BQhiZ9SBfaBrofZ65M=",
+=======
   "Hash": "z7VdGsda75AzfwB9LhueimwA/3j6pdkiqtQV0LzGSdg=",
+>>>>>>> main
   "Source": "DoAnCNPM",
   "BasePath": "_content/DoAnCNPM",
   "Mode": "Default",
@@ -55,7 +59,49 @@
       "OriginalItemSpec": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/projectbundle/DoAnCNPM.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
+      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\css\\bacsi.css",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "css/bacsi.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bacsi.css"
+    },
+    {
+      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\css\\home.css",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "css/home.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\home.css"
+    },
+    {
+      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\css\\site.css",
+=======
       "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Article.css",
+>>>>>>> main
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",

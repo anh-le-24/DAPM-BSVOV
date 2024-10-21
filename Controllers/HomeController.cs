@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Http;
 namespace DoAnCNPM.Controllers;
 using System.Collections;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
+
 
 public class HomeController : Controller
 {
@@ -39,11 +41,7 @@ public class HomeController : Controller
 
         return View();
     }
-<<<<<<< HEAD
-    public IActionResult Home()
-=======
     public IActionResult Article()
->>>>>>> main
     {
         LayoutShare();
 

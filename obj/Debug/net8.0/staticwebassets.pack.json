@@ -1,10 +1,11 @@
 {
   "Files": [
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DoAnCNPM.bundle.scp.css",
-      "PackagePath": "staticwebassets\\DoAnCNPM.bundle.scp.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/projectbundle/DoAnCNPM.bundle.scp.css",
+      "PackagePath": "staticwebassets/DoAnCNPM.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
       "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\css\\bacsi.css",
       "PackagePath": "staticwebassets\\css\\bacsi.css"
     },
@@ -15,377 +16,413 @@
     {
       "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+=======
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Article.css",
+      "PackagePath": "staticwebassets/css/Article.css"
+>>>>>>> main
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\angle-left.png",
-      "PackagePath": "staticwebassets\\images\\angle-left.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Personal.css",
+      "PackagePath": "staticwebassets/css/Personal.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\angle-right.png",
-      "PackagePath": "staticwebassets\\images\\angle-right.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bg-next-home.png",
-      "PackagePath": "staticwebassets\\images\\bg-next-home.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/angle-left.png",
+      "PackagePath": "staticwebassets/images/angle-left.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bg_blue_home.jpg",
-      "PackagePath": "staticwebassets\\images\\bg_blue_home.jpg"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/angle-right.png",
+      "PackagePath": "staticwebassets/images/angle-right.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs1.jpeg",
-      "PackagePath": "staticwebassets\\images\\bs1.jpeg"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg-next-home.png",
+      "PackagePath": "staticwebassets/images/bg-next-home.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs2.jpeg",
-      "PackagePath": "staticwebassets\\images\\bs2.jpeg"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_article.jpg",
+      "PackagePath": "staticwebassets/images/bg_article.jpg"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs3.jpeg",
-      "PackagePath": "staticwebassets\\images\\bs3.jpeg"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_blue_home.jpg",
+      "PackagePath": "staticwebassets/images/bg_blue_home.jpg"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs4.jpg",
-      "PackagePath": "staticwebassets\\images\\bs4.jpg"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_login.jpg",
+      "PackagePath": "staticwebassets/images/bg_login.jpg"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs5.jpg",
-      "PackagePath": "staticwebassets\\images\\bs5.jpg"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bia_person.jpg",
+      "PackagePath": "staticwebassets/images/bia_person.jpg"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs6.jpg",
-      "PackagePath": "staticwebassets\\images\\bs6.jpg"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs1.jpeg",
+      "PackagePath": "staticwebassets/images/bs1.jpeg"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs7.png",
-      "PackagePath": "staticwebassets\\images\\bs7.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs2.jpeg",
+      "PackagePath": "staticwebassets/images/bs2.jpeg"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\calader.png",
-      "PackagePath": "staticwebassets\\images\\calader.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs3.jpeg",
+      "PackagePath": "staticwebassets/images/bs3.jpeg"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\call.png",
-      "PackagePath": "staticwebassets\\images\\call.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs4.jpg",
+      "PackagePath": "staticwebassets/images/bs4.jpg"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\doctor.png",
-      "PackagePath": "staticwebassets\\images\\doctor.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs5.jpg",
+      "PackagePath": "staticwebassets/images/bs5.jpg"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\doctor_female.png",
-      "PackagePath": "staticwebassets\\images\\doctor_female.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs6.jpg",
+      "PackagePath": "staticwebassets/images/bs6.jpg"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\favicon.ico",
-      "PackagePath": "staticwebassets\\images\\favicon.ico"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs7.png",
+      "PackagePath": "staticwebassets/images/bs7.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\hospital1.jpeg",
-      "PackagePath": "staticwebassets\\images\\hospital1.jpeg"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/calader.png",
+      "PackagePath": "staticwebassets/images/calader.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\ic_avatar.png",
-      "PackagePath": "staticwebassets\\images\\ic_avatar.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/call.png",
+      "PackagePath": "staticwebassets/images/call.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\ic_bell.png",
-      "PackagePath": "staticwebassets\\images\\ic_bell.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/doctor.png",
+      "PackagePath": "staticwebassets/images/doctor.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\ic_search.png",
-      "PackagePath": "staticwebassets\\images\\ic_search.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/doctor_female.png",
+      "PackagePath": "staticwebassets/images/doctor_female.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\logo_footer.png",
-      "PackagePath": "staticwebassets\\images\\logo_footer.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/favicon.ico",
+      "PackagePath": "staticwebassets/images/favicon.ico"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\logo_vov.png",
-      "PackagePath": "staticwebassets\\images\\logo_vov.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/hospital1.jpeg",
+      "PackagePath": "staticwebassets/images/hospital1.jpeg"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\silde1.png",
-      "PackagePath": "staticwebassets\\images\\silde1.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/ic_avatar.png",
+      "PackagePath": "staticwebassets/images/ic_avatar.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\silde2.jpg",
-      "PackagePath": "staticwebassets\\images\\silde2.jpg"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/ic_bell.png",
+      "PackagePath": "staticwebassets/images/ic_bell.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\silde3.png",
-      "PackagePath": "staticwebassets\\images\\silde3.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/ic_search.png",
+      "PackagePath": "staticwebassets/images/ic_search.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\silde4.png",
-      "PackagePath": "staticwebassets\\images\\silde4.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/info-doc.JPG",
+      "PackagePath": "staticwebassets/images/info-doc.JPG"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\silde5.png",
-      "PackagePath": "staticwebassets\\images\\silde5.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo-vnpay.png",
+      "PackagePath": "staticwebassets/images/logo-vnpay.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\silde6.png",
-      "PackagePath": "staticwebassets\\images\\silde6.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_footer.png",
+      "PackagePath": "staticwebassets/images/logo_footer.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\whyus_hear.png",
-      "PackagePath": "staticwebassets\\images\\whyus_hear.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_vov.png",
+      "PackagePath": "staticwebassets/images/logo_vov.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\whyus_heart.png",
-      "PackagePath": "staticwebassets\\images\\whyus_heart.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_vov1.png",
+      "PackagePath": "staticwebassets/images/logo_vov1.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\whyus_protect.png",
-      "PackagePath": "staticwebassets\\images\\whyus_protect.png"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde1.png",
+      "PackagePath": "staticwebassets/images/silde1.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde2.jpg",
+      "PackagePath": "staticwebassets/images/silde2.jpg"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "PackagePath": "staticwebassets\\lib\\bootstrap"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde3.png",
+      "PackagePath": "staticwebassets/images/silde3.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde4.png",
+      "PackagePath": "staticwebassets/images/silde4.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde5.png",
+      "PackagePath": "staticwebassets/images/silde5.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde6.png",
+      "PackagePath": "staticwebassets/images/silde6.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/whyus_hear.png",
+      "PackagePath": "staticwebassets/images/whyus_hear.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/whyus_heart.png",
+      "PackagePath": "staticwebassets/images/whyus_heart.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/whyus_protect.png",
+      "PackagePath": "staticwebassets/images/whyus_protect.png"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DoAnCNPM.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.DoAnCNPM.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DoAnCNPM.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.DoAnCNPM.props",
       "PackagePath": "build\\DoAnCNPM.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DoAnCNPM.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.DoAnCNPM.props",
       "PackagePath": "buildMultiTargeting\\DoAnCNPM.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DoAnCNPM.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.DoAnCNPM.props",
       "PackagePath": "buildTransitive\\DoAnCNPM.props"
     }
   ],

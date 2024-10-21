@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "YFsO78o3+TOgKNvY7+8gk8Jo3BQhiZ9SBfaBrofZ65M=",
+=======
+  "Hash": "z7VdGsda75AzfwB9LhueimwA/3j6pdkiqtQV0LzGSdg=",
+>>>>>>> main
   "Source": "DoAnCNPM",
   "BasePath": "_content/DoAnCNPM",
   "Mode": "Default",
@@ -8,19 +12,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "DoAnCNPM\\wwwroot",
+      "Name": "DoAnCNPM/wwwroot",
       "Source": "DoAnCNPM",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DoAnCNPM.styles.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/bundle/DoAnCNPM.styles.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "DoAnCNPM.styles.css",
       "AssetKind": "All",
@@ -33,13 +37,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\DAPM\\DoAnCNPM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DoAnCNPM.styles.css"
+      "OriginalItemSpec": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/bundle/DoAnCNPM.styles.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DoAnCNPM.bundle.scp.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/projectbundle/DoAnCNPM.bundle.scp.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/projectbundle/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "DoAnCNPM.bundle.scp.css",
       "AssetKind": "All",
@@ -52,9 +56,10 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\DAPM\\DoAnCNPM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DoAnCNPM.bundle.scp.css"
+      "OriginalItemSpec": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/projectbundle/DoAnCNPM.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\css\\bacsi.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
@@ -94,9 +99,50 @@
     },
     {
       "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\css\\site.css",
+=======
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Article.css",
+>>>>>>> main
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "css/Article.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/Article.css"
+    },
+    {
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Personal.css",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "css/Personal.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/Personal.css"
+    },
+    {
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/site.css",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -109,13 +155,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\angle-left.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/angle-left.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/angle-left.png",
       "AssetKind": "All",
@@ -128,13 +174,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\angle-left.png"
+      "OriginalItemSpec": "wwwroot/images/angle-left.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\angle-right.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/angle-right.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/angle-right.png",
       "AssetKind": "All",
@@ -147,13 +193,32 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\angle-right.png"
+      "OriginalItemSpec": "wwwroot/images/angle-right.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bg_blue_home.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_article.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "images/bg_article.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/bg_article.jpg"
+    },
+    {
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_blue_home.jpg",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bg_blue_home.jpg",
       "AssetKind": "All",
@@ -166,13 +231,32 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bg_blue_home.jpg"
+      "OriginalItemSpec": "wwwroot/images/bg_blue_home.jpg"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bg-next-home.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_login.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "images/bg_login.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/bg_login.jpg"
+    },
+    {
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg-next-home.png",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bg-next-home.png",
       "AssetKind": "All",
@@ -185,13 +269,32 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bg-next-home.png"
+      "OriginalItemSpec": "wwwroot/images/bg-next-home.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs1.jpeg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bia_person.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "images/bia_person.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/bia_person.jpg"
+    },
+    {
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs1.jpeg",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs1.jpeg",
       "AssetKind": "All",
@@ -204,13 +307,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs1.jpeg"
+      "OriginalItemSpec": "wwwroot/images/bs1.jpeg"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs2.jpeg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs2.jpeg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs2.jpeg",
       "AssetKind": "All",
@@ -223,13 +326,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs2.jpeg"
+      "OriginalItemSpec": "wwwroot/images/bs2.jpeg"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs3.jpeg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs3.jpeg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs3.jpeg",
       "AssetKind": "All",
@@ -242,13 +345,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs3.jpeg"
+      "OriginalItemSpec": "wwwroot/images/bs3.jpeg"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs4.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs4.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs4.jpg",
       "AssetKind": "All",
@@ -261,13 +364,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs4.jpg"
+      "OriginalItemSpec": "wwwroot/images/bs4.jpg"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs5.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs5.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs5.jpg",
       "AssetKind": "All",
@@ -280,13 +383,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs5.jpg"
+      "OriginalItemSpec": "wwwroot/images/bs5.jpg"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs6.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs6.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs6.jpg",
       "AssetKind": "All",
@@ -299,13 +402,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs6.jpg"
+      "OriginalItemSpec": "wwwroot/images/bs6.jpg"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\bs7.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs7.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs7.png",
       "AssetKind": "All",
@@ -318,13 +421,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs7.png"
+      "OriginalItemSpec": "wwwroot/images/bs7.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\calader.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/calader.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/calader.png",
       "AssetKind": "All",
@@ -337,13 +440,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\calader.png"
+      "OriginalItemSpec": "wwwroot/images/calader.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\call.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/call.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/call.png",
       "AssetKind": "All",
@@ -356,13 +459,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\call.png"
+      "OriginalItemSpec": "wwwroot/images/call.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\doctor_female.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/doctor_female.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/doctor_female.png",
       "AssetKind": "All",
@@ -375,13 +478,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\doctor_female.png"
+      "OriginalItemSpec": "wwwroot/images/doctor_female.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\doctor.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/doctor.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/doctor.png",
       "AssetKind": "All",
@@ -394,13 +497,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\doctor.png"
+      "OriginalItemSpec": "wwwroot/images/doctor.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\favicon.ico",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/favicon.ico",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/favicon.ico",
       "AssetKind": "All",
@@ -413,13 +516,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\favicon.ico"
+      "OriginalItemSpec": "wwwroot/images/favicon.ico"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\hospital1.jpeg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/hospital1.jpeg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/hospital1.jpeg",
       "AssetKind": "All",
@@ -432,13 +535,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\hospital1.jpeg"
+      "OriginalItemSpec": "wwwroot/images/hospital1.jpeg"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\ic_avatar.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/ic_avatar.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/ic_avatar.png",
       "AssetKind": "All",
@@ -451,13 +554,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\ic_avatar.png"
+      "OriginalItemSpec": "wwwroot/images/ic_avatar.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\ic_bell.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/ic_bell.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/ic_bell.png",
       "AssetKind": "All",
@@ -470,13 +573,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\ic_bell.png"
+      "OriginalItemSpec": "wwwroot/images/ic_bell.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\ic_search.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/ic_search.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/ic_search.png",
       "AssetKind": "All",
@@ -489,13 +592,32 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\ic_search.png"
+      "OriginalItemSpec": "wwwroot/images/ic_search.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\logo_footer.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/info-doc.JPG",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "images/info-doc.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/info-doc.JPG"
+    },
+    {
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_footer.png",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/logo_footer.png",
       "AssetKind": "All",
@@ -508,13 +630,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\logo_footer.png"
+      "OriginalItemSpec": "wwwroot/images/logo_footer.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\logo_vov.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_vov.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/logo_vov.png",
       "AssetKind": "All",
@@ -527,13 +649,51 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\logo_vov.png"
+      "OriginalItemSpec": "wwwroot/images/logo_vov.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\silde1.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_vov1.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "images/logo_vov1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/logo_vov1.png"
+    },
+    {
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo-vnpay.png",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "images/logo-vnpay.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/logo-vnpay.png"
+    },
+    {
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde1.png",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/silde1.png",
       "AssetKind": "All",
@@ -546,13 +706,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\silde1.png"
+      "OriginalItemSpec": "wwwroot/images/silde1.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\silde2.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde2.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/silde2.jpg",
       "AssetKind": "All",
@@ -565,13 +725,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\silde2.jpg"
+      "OriginalItemSpec": "wwwroot/images/silde2.jpg"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\silde3.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde3.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/silde3.png",
       "AssetKind": "All",
@@ -584,13 +744,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\silde3.png"
+      "OriginalItemSpec": "wwwroot/images/silde3.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\silde4.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde4.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/silde4.png",
       "AssetKind": "All",
@@ -603,13 +763,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\silde4.png"
+      "OriginalItemSpec": "wwwroot/images/silde4.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\silde5.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde5.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/silde5.png",
       "AssetKind": "All",
@@ -622,13 +782,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\silde5.png"
+      "OriginalItemSpec": "wwwroot/images/silde5.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\silde6.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde6.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/silde6.png",
       "AssetKind": "All",
@@ -641,13 +801,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\silde6.png"
+      "OriginalItemSpec": "wwwroot/images/silde6.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\whyus_hear.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/whyus_hear.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/whyus_hear.png",
       "AssetKind": "All",
@@ -660,13 +820,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\whyus_hear.png"
+      "OriginalItemSpec": "wwwroot/images/whyus_hear.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\whyus_heart.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/whyus_heart.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/whyus_heart.png",
       "AssetKind": "All",
@@ -679,13 +839,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\whyus_heart.png"
+      "OriginalItemSpec": "wwwroot/images/whyus_heart.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\images\\whyus_protect.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/whyus_protect.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/whyus_protect.png",
       "AssetKind": "All",
@@ -698,13 +858,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\whyus_protect.png"
+      "OriginalItemSpec": "wwwroot/images/whyus_protect.png"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\js\\site.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/js/site.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -717,13 +877,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
+      "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -736,13 +896,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -755,13 +915,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -774,13 +934,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -793,13 +953,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -812,13 +972,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -831,13 +991,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -850,13 +1010,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -869,13 +1029,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -888,13 +1048,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -907,13 +1067,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -926,13 +1086,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -945,13 +1105,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -964,13 +1124,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -983,13 +1143,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1002,13 +1162,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1021,13 +1181,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1040,13 +1200,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1059,13 +1219,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1078,13 +1238,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1097,13 +1257,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1116,13 +1276,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1135,13 +1295,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1154,13 +1314,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1173,13 +1333,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1192,13 +1352,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1211,13 +1371,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1230,13 +1390,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1249,13 +1409,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1268,13 +1428,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1287,13 +1447,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1306,13 +1466,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1325,13 +1485,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1344,13 +1504,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1363,13 +1523,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1382,13 +1542,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1401,13 +1561,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1420,13 +1580,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1439,13 +1599,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1458,13 +1618,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1477,13 +1637,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1496,13 +1656,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1515,13 +1675,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1534,13 +1694,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1553,13 +1713,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/LICENSE",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1572,13 +1732,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1591,13 +1751,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1610,13 +1770,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1629,13 +1789,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1648,13 +1808,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1667,13 +1827,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1686,13 +1846,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1705,13 +1865,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/LICENSE.md",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1724,13 +1884,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery/dist/jquery.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1743,13 +1903,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery/dist/jquery.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1762,13 +1922,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery/dist/jquery.min.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1781,13 +1941,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
+      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Identity": "D:\\DAPM\\DoAnCNPM\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery/LICENSE.txt",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\DAPM\\DoAnCNPM\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1800,7 +1960,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+      "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
     }
   ]
 }

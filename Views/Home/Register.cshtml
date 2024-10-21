@@ -1,0 +1,238 @@
+@{
+    ViewData["Title"] = "Đăng ký";
+}
+
+<link rel="stylesheet" href="~/css/Article.css" asp-append-version="true">
+
+<div class="wrapper">
+    <div id="loginForm" class="container main">
+        <div class="form-login">
+            <div class="col-6 side-image">
+                <img src="~/images/bg_login.jpg">
+            </div>
+            <div class="col-6 right">
+                <div class="input-box">
+                   <h2>Đăng ký</h2>
+
+                   <form class="needs-validation input-box" novalidate id="registrationForm">
+                        <!-- Existing form fields -->
+                        <div class="input-field">
+                            <input type="tel" class="input-info" id="sdt" required="" name="sdt">
+                            <label for="sdt">Số điện thoại</label>
+                            <div class="invalid-feedback">* Vui lòng nhập số điện thoại hợp lệ </div>
+                            <div class="valid-feedback">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="text" class="input-info" id="username" required="" name="TenND">
+                            <label for="username">Tên người dùng</label>
+                            <div class="invalid-feedback">* Vui lòng nhập tên.</div>
+                            <div class="valid-feedback">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="password" class="input-info" id="pass" required="" name="Password">
+                            <label for="pass">Mật khẩu</label>
+                            <div class="invalid-feedback">* Phải gồm (chữ hoa, chữ thường, số và ký tự đặc biệt).</div>
+                            <div class="valid-feedback">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="password" class="input-info" id="repass" required="">
+                            <label for="repass">Nhập lại mật khẩu</label>
+                            <div class="invalid-feedback">* Mật khẩu không khớp.</div>
+                            <div class="valid-feedback">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <button type="submit" class="submit" >Đăng ký</button>
+                        </div>
+                    </form>
+                    <div class="signin">
+                        <span>
+                            Bạn đã có tài khoản? 
+                            <a asp-controller="Home" asp-action="Login">
+                                Đăng nhập
+                            </a>
+                        </span>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="verifyForm" style="display:none; background-image: linear-gradient(180deg, rgba(202, 202, 202, 0.1) 10%, rgba(202, 202, 202, 0.1) 83%);">
+    <div class="form-verify">
+        <form class="form-card" id="verificationForm">
+            <div class="form-card-title">
+                <h2>NHẬP MÃ OTP</h2>
+            </div>
+            
+            <p class="form-card-prompt">Chúng tôi đã gửi mã OTP vào số điện thoại của bạn. Hãy kiểm tra điện thoại</p>
+            <div class="form-card-input-wrapper">
+                <input class="form-card-input" id="verificationCode" placeholder="______" maxlength="6" type="text">
+                <div class="form-card-input-bg"></div>
+            </div>
+            <p class="call-again"><span>Gửi lại trong:</span> <span id="timer">60</span> s</p>
+            <button class="form-card-submit" type="submit" >
+                Gửi
+            </button>
+            <button class="form-card-return" type="button" onclick="hideVerifyForm()">
+                Quay lại
+            </button>
+        </form>
+    </div>
+</div>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    import { getAuth, signInWithPhoneNumber, RecaptchaVerifier, signInWithCredential, PhoneAuthProvider } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+
+    // Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyDeyjD4k6PRt96d0f0sGwVV09memI86WMw",
+        authDomain: "verifynumbervov.firebaseapp.com",
+        projectId: "verifynumbervov",
+        storageBucket: "verifynumbervov.appspot.com",
+        messagingSenderId: "30386070131",
+        appId: "1:30386070131:web:e0a74391e03c5eee038006"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+
+    let verificationId = '';
+
+    // Function to initialize reCAPTCHA
+    function initializeRecaptcha() {
+        if (window.recaptchaVerifier) {
+            window.recaptchaVerifier.clear();
+        }
+        window.recaptchaVerifier = new RecaptchaVerifier(auth, 'recaptcha-container', {
+            'size': 'invisible',
+            'callback': onSignInSubmit
+        });
+    }
+
+    // Function to handle phone number submission
+    function onSignInSubmit() {
+        const phoneInput = document.getElementById('sdt');
+        const phoneNumber = '+84' + phoneInput.value.substring(1);
+
+        signInWithPhoneNumber(auth, phoneNumber, window.recaptchaVerifier)
+            .then((confirmationResult) => {
+                verificationId = confirmationResult.verificationId;
+                document.getElementById('loginForm').style.display = 'none';
+                document.getElementById('verifyForm').style.display = 'block';
+                startTimer();
+            }).catch((error) => {
+                console.error("Error sending OTP:", error);
+                alert("Error sending OTP. Please try again.");
+            });
+    }
+
+    // Function to start the timer
+    function startTimer() {
+        let timeLeft = 60;
+        const timerElement = document.getElementById('timer');
+        const timerId = setInterval(() => {
+            if (timeLeft <= 0) {
+                clearInterval(timerId);
+                timerElement.textContent = "0";
+            } else {
+                timerElement.textContent = timeLeft;
+                timeLeft--;
+            }
+        }, 1000);
+    }
+
+    // Function to submit registration
+    function submitRegistration() {
+        const formData = new FormData(document.getElementById('registrationForm'));
+
+        fetch('/Home/RegisterProcess', {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => {
+            if (response.redirected) {
+                window.location.href = response.url;
+            } else {
+                return response.json();
+            }
+        })
+        .then(data => {
+            if (data && data.success) {
+                alert('Đăng ký thành công!');
+                window.location.href = '/Home/Login';
+            } else if (data) {
+                alert(data.message || 'Đăng ký thất bại. Vui lòng thử lại.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Có lỗi xảy ra. Vui lòng thử lại sau hoặc liên hệ hỗ trợ.');
+        });
+    }
+
+    // Event listeners
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const phoneInput = document.getElementById('sdt');
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('pass').value;
+            const repassword = document.getElementById('repass').value;
+
+            if (!phoneInput.value || !username || !password || password !== repassword) {
+                alert('Vui lòng kiểm tra lại thông tin đăng ký.');
+                return;
+            }
+
+            initializeRecaptcha();
+            onSignInSubmit();
+        });
+
+        document.getElementById('verificationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const code = document.getElementById('verificationCode').value;
+            
+            const credential = PhoneAuthProvider.credential(verificationId, code);
+            signInWithCredential(auth, credential)
+                .then((result) => {
+                    console.log("User verified:", result.user);
+                    submitRegistration();
+                }).catch((error) => {
+                    console.error("Error verifying OTP:", error);
+                    alert("Invalid OTP. Please try again.");
+                });
+        });
+    });
+</script>
+
+<div id="recaptcha-container"></div>

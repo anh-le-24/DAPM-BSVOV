@@ -58,3 +58,4 @@ D:\DAPM\DoAnCNPM\obj\Debug\net8.0\refint\DoAnCNPM.dll
 D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.pdb
 D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.genruntimeconfig.cache
 D:\DAPM\DoAnCNPM\obj\Debug\net8.0\ref\DoAnCNPM.dll
+D:\DAPM\DoAnCNPM\obj\Debug\net8.0\DoAnCNPM.sourcelink.json

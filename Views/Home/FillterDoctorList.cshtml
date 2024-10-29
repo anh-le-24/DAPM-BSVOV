@@ -1,7 +1,8 @@
 
 @{
-    ViewData["Title"] = "FillterDoctor";
+    ViewData["Title"] = "danh sách bác sĩ";
 }
+
 <link rel="stylesheet" href="~/css/Article.css" asp-append-version="true">
 
 <div id="loginForm">
@@ -11,85 +12,31 @@
     </div>
 </div>
 
-<div class="container" >
+<div class="container">
     <div class="bread-flow">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Tìm bác sĩ</li>
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="FillterDoctor">Tìm bác sĩ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Danh sách bác sĩ</li>
             </ol>
         </nav>
     </div>
-        <!-- Filter Section -->
-    <div class="filter-section">
-        <form class="row g-3" method="post" action="~/Home/FillterDoctorList">
-            <div class="col-md-3">
-                <select class="form-select" name="khuvuc">
-                    <option selected value="Null">Khu vực</option>
-                    <option>Hà nội</option>
-                    <option>Hồ Chí Minh</option>
-                    <option>Đà nẵng </option>
-                    <option>Thanh Hóa</option>
-                    <option>Bình Dương</option>
-                    <option>Vũng Tàu</option>
-                </select>
-            </div>
-            <div class="col-md-2" >
-                <select class="form-select" name="phikham">
-                    <option selected value="Null">Phí khám</option>
-                    <option value="150000">150.000</option>
-                    <option value="200000">200.000</option>
-                    <option value="300000">300.000</option>
-                </select>
-            </div>
-            <div class="col-md-3">
-                <select class="form-select" name="khoabenh">
-                    <option selected value="Null">khoa bệnh</option>
-                    @{
-                        int count = (int)ViewBag.listKB.Count;
-                    }
-                    @for (var i = 0; i < count; i++)
-                    {
-                        <option value="@int.Parse(ViewBag.listKB[i][0])">@ViewBag.listKB[i][1]</option>
-                    }
-                </select>
-            </div>
-            <div class="col-md-2">
-                <select class="form-select" name="hocham">
-                    <option selected value="Null">Học hàm</option>
-                    <option>Bác sĩ</option>
-                    <option>Thạc sĩ</option>
-                    <option>Giáo sư</option>
-                    <option>Tiến sĩ</option>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <button type="submit" class="btn-search">Lọc bác sĩ</button>
-            </div>
-        </form>
-        <div class="col-md-2 search_doc group">
-            <img src="~/images/ic_search.png" class="ic-search"/>
-            <input type="text" name="q" id="mySearch" value="" placeholder="Nhập tên bác sĩ..." autocomplete="off" onkeyup="myFunction()">
-            <button type="submit" class="btn-search">Tìm kiếm</button>
-        </div>
-        <div id="propose-box" class="fm-propose">
-            <div class="ite-propose keyword_searched">
-                <ul id="myMenu">
-                    @foreach(var a in ViewBag.ListNameDoc){
-                        <li th:each="doiTac : ${topDoiTacs}">
-                            <a style="color: #555; text-decoration: none;" href="~/Home/DetailDoctor?MaBS=@int.Parse(a[0])">@a[1]</a>
-                        </li>
-                    }
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <!-- Doctor List Section -->
+        <!-- Doctor List Section -->
     <div class="row title-content">
         <h2 style="margin:0 0 30px 50px; font-size: 25px;">Danh sách bác sĩ</h2>
+        @{
+            int count = (int)ViewBag.ListDocFill.Count;
+        }
+        @if(count == 0 ){
+            <h3 style="text-align: center; font-weight: bold;">
+                Rất tiếc! Chúng tôi không Tìm thấy bác sĩ
+            </h3>
+        }
+        
+        @foreach( var a in ViewBag.ListDocFill){
 
-        @foreach( var a in ViewBag.ListDoc){
             <div class="col-md-6 col-lg-6">
                 <div class="doctor-card p-3">
                     <div class="d-img">
@@ -120,7 +67,7 @@
                     </div>
 
                     <div class="content-doctor" >
-                         <a href="~/Home/DetailDoctor?MaBS=@int.Parse(a[0])">
+                        <a href="~/Home/DetailDoctor?MaBS=@int.Parse(a[0])">
                             <h5 class="text-primary">@a[2]</h5>
                         </a>
                         <p>
@@ -183,66 +130,13 @@
             </div>
         }
     </div>
-    <script>
+     <script>
         window.onload = function() {
             document.getElementById("loginForm").scrollIntoView({
                 behavior: "smooth",
                 block: "start"
             });
         };
-
-        function myFunction() {
-            var input = document.getElementById("mySearch");
-            var filter = input.value.trim().toUpperCase();
-            var ul = document.getElementById("myMenu");
-            var li = ul.getElementsByTagName("li");
-            var hasResults = false;
-            
-            // Nếu input rỗng, ẩn menu
-            if (filter === "") {
-                ul.style.display = "none";
-                return;
-            }
-            
-            // Duyệt qua các li để tìm kết quả trùng khớp
-            for (var i = 0; i < li.length; i++) {
-                var a = li[i].getElementsByTagName("a")[0];
-                var txtValue = a.textContent || a.innerText;
-                
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                    hasResults = true;
-                } else {
-                    li[i].style.display = "none";
-                }
-            }
-            
-            // Hiển thị/ẩn menu dựa trên kết quả tìm kiếm
-            ul.style.display = hasResults ? "block" : "none";
-        }
-
-        // Thêm sự kiện click outside để ẩn menu
-        document.addEventListener('click', function(event) {
-            var menu = document.getElementById("myMenu");
-            var searchInput = document.getElementById("mySearch");
-            
-            if (event.target !== searchInput && !menu.contains(event.target)) {
-                menu.style.display = "none";
-            }
-        });
-
-        // Thêm sự kiện focus vào input
-        document.getElementById("mySearch").addEventListener('focus', function() {
-            var filter = this.value.trim();
-            var menu = document.getElementById("myMenu");
-            
-            // Chỉ hiện menu nếu có giá trị trong input
-            if (filter !== "") {
-                myFunction();
-            }
-        });
     </script>
-
 </div>
-
 

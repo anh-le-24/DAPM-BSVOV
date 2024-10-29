@@ -9,13 +9,13 @@
     <img src="~/images/bg_article.jpg" alt="Đặt lịch">
 </div>
 
-<div class="container">
+<div class="container" id="loginForm">
     <div class="bread-flow">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
                 <li class="breadcrumb-item"><a asp-controller="Home" asp-action="FillterDoctor">Tìm bác sĩ</a></li>
-                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="FillterDoctor">Thông tin bác sĩ</a></li>
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="DetailDoctor">Thông tin bác sĩ</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Đặt Lịch khám</li>
             </ol>
         </nav>
@@ -123,3 +123,13 @@
         
     </form>
 </div>
+
+<script>
+    window.onload = function() {
+        document.getElementById("loginForm").scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    };
+
+</script>

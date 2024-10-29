@@ -152,18 +152,44 @@ public class HomeController : Controller
 
         return RedirectToAction("Index", "Home");
     }
-
-
     public IActionResult FillterDoctor()
     {
         LayoutShare();
+        DataModel db = new DataModel();
+        ViewBag.ListNameDoc = db.get("SELECT MaBS, nd.TenND FROM BACSI bs, NGUOIDUNG nd where bs.MaND = nd.MaND");
+        ViewBag.ListDoc = db.get("Exec getAllBacSi");
         
         return View();
     }
-    public IActionResult DetailDoctor()
+    public IActionResult FillterDoctorList(string khuvuc, string phikham, string khoabenh, string hocham)
     {
         LayoutShare();
+        DataModel db = new DataModel();
+        if(khuvuc != "Null"){
+            khuvuc = "N'"+ khuvuc +"'";
+        }
+        if(hocham != "Null" ){
+            hocham = "N'"+ hocham +"'";
+        }
+        ViewBag.ListDocFill = db.get($"EXEC FILTER_BACSI {khuvuc}, {phikham}, {khoabenh},  {hocham};");
         
+        return View();
+    }
+    public IActionResult DetailDoctor(string MaBS)
+    {
+        LayoutShare();
+
+        DataModel db = new DataModel();
+
+        // Tạo danh sách tham số
+        var parameters = new List<SqlParameter>
+        {
+            new SqlParameter("@MaBS", SqlDbType.Int) { Value = int.Parse(MaBS) }
+        };
+
+        // Sử dụng tham số hóa để tránh lỗi
+        ViewBag.ListDBS = db.getid("EXEC DetDETAILlBACSI @MaBS", parameters);
+
         return View();
     }
     public IActionResult ListDoctor()

@@ -28,6 +28,7 @@
 /Users/luongdat/Documents/Demo ASP.net/DoAnCNPM/obj/Debug/net8.0/DoAnCNPM.pdb
 /Users/luongdat/Documents/Demo ASP.net/DoAnCNPM/obj/Debug/net8.0/DoAnCNPM.genruntimeconfig.cache
 /Users/luongdat/Documents/Demo ASP.net/DoAnCNPM/obj/Debug/net8.0/ref/DoAnCNPM.dll
+<<<<<<< HEAD
 D:/DAPM/DoAnCNPM/bin/Debug/net8.0/appsettings.Development.json
 D:/DAPM/DoAnCNPM/bin/Debug/net8.0/appsettings.json
 D:/DAPM/DoAnCNPM/bin/Debug/net8.0/DoAnCNPM.staticwebassets.runtime.json
@@ -58,6 +59,9 @@ D:/DAPM/DoAnCNPM/obj/Debug/net8.0/refint/DoAnCNPM.dll
 D:/DAPM/DoAnCNPM/obj/Debug/net8.0/DoAnCNPM.pdb
 D:/DAPM/DoAnCNPM/obj/Debug/net8.0/DoAnCNPM.genruntimeconfig.cache
 D:/DAPM/DoAnCNPM/obj/Debug/net8.0/ref/DoAnCNPM.dll
+D:/DAPM/DoAnCNPM/obj/Debug/net8.0/DoAnCNPM.sourcelink.json
+=======
+>>>>>>> main
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/appsettings.Development.json
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/appsettings.json
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/DoAnCNPM.staticwebassets.runtime.json

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/css/Personal.css"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/home.css",
+      "PackagePath": "staticwebassets/css/home.css"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

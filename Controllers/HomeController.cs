@@ -12,6 +12,8 @@ using System.Collections;
 using System.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Logging;
+
 
 public class HomeController : Controller
 {

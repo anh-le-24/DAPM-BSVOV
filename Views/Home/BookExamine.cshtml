@@ -1,3 +1,5 @@
+@using System.Collections
+
 @{
     ViewData["Title"] = "Đặt lịch";
 }
@@ -9,13 +11,18 @@
     <img src="~/images/bg_article.jpg" alt="Đặt lịch">
 </div>
 
-<div class="container" id="loginForm">
+@{
+    var bn = ViewBag.UserInfo;
+    var bs = ViewBag.ListDBS[0];
+}
+<div class="container " id="loginForm">
+    
     <div class="bread-flow">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
                 <li class="breadcrumb-item"><a asp-controller="Home" asp-action="FillterDoctor">Tìm bác sĩ</a></li>
-                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="DetailDoctor">Thông tin bác sĩ</a></li>
+                <li class="breadcrumb-item"><a href="~/Home/DetailDoctor?MaBS=@int.Parse(bs[0])">Thông tin bác sĩ</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Đặt Lịch khám</li>
             </ol>
         </nav>
@@ -28,100 +35,114 @@
             </span>
         </h3>
     </div>  
-    <form class="book-form">
-        
-        <div class="title-content">
-            <h2>
-                Chi tiết lịch hẹn
-            </h2>
-        </div>
-        <h4 class="mb-3">Thông tin bác sĩ</h4>
-        <div class="boder-ex">
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <label for="doctor" class="form-label">Bác sĩ</label>
-                    <select class="form-select" id="doctor" disabled>
-                        <option selected disabled value="">Bùi Ngọc Uyên Chi</option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    <label for="hospital" class="form-label ">Bệnh viện/phòng khám</label>
-                    <select class="form-select" id="hospital" required disabled>
-                        <option selected disabled value="">bệnh viện bạch mai</option>
-                    </select>
-                </div>  
-                <div class="col-md-4">
-                    <label for="department" class="form-label">Chuyên khoa</label>
-                    <select class="form-select" id="department" required disabled>
-                        <option selected disabled value="">Răng - Hàm - Mặt</option>
-                    </select>
-                </div>
+    <div class="form-booking ">
+        <form class="book-form" asp-controller="Home" asp-action="BookExamineProcess" method="post" enctype="multipart/form-data">
+            <div class="title-content_arti">
+                <h2>
+                    Chi tiết lịch hẹn
+                </h2>
             </div>
-
-            <div class="mb-3 fee">
-                <label for="department" class="form-label">Phí khám:</label>
-                <span>200.000</span>
-                <span>đ</span>
-            </div>
-        </div>
-
-        <h4 class="mb-3">Thông tin khách hàng</h4>
-        <div class="boder-ex">
-            <div class="row mb-3 ">
-                <div class="col-md-6">
-                    <label for="fullName" class="form-label required">Họ và tên</label>
-                    <input type="text" class="form-control" id="fullName" placeholder="Họ và tên" required>
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label required">Giới tính</label>
-                    <div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-                            <label class="form-check-label" for="male">Nam</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                            <label class="form-check-label" for="female">Nữ</label>
-                        </div>
+            <h4 class="mb-3">Thông tin bác sĩ</h4>
+            <div class="boder-ex">
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label for="doctor" class="form-label">Bác sĩ</label>
+                        <input type="text" class="form-control" id="doctor" disabled value="@bs[2]">
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <label for="hospital" class="form-label ">Bệnh viện/phòng khám</label>
+                        <input type="text" class="form-control" id="hospital" disabled value="@bs[3]">
+                    </div>  
+                    <div class="col-md-4">
+                        <label for="department" class="form-label">Chuyên khoa</label>
+                        <input type="text" class="form-control" id="department" disabled value="@bs[4]">
                     </div>
                 </div>
             </div>
 
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label for="phone" class="form-label required">Số điện thoại</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" required>
+            <h4 class="mb-3">Thông tin khách hàng</h4>
+            <div class="boder-ex">
+                <div class="row mb-3 ">
+                    <div class="col-md-6">
+                        <label for="fullName" class="form-label required">Họ và tên</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Họ và tên" required value="@bn[1]">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label required">Giới tính:</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="Nam"@(bn[7] == "Nam" ? "checked" : "")>
+                                <label class="form-check-label" for="male">Nam</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="Nữ" @(bn[7] == "Nữ" ? "checked" : "") >
+                                <label class="form-check-label" for="female">Nữ</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Nhập email">
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label required">Số điện thoại</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" value="@bn[4]" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Nhập email" value="@bn[3]">
+                    </div>
+                </div>
+                @if (bn[6] != null)
+                {
+                    DateTime birthDate = DateTime.Parse(bn[6].ToString());
+                    var formattedDate = birthDate.ToString("yyyy-MM-dd"); // Định dạng yyyy-MM-dd
+
+                    <div class="mb-3">
+                        <label for="dob" class="form-label required">Ngày tháng năm sinh</label>
+                        <input type="date" class="form-control" id="dob" value="@formattedDate" required>
+                    </div>
+                }
+                else
+                {
+                    <div class="mb-3">
+                        <label for="dob" class="form-label required">Ngày tháng năm sinh</label>
+                        <input type="date" class="form-control" id="dob" required>
+                    </div>
+                }
+                
+
+                <div class="mb-3">
+                    <label for="reason" class="form-label required">Lý do khám</label>
+                    <textarea class="form-control" id="reason" rows="3" placeholder="Triệu chứng của bạn" name="MoTaBenh" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="dob" class="form-label">Hình ảnh bệnh</label>
+                    <input type="file" class="form-control" id="dob" required name="HinhAnhBenhs" multiple>
                 </div>
             </div>
+            <div class="mb-3 fee" style="text-align: end;">
+                @{
+                    // Định dạng số tiền đẹp hơn
+                    var amount = Convert.ToInt32(bs[5]);
+                    var SoTien = amount.ToString("#,##0");  
+                }
+                    <label for="department" class="form-label">Phí khám:</label>
+                    <span>@SoTien</span>
+                    <span>đ</span>
+                </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="termsAgreement" required>
+                <label class="form-check-label" for="termsAgreement">Tôi đã đọc và xác nhận <a href="#">Điều khoản dịch vụ</a> của Bệnh viện .</label>
+            </div>
+            <input type="text" value="@bs[0]" name="MaBS" style="display: none;">
 
-            <div class="mb-3">
-                <label for="dob" class="form-label required">Ngày tháng năm sinh</label>
-                <input type="date" class="form-control" id="dob" required>
+            <div class="center" >
+                <button type="submit" class="btn-send-book">Đặt lịch khám</button>
             </div>
-
-            <div class="mb-3">
-                <label for="reason" class="form-label required">Lý do khám</label>
-                <textarea class="form-control" id="reason" rows="3" placeholder="Triệu chứng của bạn" required></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="dob" class="form-label">Hình ảnh bệnh</label>
-                <input type="file" class="form-control" id="dob" required>
-            </div>
-        </div>
-        
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="termsAgreement" required>
-            <label class="form-check-label" for="termsAgreement">Tôi đã đọc và xác nhận <a href="#">Điều khoản dịch vụ</a> của Bệnh viện .</label>
-        </div>
-        <div class="center" >
-            <button type="submit" class="btn-send-book">Đặt lịch khám</button>
-        </div>
-        
-    </form>
+        </form>
+    </div>
+   
 </div>
 
 <script>

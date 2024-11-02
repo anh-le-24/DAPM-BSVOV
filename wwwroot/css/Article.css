@@ -1,10 +1,11 @@
 .cover_list_news {
-    height: 400px;
+    height: 300px;
     text-align: center;
     max-height: 440px;
     position: relative;
     overflow: hidden;
 }
+
 .name_cate_cover {
     transform: translate(-50%,-50%);
     max-width: var(--max-body);
@@ -309,16 +310,22 @@ margin-top: 20px;
   }
 
   /* ----------- BOOK Examine ---------- */
+  .form-booking{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
   .book-form{
+    width: 70%;
     background-color: white;
     border-radius: 16px;
     padding: 20px;
-    
+    border: 4px dotted #a12e35;
   }
   .book-form h4{
     font-weight: bold;
     font-size: 30px;
-
+    color: #4a4a4a;
   }
   .boder-ex{
     border-radius: 10px;
@@ -331,15 +338,19 @@ margin-top: 20px;
     content: " *";
     color: red;
 }
-
+.fee{
+  text-align: end;
+  margin-right: 50px;
+}
 .fee label{
   font-weight: bold;
   font-size: 20px;
-  color: rgb(217, 7, 7);
+  
 }
 .fee span{
   font-weight: bold;
-  font-size: 30px;
+  font-size: 35px;
+  color: rgb(217, 7, 7);
 }
 .btn-send-book{
   background: #51be9d;
@@ -562,4 +573,66 @@ margin-top: 20px;
   width: 20px;
   height: 20px;
   opacity: 0.5;
+}
+
+/* -------- ĐÁNH GIÁ -------- */
+
+.list-comments{
+  max-height: 300px;
+  overflow-x: auto;
+  margin: 20px;
+  display: flex;
+}
+.post-card {
+  min-width: 350px;
+  background: rgb(250, 246, 246);
+  border: 2px dotted rgb(103, 144, 255);
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+
+
+.title {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: rgb(101, 101, 101);
+  text-decoration: none;
+  transition: all .35s ease-in;
+}
+
+.datetime {
+  font-size: 12px;
+  color: rgb(80, 80, 80);
+  margin: 5px 0;
+}
+
+.image-preview {
+  flex: 1;
+  min-height: 50px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgb(32, 101, 221);
+  margin-bottom: 4px;
+  text-align: start;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.comment-like {
+  min-width: 50px;
+  align-items: center;
+  padding: 2px 0;
 }

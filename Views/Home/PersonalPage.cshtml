@@ -40,7 +40,7 @@
                                 if (user != null && user.Count > 1)
                                 {
                                     <div style="padding: 25px;">
-                                        <img src="~/images/ic_avatar.png" class="img-fluid rounded-circle profile-picture mb-3" alt="Profile Picture">
+                                        <img src="~/Uploads/@user[8]" class="img-fluid rounded-circle profile-picture mb-3" alt="Profile Picture">
                                         <h2 class="card-subtitle mb-2 text-muted">@user[1]</h2>
                                         <p class="card-text"style="font-weight: bold; font-size: 20px">Mã giới thiệu: @user[10]</p>
                                         <button class="btn-changepass">Đổi mật khẩu</button>
@@ -69,7 +69,7 @@
                                     <input type="text" class="form-control" id="fullName" value="@user[0]" name="MaND" style="display: none;">
                                     <div class="mb-3">
                                         <label for="fullName" class="form-label">Họ và tên:</label>
-                                        <input type="text" class="form-control" id="fullName" value="@user[1]" name="TenND">
+                                        <input type="text" class="form-control" value="@user[1]" name="TenND">
                                     </div>
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email:</label>
@@ -96,9 +96,9 @@
                                         <label for="gender" class="form-label">Giới tính:</label>
                                         <select class="form-select" id="gender" name="GioiTinh">
                                             <option selected>@user[7]</option>
-                                            <option>Nam</option>
-                                            <option>Nữ</option>
-                                            <option>Khác</option>
+                                            <option value="Nam">Nam</option>
+                                            <option value="Nữ">Nữ</option>
+                                            <option value="Khác">Khác</option>
                                         </select>
                                     </div>
                                     <div class="mb-3">
@@ -109,6 +109,12 @@
                                         <label for="phone" class="form-label">Số điện thoại:</label>
                                         <input type="tel" class="form-control" id="phone" value="@user[4]" name="SDT">
                                     </div>
+
+                                    <div class="mb-3">
+                                        <label for="avar" class="form-label">Ảnh cá nhân:</label>
+                                        <input type="file" class="form-control" id="avar" name="Hinhcanhan">
+                                    </div>
+
                                     <button type="submit" class="btn btn-primary">Cập nhật</button>
                                 }
                             }

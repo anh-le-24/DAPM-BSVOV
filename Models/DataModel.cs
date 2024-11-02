@@ -35,38 +35,6 @@ namespace DoAnCNPM.Models
 
             return datalist;
         }
-        public ArrayList getid(string sql, List<SqlParameter> parameters = null)
-        {
-            ArrayList datalist = new ArrayList();
-
-            using (SqlConnection connection = new SqlConnection(connecttionStrings))
-            {
-                using (SqlCommand command = new SqlCommand(sql, connection))
-                {
-                    // Thêm các tham số (nếu có)
-                    if (parameters != null)
-                    {
-                        command.Parameters.AddRange(parameters.ToArray());
-                    }
-
-                    connection.Open();
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            ArrayList row = new ArrayList();
-                            for (int i = 0; i < reader.FieldCount; i++)
-                            {
-                                row.Add(reader.GetValue(i).ToString());
-                            }
-                            datalist.Add(row);
-                        }
-                    }
-                }
-            }
-
-            return datalist;
-        }
 
     }
 }

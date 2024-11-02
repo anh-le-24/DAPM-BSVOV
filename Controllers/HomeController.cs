@@ -49,14 +49,8 @@ public class HomeController : Controller
 
         DataModel db = new DataModel();
 
-        // Tạo danh sách tham số
-        var parameters = new List<SqlParameter>
-        {
-            new SqlParameter("@MaBV", SqlDbType.Int) { Value = int.Parse(MaBV) }
-        };
-
         // Sử dụng tham số hóa để tránh lỗi
-        ViewBag.ListBV = db.getid("EXEC getBaiVietByIDMaKhoaBenh @MaBV", parameters);
+        ViewBag.ListBV = db.get($"EXEC getBaiVietByIDMaKhoaBenh {MaBV}");
 
         return View();
     }
@@ -66,14 +60,8 @@ public class HomeController : Controller
 
         DataModel db = new DataModel();
 
-        // Tạo danh sách tham số
-        var parameters = new List<SqlParameter>
-        {
-            new SqlParameter("@MaLBV", SqlDbType.Int) { Value = int.Parse(MaLBV) }
-        };
-
         // Sử dụng tham số hóa để tránh lỗi
-        ViewBag.ListLBV = db.getid("EXEC getBaiVietByIDMaLoai @MaLBV", parameters);
+        ViewBag.ListLBV = db.get($"EXEC getBaiVietByIDMaLoai {MaLBV}");
 
         return View();
     }
@@ -83,14 +71,8 @@ public class HomeController : Controller
 
         DataModel db = new DataModel();
 
-        // Tạo danh sách tham số
-        var parameters = new List<SqlParameter>
-        {
-            new SqlParameter("@MaBV", SqlDbType.Int) { Value = int.Parse(MaBV) }
-        };
-
         // Sử dụng tham số hóa để tránh lỗi
-        ViewBag.ListBV = db.getid("EXEC getBaiVietByID @MaBV", parameters);
+        ViewBag.ListBV = db.get($"EXEC getBaiVietByID {MaBV}");
 
         return View();
     }
@@ -183,15 +165,11 @@ public class HomeController : Controller
 
         DataModel db = new DataModel();
 
-        // Tạo danh sách tham số
-        var parameters = new List<SqlParameter>
-        {
-            new SqlParameter("@MaBS", SqlDbType.Int) { Value = int.Parse(MaBS) }
-        };
-
+   
         // Sử dụng tham số hóa để tránh lỗi
-        ViewBag.ListDBS = db.getid("EXEC DetDETAILlBACSI @MaBS", parameters);
+        ViewBag.ListDBS = db.get($"EXEC DetDETAILlBACSI {MaBS}");
 
+        ViewBag.ListComment = db.get($"EXEC GetCommentBACSI {MaBS}");
         return View();
     }
     public IActionResult ListDoctor()
@@ -219,26 +197,99 @@ public class HomeController : Controller
         }
         return View();
     }
+
     [HttpPost]
     public IActionResult UpdateUserInfo(string MaND, string TenND, string Email, 
                                         string NamSinh, string GioiTinh, 
-                                        string DiaChi)
+                                        string DiaChi, IFormFile Hinhcanhan)
     {
         DataModel db = new DataModel();
         int manD = int.Parse(MaND);
         DateTime parsedDate = DateTime.Parse(NamSinh); 
         string formattedDate = parsedDate.ToString("yyyy-MM-dd");
+    
+        // lấy tên tệp
+        string nameFile = Path.GetFileName(Hinhcanhan.FileName);
 
-        db.get($"EXEC UpdateUserInfo {manD}, N'{TenND}', '{Email}', '{formattedDate}', N'{GioiTinh}', N'{DiaChi}' ");
+        // Đường dẫn để lưu tệp
+        string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Uploads");
+        Directory.CreateDirectory(uploadsFolder); // Tạo thư mục nếu chưa tồn tại
+        string filePath = Path.Combine(uploadsFolder, nameFile);
+        // Lưu tệp
+        using (var stream = new FileStream(filePath, FileMode.Create))
+        {
+            Hinhcanhan.CopyTo(stream);
+        }
+        
+        db.get($"EXEC UpdateUserInfo {manD}, N'{TenND}', '{Email}', '{formattedDate}', N'{GioiTinh}', N'{DiaChi}', '{nameFile}' ");
 
         return RedirectToAction("PersonalPage", "Home");
     }
 
-    public IActionResult BookExamine()
+    public IActionResult BookExamine(string MaBS)
     {
         LayoutShare();
+
+        DataModel db = new DataModel();
+        var taikhoan = HttpContext.Session.GetString("taikhoan");
+        ViewData["TaiKhoan"] = taikhoan;
+
+        if (!string.IsNullOrEmpty(taikhoan))
+        {
+            var result = db.get("SELECT * from NGUOIDUNG where manD=" + taikhoan);
+            if (result != null && result.Count > 0)
+            {
+                ViewBag.UserInfo = result[0]; // Lấy dòng đầu tiên của kết quả
+            }
+        }
+
+        ViewBag.ListDBS = db.get($"EXEC DetDETAILlBACSI1 {MaBS}");
+
         return View();
     }
+   [HttpPost]
+    public IActionResult BookExamineProcess(string MaBS, string MoTaBenh, List<IFormFile> HinhAnhBenhs)
+    {
+        DataModel db = new DataModel();
+
+        var taikhoan = HttpContext.Session.GetString("taikhoan");
+        ViewData["TaiKhoan"] = taikhoan;
+        var MaND = taikhoan;
+        Console.WriteLine("Ma ND: " + MaND);
+
+        var result = db.get($"DECLARE @MaHS INT; EXEC SAVEHOSO {MaND}, N'{MoTaBenh}', @MaHS = @MaHS OUTPUT; SELECT @MaHS;");
+        if (result != null && result.Count > 0)
+        {
+            ViewBag.MaHS = result[0]; // Lấy dòng đầu tiên của kết quả
+        }
+        var MaHS = int.Parse(ViewBag.MaHS[0].ToString());
+        
+        Console.WriteLine("Ma HS: " + MaHS);
+
+        foreach (var file in HinhAnhBenhs)
+        {
+             // lấy tên tệp
+            string nameFile = Path.GetFileName(file.FileName);
+
+            // Đường dẫn để lưu tệp
+            string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Uploads");
+            Directory.CreateDirectory(uploadsFolder); // Tạo thư mục nếu chưa tồn tại
+            string filePath = Path.Combine(uploadsFolder, nameFile);
+            // Lưu tệp
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                file.CopyTo(stream);
+            }
+            
+            db.get($"EXEC SAVEHINHANHBENH {MaHS}, '{nameFile}'");
+            Console.WriteLine("Luu anh: "+ nameFile);
+        }
+
+        db.get($"EXEC SAVECUOCHENKHAM {MaND}, {MaBS}, {MaHS}, null");
+
+        return RedirectToAction("Index", "Home");
+    }
+
 
      public IActionResult ExamineHistory()
     {

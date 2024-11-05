@@ -16,6 +16,7 @@ namespace DoAnCNPM.Models
         {
             ArrayList datalist = new ArrayList();
             SqlConnection connection = new SqlConnection(connecttionStrings);
+            
             SqlCommand command = new SqlCommand(sql, connection);
             connection.Open();
             using (SqlDataReader r = command.ExecuteReader())

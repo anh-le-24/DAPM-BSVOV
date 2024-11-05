@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets/DoAnCNPM.bundle.scp.css"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/o.jpg",
+      "PackagePath": "staticwebassets/Uploads/o.jpg"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/raccoon_o.jpeg",
+      "PackagePath": "staticwebassets/Uploads/raccoon_o.jpeg"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Article.css",
       "PackagePath": "staticwebassets/css/Article.css"
     },

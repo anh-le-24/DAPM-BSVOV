@@ -72,11 +72,11 @@
                         <label class="form-label required">Giới tính:</label>
                         <div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="male" value="Nam"@(bn[7] == "Nam" ? "checked" : "")>
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="Nam" @(bn[7] == "Nam" ? "checked" : "")>
                                 <label class="form-check-label" for="male">Nam</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="female" value="Nữ" @(bn[7] == "Nữ" ? "checked" : "") >
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="Nữ" @(bn[7] == "Nữ" ? "checked" : "")>
                                 <label class="form-check-label" for="female">Nữ</label>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                     <textarea class="form-control" id="reason" rows="3" placeholder="Triệu chứng của bạn" name="MoTaBenh" required></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="dob" class="form-label">Hình ảnh bệnh</label>
+                    <label for="dob" class="form-label required">Hình ảnh bệnh</label>
                     <input type="file" class="form-control" id="dob" required name="HinhAnhBenhs" multiple>
                 </div>
             </div>

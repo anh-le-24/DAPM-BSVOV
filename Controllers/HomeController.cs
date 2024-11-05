@@ -255,7 +255,6 @@ public class HomeController : Controller
         var taikhoan = HttpContext.Session.GetString("taikhoan");
         ViewData["TaiKhoan"] = taikhoan;
         var MaND = taikhoan;
-        Console.WriteLine("Ma ND: " + MaND);
 
         var result = db.get($"DECLARE @MaHS INT; EXEC SAVEHOSO {MaND}, N'{MoTaBenh}', @MaHS = @MaHS OUTPUT; SELECT @MaHS;");
         if (result != null && result.Count > 0)
@@ -264,8 +263,6 @@ public class HomeController : Controller
         }
         var MaHS = int.Parse(ViewBag.MaHS[0].ToString());
         
-        Console.WriteLine("Ma HS: " + MaHS);
-
         foreach (var file in HinhAnhBenhs)
         {
              // lấy tên tệp
@@ -282,7 +279,6 @@ public class HomeController : Controller
             }
             
             db.get($"EXEC SAVEHINHANHBENH {MaHS}, '{nameFile}'");
-            Console.WriteLine("Luu anh: "+ nameFile);
         }
 
         db.get($"EXEC SAVECUOCHENKHAM {MaND}, {MaBS}, {MaHS}, null");
@@ -291,10 +287,26 @@ public class HomeController : Controller
     }
 
 
-     public IActionResult ExamineHistory()
+    public IActionResult ExamineHistory()
     {
         LayoutShare();
+        
+        var taikhoan = HttpContext.Session.GetString("taikhoan");
+        ViewData["TaiKhoan"] = taikhoan;
+        var MaND = taikhoan;
+
+        DataModel db = new DataModel();
+        ViewBag.ListLichKham = db.get($"EXEC GetLichKhamInfoByMaND {MaND}");
+
+
         return View();
+    }
+    public IActionResult Cancel(string maCHK)
+    {
+        DataModel db = new DataModel();
+        ViewBag.List = db.get("EXEC DeleteCHKbyID " + maCHK);
+        
+        return RedirectToAction("ExamineHistory", "Home");
     }
 
     public IActionResult AccountBank()

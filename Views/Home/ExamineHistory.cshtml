@@ -35,16 +35,32 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Lương Đạt</td>
-                    <td>4</td>
-                    <td>Bệnh nhân cần theo dõi thêm</td>
-                    <td>https://www.youtube.com/watch?v=u76BOoh4Ga8</td>
-                    <td>200.000 đ</td>
-                    <td>Đã hoàn thành </td>
-                </tr>
-
+                @{
+                    int stt = 1;
+                }
+                @foreach(var a in ViewBag.ListLichKham){
+                    <tr>
+                        <th scope="row">@stt</th> 
+                        <td>@a[1]</td>
+                        <td>@a[2]</td>
+                        <td>@a[7]</td>
+                        <td>@a[6]</td>
+                        <td>@a[5]</td>
+                        <td>
+                            @if(a[3] == "1")
+                            {
+                                <a class="btn btn-danger" href="~/Home/Cancel?maCHK=@a[0]">
+                                    Hủy lịch
+                                </a>
+                            }
+                            else{
+                                @a[4]
+                            }
+                        </td>
+                    </tr>
+                    stt = stt + 1;
+                }
+                
             </tbody>
         </table>        
     </div>

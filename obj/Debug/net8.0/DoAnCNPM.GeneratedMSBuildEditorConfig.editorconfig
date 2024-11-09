@@ -9,79 +9,79 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DoAnCNPM
 build_property.RootNamespace = DoAnCNPM
-build_property.ProjectDir = D:\DAPM\DoAnCNPM\
+build_property.ProjectDir = C:\Users\ACER\DAPM-BSVOV\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\DAPM\DoAnCNPM
+build_property.MSBuildProjectDirectory = C:\Users\ACER\DAPM-BSVOV
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/DAPM/DoAnCNPM/Views/BacSi/HomeBS.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/BacSi/HomeBS.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjU2lcSG9tZUJTLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Home/AccountBank.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Home/AccountBank.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY2NvdW50QmFuay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Home/Article.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Home/Article.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBcnRpY2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Home/BookExamine.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Home/BookExamine.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCb29rRXhhbWluZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Home/DetailDoctor.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Home/DetailDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxEb2N0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Home/ExamineHistory.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Home/ExamineHistory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFeGFtaW5lSGlzdG9yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Home/FillterDoctor.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Home/FillterDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGaWxsdGVyRG9jdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Home/Index.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Home/ListDoctor.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Home/ListDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0RG9jdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Home/Login.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Home/PersonalPage.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Home/PersonalPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZXJzb25hbFBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Home/Register.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Home/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Shared/Error.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/_ViewImports.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/_ViewStart.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DAPM/DoAnCNPM/Views/Shared/_Layout.cshtml]
+[C:/Users/ACER/DAPM-BSVOV/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ppj8p029ig

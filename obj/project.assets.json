@@ -2587,11 +2587,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DAPM\\DoAnCNPM\\DoAnCNPM.csproj",
+      "projectUniqueName": "C:\\Users\\ACER\\DAPM-BSVOV\\DoAnCNPM.csproj",
       "projectName": "DoAnCNPM",
-      "projectPath": "D:\\DAPM\\DoAnCNPM\\DoAnCNPM.csproj",
+      "projectPath": "C:\\Users\\ACER\\DAPM-BSVOV\\DoAnCNPM.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "D:\\DAPM\\DoAnCNPM\\obj\\",
+      "outputPath": "C:\\Users\\ACER\\DAPM-BSVOV\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,125 @@
+@{
+    ViewData["Title"] = "DangkyBs";
+    Layout = null;
+    <link rel="stylesheet" href="~/css/DangKy.css" asp-append-version="true" />
+}
+
+<body>
+    <h2>Đăng ký bác sĩ</h2>
+    <div class="form-container">
+        <form asp-controller="Bacsis" asp-action="ThucHienDKBs" method="post" enctype="multipart/form-data">
+
+            <label for="hinhanh">Ảnh đại diện</label>
+            <input type="file" id="hinhanh" name="hinhanh" placeholder="Chọn ảnh" required>
+
+            <label for="username">Tên đăng nhập <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Mật khẩu <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Nhập lại mật khẩu <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label for="birthyear">Năm sinh <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="date" id="birthyear" name="birthyear" required>
+
+            <label for="cmtnumber">Số CMT <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="text" id="cmtnumber" name="cmtnumber" placeholder="Số CMT" required pattern="\d*" title="Vui lòng nhập số">
+
+            <input type="date" id="issuedate" name="issuedate" placeholder="Ngày cấp" required>
+            <input type="text" id="issueplace" name="issueplace" placeholder="Nơi cấp" required>
+
+            <label for="cmt-image-front">Ảnh CMT mặt trước <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="file" id="cmt-image-front" name="cmtimagefront" accept="image/*" required>
+
+            <label for="cmt-image-back">Ảnh CMT mặt sau <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="file" id="cmtimageback" name="cmtimageback" accept="image/*" required>
+
+            <label for="gender">Giới tính <span class="required">(Bắt buộc nhập)</span></label>
+            <select id="gender" name="gender" required>
+                <option value="">Chọn giới tính</option>
+                <option value="male">Nam</option>
+                <option value="female">Nữ</option>
+            </select>
+
+            <label for="email">Email <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Số điện thoại <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="diaChi">Địa chỉ</label>
+            <input type="text" id="diaChi" name="diaChi" placeholder="Địa chỉ">
+
+            <label for="namKinhNghiem">Năm kinh nghiệm <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="number" id="namKinhNghiem" name="namKinhNghiem" required>
+
+            <label for="noiCongTac">Nơi công tác <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="number" id="noiCongTac" name="noiCongTac" placeholder="Hãy chọn bệnh viện công tác" required>
+
+            <label for="khoa">Khoa <span class="required">(Bắt buộc nhập)</span></label>
+            <select id="khoa" name="khoa" required>
+                <option value="2">Bại Não</option>
+            </select>
+
+            <label for="chuyenKhoa">Chuyên khoa <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="text" id="chuyenKhoa" name="chuyenKhoa" required>
+
+            <label for="soChungChi">Số chứng chỉ hành nghề <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="text" id="soChungChi" name="soChungChi" required >
+
+            <label for="ngayThangCap">Ngày tháng cấp <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="date" id="ngayThangCap" name="ngayThangCap" required>
+
+            <label for="noiCap">Nơi cấp <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="text" id="noiCap" name="noiCap" required>
+
+            <label for="anhChungChi">Ảnh chứng chỉ hành nghề <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="file" id="anhChungChi1" name="anhChungChi1" required>
+             <input type="file" id="anhChungChi2" name="anhChungChi2" required>
+
+            <label for="hocVi">Học vị</label>
+            <input type="text" id="hocVi" name="hocVi">
+
+            <label for="hocHam">Học hàm</label>
+            <input type="text" id="hocHam" name="hocHam">
+
+            <label for="chuyenMon">Chuyên môn <span class="required">(Bắt buộc nhập)</span></label>
+            <input type="text" id="chuyenMon" name="chuyenMon" value="Bác sĩ" required>
+
+            <label for="cacBenhDieuTri">Các bệnh điều trị <span class="required">(Bắt buộc nhập)</span></label>
+            <textarea id="cacBenhDieuTri" name="cacBenhDieuTri" required></textarea>
+
+            <label for="gioithieu">Giới thiệu <span class="required">(Bắt buộc nhập)</span></label>
+            <textarea id="gioithieu" name="gioithieu" required></textarea>
+
+            <label for="thontinbangcap">Thông tin bằng cấp</label>
+            <textarea id="thontinbangcap" name="thontinbangcap" required></textarea>
+
+            <label for="quaTrinhhoc">Quá trình Học</label>
+            <textarea id="quaTrinhhoc" name="quaTrinhhoc" required></textarea>
+
+            <label for="quaTrinhCongTac">Quá trình công tác</label>
+            <textarea id="quaTrinhCongTac" name="quaTrinhCongTac" required></textarea>
+
+            <label for="khamChuaBenh">Khám chữa bệnh</label>
+            <textarea id="khamChuaBenh" name="khamChuaBenh" required></textarea>
+
+            <label for="nghienCuuKhoaHoc">Nghiên cứu khoa học</label>
+            <textarea id="nghienCuuKhoaHoc" name="nghienCuuKhoaHoc" required></textarea>
+
+            <label for="giangDay">Giảng dạy</label>
+            <textarea id="giangDay" name="giangDay" required></textarea>
+
+            <label for="hoiVienCongTac">Hội viên công tác</label>
+            <textarea id="hoiVienCongTac" name="hoiVienCongTac" required></textarea>
+
+            <label for="quanLy">Quản lý</label>
+            <textarea id="quanLy" name="quanLy" required></textarea>
+
+            <button type="submit" class="submit-button">Đăng ký</button>
+        </form>
+    </div>
+</body>
+

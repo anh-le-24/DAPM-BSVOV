@@ -1,0 +1,37 @@
+
+@{
+    ViewData["Title"] = "Bs_Layout";
+    Layout = null;
+    <link rel="stylesheet" href="~/css/HomeBs.css" asp-append-version="true" />
+    var userId = Context.Session.GetString("userId");
+}
+
+<header>
+    <div class="logo">
+        <a href="@Url.Action("Index","Home")">
+            <img src="~/images/logo_vov.png" alt="Logo VinaAI">
+        </a>
+      
+        <span> Xin chào Bác Sĩ:# @userId</span>
+    </div>
+    <div class="user-info">
+        <span>@DateTime.Now.ToString("hh:mm:ss tt | dddd, dd MM yyyy")</span>        
+    </div>
+</header>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+    <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="~/Bacsis/HoSoBN">Hồ sơ bệnh nhân</a></li>
+        <li><a href="#">Lịch hẹn khám</a></li>
+        <li><a href="#">Thống kê</a></li>
+        <li><a href="#">Doanh Thu</a></li>
+        
+    </ul>
+</aside>
+
+<!-- Main Content -->
+<main>
+   @RenderBody()
+</main>

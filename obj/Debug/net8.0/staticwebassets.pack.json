@@ -5,6 +5,34 @@
       "PackagePath": "staticwebassets/DoAnCNPM.bundle.scp.css"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/BMW 4.jpg",
+      "PackagePath": "staticwebassets/Hinh/BMW 4.jpg"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/BMWi3.jpg",
+      "PackagePath": "staticwebassets/Hinh/BMWi3.jpg"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/doctor-bg.jpg",
+      "PackagePath": "staticwebassets/Hinh/doctor-bg.jpg"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/img.jpg",
+      "PackagePath": "staticwebassets/Hinh/img.jpg"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/logovov.png",
+      "PackagePath": "staticwebassets/Hinh/logovov.png"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/tải xuống.jpg",
+      "PackagePath": "staticwebassets/Hinh/tải xuống.jpg"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/z5646905496353_33d4a5e90d7627bedd9b23d52445d177.jpg",
+      "PackagePath": "staticwebassets/Hinh/z5646905496353_33d4a5e90d7627bedd9b23d52445d177.jpg"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/0f94d40525d6f952e2d73f53882d7bf2.jpg",
       "PackagePath": "staticwebassets/Uploads/0f94d40525d6f952e2d73f53882d7bf2.jpg"
     },
@@ -25,12 +53,28 @@
       "PackagePath": "staticwebassets/css/Article.css"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Dangky.css",
+      "PackagePath": "staticwebassets/css/Dangky.css"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/DnBs.css",
+      "PackagePath": "staticwebassets/css/DnBs.css"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/HomeBs.css",
+      "PackagePath": "staticwebassets/css/HomeBs.css"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Personal.css",
       "PackagePath": "staticwebassets/css/Personal.css"
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/home.css",
       "PackagePath": "staticwebassets/css/home.css"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/hosobn.css",
+      "PackagePath": "staticwebassets/css/hosobn.css"
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/site.css",
@@ -101,6 +145,10 @@
       "PackagePath": "staticwebassets/images/call.png"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/doctor-bg.jpg",
+      "PackagePath": "staticwebassets/images/doctor-bg.jpg"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/doctor.png",
       "PackagePath": "staticwebassets/images/doctor.png"
     },
@@ -135,6 +183,10 @@
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo-vnpay.png",
       "PackagePath": "staticwebassets/images/logo-vnpay.png"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_doctor_new.png",
+      "PackagePath": "staticwebassets/images/logo_doctor_new.png"
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_footer.png",
@@ -183,6 +235,10 @@
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/whyus_protect.png",
       "PackagePath": "staticwebassets/images/whyus_protect.png"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/js/hosobn.js",
+      "PackagePath": "staticwebassets/js/hosobn.js"
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/js/site.js",

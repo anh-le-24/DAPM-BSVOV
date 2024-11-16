@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets/DoAnCNPM.bundle.scp.css"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/0f94d40525d6f952e2d73f53882d7bf2.jpg",
+      "PackagePath": "staticwebassets/Hinh/0f94d40525d6f952e2d73f53882d7bf2.jpg"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/2fdaf94208f54f4113d745b9a660696e.jpg",
+      "PackagePath": "staticwebassets/Hinh/2fdaf94208f54f4113d745b9a660696e.jpg"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/BMW 4.jpg",
       "PackagePath": "staticwebassets/Hinh/BMW 4.jpg"
     },
@@ -49,6 +57,14 @@
       "PackagePath": "staticwebassets/Uploads/2fdaf94208f54f4113d745b9a660696e.jpg"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/3.jpg",
+      "PackagePath": "staticwebassets/Uploads/3.jpg"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/Screenshot 2024-09-29 194036.png",
+      "PackagePath": "staticwebassets/Uploads/Screenshot 2024-09-29 194036.png"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/o.jpg",
       "PackagePath": "staticwebassets/Uploads/o.jpg"
     },
@@ -87,6 +103,10 @@
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/styles.css",
+      "PackagePath": "staticwebassets/css/styles.css"
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/angle-left.png",
@@ -247,6 +267,10 @@
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/js/hosobn.js",
       "PackagePath": "staticwebassets/js/hosobn.js"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/js/script.js",
+      "PackagePath": "staticwebassets/js/script.js"
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/js/site.js",

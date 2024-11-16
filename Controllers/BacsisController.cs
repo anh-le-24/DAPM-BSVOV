@@ -13,7 +13,7 @@ using System.Collections;
 using System.Data;
 using Microsoft.AspNetCore.Antiforgery;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Data.SqlClient;
+
 using Microsoft.Extensions.Logging;
 
 
@@ -63,7 +63,7 @@ public class BacsisController : Controller
         string diaChi,
         DateTime birthyear,
         string gender,
-        IFormFile hinhanh, // Sử dụng IFormFile thay vì HttpPostedFileBase
+        IFormFile hinhanh,
         string cmtnumber,
         DateTime issuedate,
         string issueplace,

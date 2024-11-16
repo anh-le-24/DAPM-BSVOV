@@ -29,6 +29,7 @@
 /Users/luongdat/Documents/Demo ASP.net/DoAnCNPM/obj/Debug/net8.0/DoAnCNPM.genruntimeconfig.cache
 /Users/luongdat/Documents/Demo ASP.net/DoAnCNPM/obj/Debug/net8.0/ref/DoAnCNPM.dll
 <<<<<<< HEAD
+=======
 D:/DAPM/DoAnCNPM/bin/Debug/net8.0/appsettings.Development.json
 D:/DAPM/DoAnCNPM/bin/Debug/net8.0/appsettings.json
 D:/DAPM/DoAnCNPM/bin/Debug/net8.0/DoAnCNPM.staticwebassets.runtime.json
@@ -59,8 +60,8 @@ D:/DAPM/DoAnCNPM/obj/Debug/net8.0/refint/DoAnCNPM.dll
 D:/DAPM/DoAnCNPM/obj/Debug/net8.0/DoAnCNPM.pdb
 D:/DAPM/DoAnCNPM/obj/Debug/net8.0/DoAnCNPM.genruntimeconfig.cache
 D:/DAPM/DoAnCNPM/obj/Debug/net8.0/ref/DoAnCNPM.dll
+>>>>>>> e904d463ae51c86e1a00065aaba13dae3acfc704
 D:/DAPM/DoAnCNPM/obj/Debug/net8.0/DoAnCNPM.sourcelink.json
-=======
 >>>>>>> main
 >>>>>>> deb539550342d743a260801440487ae0277a2bfe
 D:/DAPM/DoAnCNPM/obj/Debug/net8.0/DoAnCNPM.csproj.AssemblyReference.cache
@@ -135,6 +136,77 @@ C:/Users/ACER/DAPM-BSVOV/obj/Debug/net8.0/refint/DoAnCNPM.dll
 C:/Users/ACER/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.genruntimeconfig.cache
 C:/Users/ACER/DAPM-BSVOV/obj/Debug/net8.0/ref/DoAnCNPM.dll
 >>>>>>> c26dcbd25b2f2351dcc1a0877a7d0b23ee43bc8e
+>>>>>>> 2f4aa2e9506285c8798fb0d33a1c1ced352310a1
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/appsettings.Development.json
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/appsettings.json
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/DoAnCNPM.staticwebassets.runtime.json
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/DoAnCNPM.exe
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/DoAnCNPM.deps.json
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/DoAnCNPM.runtimeconfig.json
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/DoAnCNPM.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/DoAnCNPM.pdb
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/Azure.Core.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/Azure.Identity.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.Identity.Client.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/System.ClientModel.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/System.Memory.Data.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/System.Runtime.Caching.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/System.Security.Permissions.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/de/Microsoft.Data.SqlClient.resources.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/es/Microsoft.Data.SqlClient.resources.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/fr/Microsoft.Data.SqlClient.resources.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/it/Microsoft.Data.SqlClient.resources.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/ja/Microsoft.Data.SqlClient.resources.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/ko/Microsoft.Data.SqlClient.resources.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/pt-BR/Microsoft.Data.SqlClient.resources.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/ru/Microsoft.Data.SqlClient.resources.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/runtimes/unix/lib/net8.0/Microsoft.Data.SqlClient.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/runtimes/win/lib/net8.0/Microsoft.Data.SqlClient.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+C:/DAIHOC/DAPM-BSVOV/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Runtime.Caching.dll
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.csproj.AssemblyReference.cache
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.GeneratedMSBuildEditorConfig.editorconfig
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.AssemblyInfoInputs.cache
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.AssemblyInfo.cs
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.csproj.CoreCompileInputs.cache
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.MvcApplicationPartsAssemblyInfo.cache
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.RazorAssemblyInfo.cache
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.RazorAssemblyInfo.cs
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.sourcelink.json
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/staticwebassets.build.json
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/staticwebassets.development.json
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/staticwebassets/msbuild.DoAnCNPM.Microsoft.AspNetCore.StaticWebAssets.props
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/staticwebassets/msbuild.build.DoAnCNPM.props
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.DoAnCNPM.props
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.DoAnCNPM.props
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/staticwebassets.pack.json
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/bundle/DoAnCNPM.styles.css
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/projectbundle/DoAnCNPM.bundle.scp.css
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.csproj.Up2Date
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.dll
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/refint/DoAnCNPM.dll
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.pdb
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.genruntimeconfig.cache
+C:/DAIHOC/DAPM-BSVOV/obj/Debug/net8.0/ref/DoAnCNPM.dll
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/appsettings.Development.json
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/appsettings.json
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/DoAnCNPM.staticwebassets.runtime.json

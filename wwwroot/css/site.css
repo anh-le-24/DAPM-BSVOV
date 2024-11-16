@@ -19,6 +19,9 @@ html {
   position: relative;
   min-height: 100%;
 }
+body, html {
+  height: 100%;
+}
 
 body {
   font-family: inter,roboto,Arial,Helvetica,sans-serif;
@@ -35,6 +38,7 @@ a:active, a:hover {
 }
 .bg-web{
   background-color: #f0f6fb;
+  min-height: calc(100vh - 120px);
 }
 /* --------- Share Layout ------- */
 .fisrt-nav{

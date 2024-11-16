@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "cgx5iwsERDiv73RirdmRgi+Ot1N93zolEcrenU4gHW8=",
+=======
+  "Hash": "wgMJDXQORx+fOVfNEfnWSJYoJIpbEmYQmayeCld6khI=",
+>>>>>>> c26dcbd25b2f2351dcc1a0877a7d0b23ee43bc8e
   "Source": "DoAnCNPM",
   "BasePath": "_content/DoAnCNPM",
   "Mode": "Default",
@@ -8,19 +12,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "DoAnCNPM\\wwwroot",
+      "Name": "DoAnCNPM/wwwroot",
       "Source": "DoAnCNPM",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DoAnCNPM.styles.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/bundle/DoAnCNPM.styles.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "DoAnCNPM.styles.css",
       "AssetKind": "All",
@@ -33,13 +37,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ACER\\DAPM-BSVOV\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DoAnCNPM.styles.css"
+      "OriginalItemSpec": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/bundle/DoAnCNPM.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DoAnCNPM.bundle.scp.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/projectbundle/DoAnCNPM.bundle.scp.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/projectbundle/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "DoAnCNPM.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +56,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ACER\\DAPM-BSVOV\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DoAnCNPM.bundle.scp.css"
+      "OriginalItemSpec": "/Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/scopedcss/projectbundle/DoAnCNPM.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\css\\Article.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Article.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "css/Article.css",
       "AssetKind": "All",
@@ -71,13 +75,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Article.css"
+      "OriginalItemSpec": "wwwroot/css/Article.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\css\\Dangky.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Dangky.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "css/Dangky.css",
       "AssetKind": "All",
@@ -90,13 +94,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Dangky.css"
+      "OriginalItemSpec": "wwwroot/css/Dangky.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\css\\DnBs.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/DnBs.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "css/DnBs.css",
       "AssetKind": "All",
@@ -109,13 +113,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\DnBs.css"
+      "OriginalItemSpec": "wwwroot/css/DnBs.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\css\\home.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/home.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "css/home.css",
       "AssetKind": "All",
@@ -128,13 +132,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\home.css"
+      "OriginalItemSpec": "wwwroot/css/home.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\css\\HomeBs.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/HomeBs.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "css/HomeBs.css",
       "AssetKind": "All",
@@ -147,13 +151,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\HomeBs.css"
+      "OriginalItemSpec": "wwwroot/css/HomeBs.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\css\\hosobn.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/hosobn.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "css/hosobn.css",
       "AssetKind": "All",
@@ -166,13 +170,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\hosobn.css"
+      "OriginalItemSpec": "wwwroot/css/hosobn.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\css\\Personal.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Personal.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "css/Personal.css",
       "AssetKind": "All",
@@ -185,13 +189,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Personal.css"
+      "OriginalItemSpec": "wwwroot/css/Personal.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\css\\site.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/site.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -204,9 +208,10 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\Hinh\\bg_dn.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
@@ -227,9 +232,12 @@
     },
     {
       "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\Hinh\\BMW 4.jpg",
+=======
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/BMW 4.jpg",
+>>>>>>> c26dcbd25b2f2351dcc1a0877a7d0b23ee43bc8e
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "Hinh/BMW 4.jpg",
       "AssetKind": "All",
@@ -242,13 +250,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Hinh\\BMW 4.jpg"
+      "OriginalItemSpec": "wwwroot/Hinh/BMW 4.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\Hinh\\BMWi3.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/BMWi3.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "Hinh/BMWi3.jpg",
       "AssetKind": "All",
@@ -261,13 +269,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Hinh\\BMWi3.jpg"
+      "OriginalItemSpec": "wwwroot/Hinh/BMWi3.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\Hinh\\doctor-bg.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/doctor-bg.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "Hinh/doctor-bg.jpg",
       "AssetKind": "All",
@@ -280,13 +288,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Hinh\\doctor-bg.jpg"
+      "OriginalItemSpec": "wwwroot/Hinh/doctor-bg.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\Hinh\\img.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/img.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "Hinh/img.jpg",
       "AssetKind": "All",
@@ -299,13 +307,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Hinh\\img.jpg"
+      "OriginalItemSpec": "wwwroot/Hinh/img.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\Hinh\\logovov.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/logovov.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "Hinh/logovov.png",
       "AssetKind": "All",
@@ -318,13 +326,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Hinh\\logovov.png"
+      "OriginalItemSpec": "wwwroot/Hinh/logovov.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\Hinh\\tải xuống.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/tải xuống.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "Hinh/tải xuống.jpg",
       "AssetKind": "All",
@@ -337,13 +345,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Hinh\\tải xuống.jpg"
+      "OriginalItemSpec": "wwwroot/Hinh/tải xuống.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\Hinh\\z5646905496353_33d4a5e90d7627bedd9b23d52445d177.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/z5646905496353_33d4a5e90d7627bedd9b23d52445d177.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "Hinh/z5646905496353_33d4a5e90d7627bedd9b23d52445d177.jpg",
       "AssetKind": "All",
@@ -356,9 +364,10 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Hinh\\z5646905496353_33d4a5e90d7627bedd9b23d52445d177.jpg"
+      "OriginalItemSpec": "wwwroot/Hinh/z5646905496353_33d4a5e90d7627bedd9b23d52445d177.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\Hinh\\z5900732958900_8eae448dbe4952662409cd5e783581e6.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
@@ -379,9 +388,12 @@
     },
     {
       "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\angle-left.png",
+=======
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/angle-left.png",
+>>>>>>> c26dcbd25b2f2351dcc1a0877a7d0b23ee43bc8e
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/angle-left.png",
       "AssetKind": "All",
@@ -394,13 +406,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\angle-left.png"
+      "OriginalItemSpec": "wwwroot/images/angle-left.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\angle-right.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/angle-right.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/angle-right.png",
       "AssetKind": "All",
@@ -413,13 +425,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\angle-right.png"
+      "OriginalItemSpec": "wwwroot/images/angle-right.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\bg_article.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_article.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bg_article.jpg",
       "AssetKind": "All",
@@ -432,13 +444,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bg_article.jpg"
+      "OriginalItemSpec": "wwwroot/images/bg_article.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\bg_blue_home.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_blue_home.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bg_blue_home.jpg",
       "AssetKind": "All",
@@ -451,13 +463,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bg_blue_home.jpg"
+      "OriginalItemSpec": "wwwroot/images/bg_blue_home.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\bg_login.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg_login.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bg_login.jpg",
       "AssetKind": "All",
@@ -470,13 +482,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bg_login.jpg"
+      "OriginalItemSpec": "wwwroot/images/bg_login.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\bg-next-home.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bg-next-home.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bg-next-home.png",
       "AssetKind": "All",
@@ -489,13 +501,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bg-next-home.png"
+      "OriginalItemSpec": "wwwroot/images/bg-next-home.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\bia_person.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bia_person.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bia_person.jpg",
       "AssetKind": "All",
@@ -508,13 +520,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bia_person.jpg"
+      "OriginalItemSpec": "wwwroot/images/bia_person.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\bs1.jpeg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs1.jpeg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs1.jpeg",
       "AssetKind": "All",
@@ -527,13 +539,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs1.jpeg"
+      "OriginalItemSpec": "wwwroot/images/bs1.jpeg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\bs2.jpeg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs2.jpeg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs2.jpeg",
       "AssetKind": "All",
@@ -546,13 +558,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs2.jpeg"
+      "OriginalItemSpec": "wwwroot/images/bs2.jpeg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\bs3.jpeg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs3.jpeg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs3.jpeg",
       "AssetKind": "All",
@@ -565,13 +577,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs3.jpeg"
+      "OriginalItemSpec": "wwwroot/images/bs3.jpeg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\bs4.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs4.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs4.jpg",
       "AssetKind": "All",
@@ -584,13 +596,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs4.jpg"
+      "OriginalItemSpec": "wwwroot/images/bs4.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\bs5.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs5.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs5.jpg",
       "AssetKind": "All",
@@ -603,13 +615,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs5.jpg"
+      "OriginalItemSpec": "wwwroot/images/bs5.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\bs6.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs6.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs6.jpg",
       "AssetKind": "All",
@@ -622,13 +634,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs6.jpg"
+      "OriginalItemSpec": "wwwroot/images/bs6.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\bs7.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs7.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/bs7.png",
       "AssetKind": "All",
@@ -641,13 +653,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bs7.png"
+      "OriginalItemSpec": "wwwroot/images/bs7.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\calader.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/calader.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/calader.png",
       "AssetKind": "All",
@@ -660,13 +672,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\calader.png"
+      "OriginalItemSpec": "wwwroot/images/calader.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\call.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/call.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/call.png",
       "AssetKind": "All",
@@ -679,13 +691,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\call.png"
+      "OriginalItemSpec": "wwwroot/images/call.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\doctor_female.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/doctor_female.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/doctor_female.png",
       "AssetKind": "All",
@@ -698,13 +710,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\doctor_female.png"
+      "OriginalItemSpec": "wwwroot/images/doctor_female.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\doctor-bg.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/doctor-bg.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/doctor-bg.jpg",
       "AssetKind": "All",
@@ -717,13 +729,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\doctor-bg.jpg"
+      "OriginalItemSpec": "wwwroot/images/doctor-bg.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\doctor.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/doctor.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/doctor.png",
       "AssetKind": "All",
@@ -736,13 +748,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\doctor.png"
+      "OriginalItemSpec": "wwwroot/images/doctor.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\favicon.ico",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/favicon.ico",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/favicon.ico",
       "AssetKind": "All",
@@ -755,13 +767,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\favicon.ico"
+      "OriginalItemSpec": "wwwroot/images/favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\hospital1.jpeg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/hospital1.jpeg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/hospital1.jpeg",
       "AssetKind": "All",
@@ -774,13 +786,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\hospital1.jpeg"
+      "OriginalItemSpec": "wwwroot/images/hospital1.jpeg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\ic_avatar.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/ic_avatar.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/ic_avatar.png",
       "AssetKind": "All",
@@ -793,13 +805,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\ic_avatar.png"
+      "OriginalItemSpec": "wwwroot/images/ic_avatar.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\ic_bell.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/ic_bell.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/ic_bell.png",
       "AssetKind": "All",
@@ -812,13 +824,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\ic_bell.png"
+      "OriginalItemSpec": "wwwroot/images/ic_bell.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\ic_search.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/ic_search.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/ic_search.png",
       "AssetKind": "All",
@@ -831,13 +843,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\ic_search.png"
+      "OriginalItemSpec": "wwwroot/images/ic_search.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\info-doc.JPG",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/info-doc.JPG",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/info-doc.JPG",
       "AssetKind": "All",
@@ -850,13 +862,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\info-doc.JPG"
+      "OriginalItemSpec": "wwwroot/images/info-doc.JPG"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\logo_doctor_new.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_doctor_new.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/logo_doctor_new.png",
       "AssetKind": "All",
@@ -869,13 +881,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\logo_doctor_new.png"
+      "OriginalItemSpec": "wwwroot/images/logo_doctor_new.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\logo_footer.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_footer.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/logo_footer.png",
       "AssetKind": "All",
@@ -888,13 +900,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\logo_footer.png"
+      "OriginalItemSpec": "wwwroot/images/logo_footer.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\logo_vov.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_vov.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/logo_vov.png",
       "AssetKind": "All",
@@ -907,13 +919,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\logo_vov.png"
+      "OriginalItemSpec": "wwwroot/images/logo_vov.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\logo_vov1.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo_vov1.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/logo_vov1.png",
       "AssetKind": "All",
@@ -926,13 +938,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\logo_vov1.png"
+      "OriginalItemSpec": "wwwroot/images/logo_vov1.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\logo-vnpay.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo-vnpay.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/logo-vnpay.png",
       "AssetKind": "All",
@@ -945,13 +957,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\logo-vnpay.png"
+      "OriginalItemSpec": "wwwroot/images/logo-vnpay.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\silde1.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde1.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/silde1.png",
       "AssetKind": "All",
@@ -964,13 +976,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\silde1.png"
+      "OriginalItemSpec": "wwwroot/images/silde1.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\silde2.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde2.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/silde2.jpg",
       "AssetKind": "All",
@@ -983,13 +995,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\silde2.jpg"
+      "OriginalItemSpec": "wwwroot/images/silde2.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\silde3.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde3.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/silde3.png",
       "AssetKind": "All",
@@ -1002,13 +1014,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\silde3.png"
+      "OriginalItemSpec": "wwwroot/images/silde3.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\silde4.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde4.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/silde4.png",
       "AssetKind": "All",
@@ -1021,13 +1033,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\silde4.png"
+      "OriginalItemSpec": "wwwroot/images/silde4.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\silde5.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde5.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/silde5.png",
       "AssetKind": "All",
@@ -1040,13 +1052,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\silde5.png"
+      "OriginalItemSpec": "wwwroot/images/silde5.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\silde6.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/silde6.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/silde6.png",
       "AssetKind": "All",
@@ -1059,13 +1071,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\silde6.png"
+      "OriginalItemSpec": "wwwroot/images/silde6.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\whyus_hear.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/whyus_hear.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/whyus_hear.png",
       "AssetKind": "All",
@@ -1078,13 +1090,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\whyus_hear.png"
+      "OriginalItemSpec": "wwwroot/images/whyus_hear.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\whyus_heart.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/whyus_heart.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/whyus_heart.png",
       "AssetKind": "All",
@@ -1097,13 +1109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\whyus_heart.png"
+      "OriginalItemSpec": "wwwroot/images/whyus_heart.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\images\\whyus_protect.png",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/whyus_protect.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "images/whyus_protect.png",
       "AssetKind": "All",
@@ -1116,13 +1128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\whyus_protect.png"
+      "OriginalItemSpec": "wwwroot/images/whyus_protect.png"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\js\\hosobn.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/js/hosobn.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "js/hosobn.js",
       "AssetKind": "All",
@@ -1135,13 +1147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\hosobn.js"
+      "OriginalItemSpec": "wwwroot/js/hosobn.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\js\\site.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/js/site.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1154,13 +1166,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
+      "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1173,13 +1185,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1192,13 +1204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1211,13 +1223,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1230,13 +1242,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1249,13 +1261,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1268,13 +1280,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1287,13 +1299,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1306,13 +1318,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1325,13 +1337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1344,13 +1356,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1363,13 +1375,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1382,13 +1394,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1401,13 +1413,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1420,13 +1432,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1439,13 +1451,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1458,13 +1470,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1477,13 +1489,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1496,13 +1508,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1515,13 +1527,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1534,13 +1546,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1553,13 +1565,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1572,13 +1584,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1591,13 +1603,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1610,13 +1622,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1629,13 +1641,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1648,13 +1660,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1667,13 +1679,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1686,13 +1698,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1705,13 +1717,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1724,13 +1736,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1743,13 +1755,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1762,13 +1774,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1781,13 +1793,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1800,13 +1812,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1819,13 +1831,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1838,13 +1850,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1857,13 +1869,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1876,13 +1888,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1895,13 +1907,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1914,13 +1926,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1933,13 +1945,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1952,13 +1964,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1971,13 +1983,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1990,13 +2002,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/bootstrap/LICENSE",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2009,13 +2021,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2028,13 +2040,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2047,13 +2059,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2066,13 +2078,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2085,13 +2097,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2104,13 +2116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2123,13 +2135,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2142,13 +2154,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery-validation/LICENSE.md",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2161,13 +2173,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery/dist/jquery.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2180,13 +2192,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery/dist/jquery.min.js",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2199,13 +2211,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery/dist/jquery.min.map",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2218,13 +2230,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
+      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/lib/jquery/LICENSE.txt",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2237,13 +2249,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+      "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\Uploads\\0f94d40525d6f952e2d73f53882d7bf2.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/0f94d40525d6f952e2d73f53882d7bf2.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "Uploads/0f94d40525d6f952e2d73f53882d7bf2.jpg",
       "AssetKind": "All",
@@ -2256,13 +2268,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\0f94d40525d6f952e2d73f53882d7bf2.jpg"
+      "OriginalItemSpec": "wwwroot/Uploads/0f94d40525d6f952e2d73f53882d7bf2.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\Uploads\\2fdaf94208f54f4113d745b9a660696e.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/2fdaf94208f54f4113d745b9a660696e.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "Uploads/2fdaf94208f54f4113d745b9a660696e.jpg",
       "AssetKind": "All",
@@ -2275,13 +2287,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\2fdaf94208f54f4113d745b9a660696e.jpg"
+      "OriginalItemSpec": "wwwroot/Uploads/2fdaf94208f54f4113d745b9a660696e.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\Uploads\\o.jpg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/o.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "Uploads/o.jpg",
       "AssetKind": "All",
@@ -2294,13 +2306,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\o.jpg"
+      "OriginalItemSpec": "wwwroot/Uploads/o.jpg"
     },
     {
-      "Identity": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\Uploads\\raccoon_o.jpeg",
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/raccoon_o.jpeg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ACER\\DAPM-BSVOV\\wwwroot\\",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
       "BasePath": "_content/DoAnCNPM",
       "RelativePath": "Uploads/raccoon_o.jpeg",
       "AssetKind": "All",
@@ -2313,7 +2325,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\raccoon_o.jpeg"
+      "OriginalItemSpec": "wwwroot/Uploads/raccoon_o.jpeg"
     }
   ]
 }

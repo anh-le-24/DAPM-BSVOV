@@ -18,9 +18,14 @@
     </div>
     <div class="sodu">
         <h3 class="">
+            @{
+                // Định dạng số tiền đẹp hơn
+                var amount1 = Convert.ToInt32(ViewBag.UserInfo[9]);
+                var SoTienUser = amount1.ToString("#,##0");  
+            }
             Số dư:
             <span style="color: #fff003;">
-                200.000 đ
+                @SoTienUser đ
             </span>
         </h3>
     </div>  
@@ -30,12 +35,13 @@
             NẠP TIỀN
         </h2>
     </div>
-        <input type="text" class="form-control mb-3" placeholder="Số tiền cần nạp (VND)">
-        
+    <form method="post" action="~/Home/AccountBankProcess" enctype="multipart/form-data">
+        <input type="text" name="SoDuTK" id="amountInput" class="form-control mb-3" placeholder="Số tiền cần nạp (VND)">
+
         <div class="btn-group mb-4" role="group">
-            <button type="button" class="btn btn-outline-secondary">1,000,000 VND</button>
-            <button type="button" class="btn btn-outline-secondary">500,000 VND</button>
-            <button type="button" class="btn btn-outline-secondary">200,000 VND</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="setAmount(200000)">200,000 VND</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="setAmount(500000)">500,000 VND</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="setAmount(1000000)">1,000,000 VND</button>
         </div>
 
         <h2>Phương thức thanh toán</h2>
@@ -68,8 +74,8 @@
         <h2 class="fm-text">Mã khuyến mại</h2>
         <input type="text" class="form-control mb-3" placeholder="Hệ thống ưu tiên áp dụng mã khuyến mại nếu có">
 
-        <button class="btn btn-primary btn-lg w-100">Tiếp tục</button>
-    </div>
+        <input type="submit" class="btn btn-primary btn-lg w-100">
+    </form>
 </div>
 
 <script>
@@ -80,4 +86,8 @@
                 this.querySelector('input[type="radio"]').checked = true;
             });
         });
+        function setAmount(amount) {
+        document.getElementById("amountInput").value = amount;
+    }
 </script>
+

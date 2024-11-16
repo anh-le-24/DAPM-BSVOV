@@ -160,8 +160,8 @@
 .avar-doc{
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
+  flex-direction: column;
+  margin-top: 50px;
 }
 .doctor-image {
   max-width: 200px;

@@ -47,9 +47,14 @@
                                         <button class="btn-changepass">Đổi mật khẩu</button>
                                     </div>
                                     <h3 style="color: white;">
+                                        @{
+                                            // Định dạng số tiền đẹp hơn
+                                            var amount = Convert.ToInt32(user[9]);
+                                            var SoTien = amount.ToString("#,##0");  
+                                        }
                                         Số dư:
                                         <span style="color: #fff003;">
-                                            @user[9]
+                                            @SoTien đ
                                         </span>
                                     </h3>
                                 }

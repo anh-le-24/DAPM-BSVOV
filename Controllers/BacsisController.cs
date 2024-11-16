@@ -55,126 +55,125 @@ public class BacsisController : Controller
     }
 
     [HttpPost]
-public IActionResult ThucHienDKBs(
-    string username,
-    string password,
-    string email,
-    string phone,
-    string diaChi,
-    DateTime birthyear,
-    string gender,
-    IFormFile hinhanh, // Sử dụng IFormFile thay vì HttpPostedFileBase
-    string cmtnumber,
-    DateTime issuedate,
-    string issueplace,
-    IFormFile cmtimagefront,
-    IFormFile cmtimageback,
-    string chonChuyenKhoa,
-    int namKinhNghiem,
-    string noiCongTac,
-    string khoa,
-    string soChungChi,
-    DateTime ngayThangCap,
-    IFormFile anhChungChi1,
-    IFormFile anhChungChi2,
-    string hocVi,
-    string hocHam,
-    string chuyenMon,
-    string thontinbangcap,
-    string gioithieu,
-    string cacBenhDieuTri,
-    string quaTrinhhoc,
-    string quaTrinhCongTac,
-    string nghienCuuKhoaHoc,
-    string giangDay,
-    string hoiVienCongTac)
-{
-    try
+    public IActionResult ThucHienDKBs(
+        string username,
+        string password,
+        string email,
+        string phone,
+        string diaChi,
+        DateTime birthyear,
+        string gender,
+        IFormFile hinhanh, // Sử dụng IFormFile thay vì HttpPostedFileBase
+        string cmtnumber,
+        DateTime issuedate,
+        string issueplace,
+        IFormFile cmtimagefront,
+        IFormFile cmtimageback,
+        string chonChuyenKhoa,
+        int namKinhNghiem,
+        string noiCongTac,
+        string khoa,
+        string soChungChi,
+        DateTime ngayThangCap,
+        IFormFile anhChungChi1,
+        IFormFile anhChungChi2,
+        string hocVi,
+        string hocHam,
+        string chuyenMon,
+        string thontinbangcap,
+        string gioithieu,
+        string cacBenhDieuTri,
+        string quaTrinhhoc,
+        string quaTrinhCongTac,
+        string nghienCuuKhoaHoc,
+        string giangDay,
+        string hoiVienCongTac)
     {
-        DataModel db = new DataModel();
-        // Kiểm tra tệp hình ảnh và lưu vào thư mục "Hinh"
-        if (hinhanh != null && hinhanh.Length > 0)
+        try
         {
-            string filename = Path.GetFileName(hinhanh.FileName); // Lấy tên tệp
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", filename); // Đường dẫn lưu tệp
-            using (var stream = new FileStream(path, FileMode.Create))
+            DataModel db = new DataModel();
+            // Kiểm tra tệp hình ảnh và lưu vào thư mục "Hinh"
+            if (hinhanh != null && hinhanh.Length > 0)
             {
-                hinhanh.CopyTo(stream); // Lưu tệp
+                string filename = Path.GetFileName(hinhanh.FileName); // Lấy tên tệp
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", filename); // Đường dẫn lưu tệp
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    hinhanh.CopyTo(stream); // Lưu tệp
+                }
             }
-        }
 
-        // Tương tự cho các tệp khác như cmtimagefront, cmtimageback, anhChungChi1, anhChungChi2
-        // Lưu tên tệp vào cơ sở dữ liệu
-        if (cmtimagefront != null && cmtimagefront.Length > 0)
+            // Tương tự cho các tệp khác như cmtimagefront, cmtimageback, anhChungChi1, anhChungChi2
+            // Lưu tên tệp vào cơ sở dữ liệu
+            if (cmtimagefront != null && cmtimagefront.Length > 0)
+            {
+                string cmtFrontFileName = Path.GetFileName(cmtimagefront.FileName);
+                string cmtFrontPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", cmtFrontFileName);
+                using (var stream = new FileStream(cmtFrontPath, FileMode.Create))
+                {
+                    cmtimagefront.CopyTo(stream);
+                }
+            }
+
+            if (cmtimageback != null && cmtimageback.Length > 0)
+            {
+                string cmtBackFileName = Path.GetFileName(cmtimageback.FileName);
+                string cmtBackPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", cmtBackFileName);
+                using (var stream = new FileStream(cmtBackPath, FileMode.Create))
+                {
+                    cmtimageback.CopyTo(stream);
+                }
+            }
+
+            int randomValue = new Random().Next(1, 10000);
+
+            // Sử dụng stored procedure để thực hiện thêm thông tin bác sĩ vào cơ sở dữ liệu
+            string result = "EXEC DangKyBacSi N'" + username + "','"
+                + password + "', '" 
+                + email + "', '" 
+                + phone + "', N'"
+                + diaChi + "', '" 
+                + birthyear.ToString("yyyy-MM-dd") + "', N'" 
+                + gender + "', N'"
+                + hinhanh.FileName + "', 0 , "
+                + randomValue +", NULL, 2 ,"
+                + cmtnumber + ", '"
+                + issuedate.ToString("yyyy-MM-dd") + "', N'"
+                + issueplace + "', N'"         
+                + cmtimagefront.FileName + "', '" 
+                + cmtimageback.FileName + "', '" 
+                + chonChuyenKhoa + "', " 
+                + namKinhNghiem + ", "
+                + noiCongTac + ", " 
+                + khoa + ", '"
+                + soChungChi + "', '" 
+                + ngayThangCap.ToString("yyyy-MM-dd") + "', N'"
+                + anhChungChi1.FileName + "', N'" 
+                + anhChungChi2.FileName + "', N'" 
+                + hocVi + "', N'" 
+                + hocHam + "', N'"
+                + chuyenMon + "', N'"
+                + thontinbangcap + "', N'" 
+                + gioithieu + "', N'"
+                + cacBenhDieuTri + "', N'"
+                + quaTrinhhoc + "', N'" 
+                + quaTrinhCongTac + "', N'"
+                + nghienCuuKhoaHoc + "', N'"
+                + giangDay + "', N'"
+                + hoiVienCongTac + "', 0 ,2 ;";
+
+            db.get(result);         
+
+        }
+        catch (Exception ex)
         {
-            string cmtFrontFileName = Path.GetFileName(cmtimagefront.FileName);
-            string cmtFrontPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", cmtFrontFileName);
-            using (var stream = new FileStream(cmtFrontPath, FileMode.Create))
-            {
-                cmtimagefront.CopyTo(stream);
-            }
-        }
-
-        if (cmtimageback != null && cmtimageback.Length > 0)
-        {
-            string cmtBackFileName = Path.GetFileName(cmtimageback.FileName);
-            string cmtBackPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", cmtBackFileName);
-            using (var stream = new FileStream(cmtBackPath, FileMode.Create))
-            {
-                cmtimageback.CopyTo(stream);
-            }
-        }
-
-        int randomValue = new Random().Next(1, 10000);
-
-        // Sử dụng stored procedure để thực hiện thêm thông tin bác sĩ vào cơ sở dữ liệu
-        string result = "EXEC DangKyBacSi N'" + username + "','"
-            + password + "', '" 
-            + email + "', '" 
-            + phone + "', N'"
-            + diaChi + "', '" 
-            + birthyear.ToString("yyyy-MM-dd") + "', N'" 
-            + gender + "', N'"
-            + hinhanh.FileName + "', 0 , "
-            + randomValue +", NULL, 3 ,"
-            + cmtnumber + ", '"
-            + issuedate.ToString("yyyy-MM-dd") + "', N'"
-            + issueplace + "', N'"         
-            + cmtimagefront.FileName + "', '" 
-            + cmtimageback.FileName + "', '" 
-            + chonChuyenKhoa + "', " 
-            + namKinhNghiem + ", "
-            + noiCongTac + ", " 
-            + khoa + ", '"
-            + soChungChi + "', '" 
-            + ngayThangCap.ToString("yyyy-MM-dd") + "', N'"
-            + anhChungChi1.FileName + "', N'" 
-            + anhChungChi2.FileName + "', N'" 
-            + hocVi + "', N'" 
-            + hocHam + "', N'"
-            + chuyenMon + "', N'"
-            + thontinbangcap + "', N'" 
-            + gioithieu + "', N'"
-            + cacBenhDieuTri + "', N'"
-            + quaTrinhhoc + "', N'" 
-            + quaTrinhCongTac + "', N'"
-            + nghienCuuKhoaHoc + "', N'"
-            + giangDay + "', N'"
-            + hoiVienCongTac + "', 0 ,2 ;";
-
-        // Nếu đăng ký thành công, chuyển đến trang DKTC
-        db.get(result);
-           
-
+            _logger.LogError(ex, "Có lỗi xảy ra khi thực hiện đăng ký bác sĩ.");
+            // Nếu có lỗi, giữ lại trang DangKyBs và thông báo lỗi
+            return RedirectToAction("DangKyBs", "Bacsis");
+        }   
+        return RedirectToAction("DKTC", "Bacsis");
+  
     }
-    catch (Exception ex)
-    {
-        _logger.LogError(ex, "Có lỗi xảy ra khi thực hiện đăng ký bác sĩ.");
-        // Nếu có lỗi, giữ lại trang DangKyBs và thông báo lỗi
-        return View("DangKyBs");
-    }   
-     return RedirectToAction("DKTC","Bacsis");  // Chuyển hướng đến URL "/Bacsis/DKTC"
-}
 
 
     public IActionResult HomeBs(){

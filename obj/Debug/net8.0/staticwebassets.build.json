@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wgMJDXQORx+fOVfNEfnWSJYoJIpbEmYQmayeCld6khI=",
+  "Hash": "7RKdIceouTcnMsf3HC3ps3IgEb2rKePnhie+uCTEiys=",
   "Source": "DoAnCNPM",
   "BasePath": "_content/DoAnCNPM",
   "Mode": "Default",
@@ -207,6 +207,25 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/bg_dn.jpg",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "Hinh/bg_dn.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Hinh/bg_dn.jpg"
+    },
+    {
       "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/BMW 4.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
@@ -338,6 +357,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Hinh/z5646905496353_33d4a5e90d7627bedd9b23d52445d177.jpg"
+    },
+    {
+      "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/Hinh/z5900732958900_8eae448dbe4952662409cd5e783581e6.jpg",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/luongdat/DAPM-BSVOV/wwwroot/",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "Hinh/z5900732958900_8eae448dbe4952662409cd5e783581e6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Hinh/z5900732958900_8eae448dbe4952662409cd5e783581e6.jpg"
     },
     {
       "Identity": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/angle-left.png",

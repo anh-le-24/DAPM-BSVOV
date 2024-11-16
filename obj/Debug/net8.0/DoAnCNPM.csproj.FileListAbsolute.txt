@@ -134,6 +134,7 @@ C:/Users/ACER/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.csproj.Up2Date
 C:/Users/ACER/DAPM-BSVOV/obj/Debug/net8.0/refint/DoAnCNPM.dll
 C:/Users/ACER/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.genruntimeconfig.cache
 C:/Users/ACER/DAPM-BSVOV/obj/Debug/net8.0/ref/DoAnCNPM.dll
+>>>>>>> c26dcbd25b2f2351dcc1a0877a7d0b23ee43bc8e
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/appsettings.Development.json
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/appsettings.json
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/DoAnCNPM.staticwebassets.runtime.json
@@ -155,10 +156,12 @@ C:/Users/ACER/DAPM-BSVOV/obj/Debug/net8.0/ref/DoAnCNPM.dll
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+/Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/System.ClientModel.dll
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/System.Memory.Data.dll
+/Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/System.Net.WebSockets.WebSocketProtocol.dll
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/System.Runtime.Caching.dll
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
 /Users/luongdat/DAPM-BSVOV/bin/Debug/net8.0/System.Security.Permissions.dll

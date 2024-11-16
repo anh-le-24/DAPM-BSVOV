@@ -1,0 +1,343 @@
+.cover_list_news {
+    height: 400px;
+    text-align: center;
+    max-height: 440px;
+    position: relative;
+    overflow: hidden;
+}
+.name_cate_cover {
+    transform: translate(-50%,-50%);
+    max-width: var(--max-body);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    line-height: 60px;
+    }
+
+.animcc{
+    opacity: 0;
+    transform: translate(-40%,-40%);
+    animation: moveup 0.9s linear forwards;
+  }
+  @keyframes moveup{
+    100%{
+      opacity: 1;
+      transform: translate(-50%,-50%);
+    }
+  }
+.bread-flow{
+    padding: 5px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+.breadcrumb .breadcrumb-item a{
+    font-weight: bold !important;
+}
+.breadcrumb{
+  padding: 0;
+  margin: 0;
+}
+
+
+.title-content_arti h2{
+    font-size: 35px;
+    line-height: 1.2;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #a12e35;
+  }
+
+  .title-content_arti h2::after {
+    content: "";
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    width: 200px;
+    height: 4px;
+    background: #a12e35;
+    }
+.content-article{
+    margin: 10px 20px;
+}
+
+
+/* ------ FILLTER DOCTOR ----- */
+.d-img{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-self: center;
+}
+
+.doctor-img {
+  max-height: 130px;
+  object-fit: cover;
+  margin: auto;
+}
+.doctor-card {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 200px;
+  background-color: white;
+}
+.content-doctor{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: nowrap;
+  max-height: max-content;
+  width: 70%;
+}
+.content-doctor span{
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.doctor-card h5{
+  font-weight: bold;
+}
+.btn-search{
+  width: 100%;
+  background: #51be9d;
+  padding:  5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.filter-section {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.search_doc{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 60px;
+}
+.btn-subex{
+  background: #0076c0;
+  background-size: auto 15px;
+  font-size: 13px;
+  width: 130px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn-subex:hover{
+  background-color: #51be9d;
+}
+
+/* ------- DETAIL DOCTOR -------- */
+.div-doc{
+  background-color: white;
+}
+.title-doc{
+  display: flex;
+}
+.avar-doc{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+.doctor-image {
+  max-width: 200px;
+  object-fit: cover;
+  height: auto;
+  margin: 10px;
+}
+.avar-doc h2{
+  font-size: 16px;
+  line-height: 28px;
+  color: #0067ab !important;
+  font-weight: 700;
+  padding: 0;
+}
+.fm-text{
+  font-size: 22px;
+  line-height: 28px;
+  color: #0067ab !important;
+  font-weight: 700;
+  margin: 0;
+}
+.custom-btn {
+  background: #00b5a5;
+  border-color: #00b5a5;
+  border-radius: 40px;
+  display: block;
+  padding: 7px 20px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin: 25px 20px;
+  margin-bottom: 0;
+}
+.custom-btn:hover {
+  outline: 0;
+  color: #076fbf;
+  text-decoration: none;
+}
+.line-ver{
+  height: 1px;
+background: #ddd;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+.fm-text-drop{
+  background-color: #0076c0;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  position: relative;
+  margin-top: 7px;
+}
+.fm-text-drop::before{
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  content: "";
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* ------------ Examine History ------- */
+
+.table-lsk{
+  min-height: 300px;
+}
+.centerls{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ------- Account Bank --------- */
+.sodu{
+  background-color: #2285e2;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.sodu h3{  
+  font-weight: bold;
+  padding: 20px;
+  font-size: 30px;
+  background-color: #2285e2;
+  color: white;
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-option {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.payment-option.selected {
+  border-color: #007bff;
+}
+.payment-logo {
+  max-height: 30px;
+  margin-right: 10px;
+}
+.account{
+  border: none;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  padding: 20px;
+  width: 80%;
+}
+
+
+.title-content_accou h2{
+  font-size: 35px;
+  line-height: 1.2;
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: start;
+  color: #a12e35;
+}
+
+.title-content_accou h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 5px;
+  bottom: 0;
+  width: 200px;
+  height: 4px;
+  background: #a12e35;
+  }
+
+  /* ----------- BOOK Examine ---------- */
+  .book-form{
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    
+  }
+  
+  
+  .form-label.required::after {
+    content: " *";
+    color: red;
+}
+
+.fee label{
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(217, 7, 7);
+}
+.fee span{
+  font-weight: bold;
+  font-size: 30px;
+}
+.btn-send-book{
+  background: #51be9d;
+  padding: 15px 60px;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+}

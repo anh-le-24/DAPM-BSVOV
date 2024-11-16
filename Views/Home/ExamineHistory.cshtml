@@ -1,0 +1,63 @@
+
+@{
+    ViewData["Title"] = "Lịch sử khám";
+}
+
+<link rel="stylesheet" href="~/css/Article.css" asp-append-version="true">
+
+
+<div class="container centerls">
+    <div class="bread-flow" style="margin-top: 10px;">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Lịch sử khám</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="title-content_arti">
+        <h2>
+            LỊCH SỬ KHÁM
+        </h2>
+    </div>
+    <div class="table-lsk">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Tên bác sĩ</th>
+                    <th scope="col">Trạng thái</th>
+                    <th scope="col">Thanh toán</th>
+                    <th scope="col">Video</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Lương Đạt</td>
+                    <td>Đã hoàn thành </td>
+                    <td>200.000 đ</td>
+                    <td>https://www.youtube.com/watch?v=u76BOoh4Ga8</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Lương Đạt</td>
+                    <td>Đã hoàn thành </td>
+                    <td>200.000 đ</td>
+                    <td>https://www.youtube.com/watch?v=u76BOoh4Ga8</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lương Đạt</td>
+                    <td>Đã hoàn thành </td>
+                    <td>200.000 đ</td>
+                    <td>https://www.youtube.com/watch?v=u76BOoh4Ga8</td>
+                </tr>
+
+            </tbody>
+        </table>        
+    </div>
+</div>

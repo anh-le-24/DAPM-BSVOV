@@ -5,8 +5,28 @@
       "PackagePath": "staticwebassets\\DoAnCNPM.bundle.scp.css"
     },
     {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\3.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\3.jpg"
+    },
+    {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\Screenshot 2024-09-29 194036.png",
+      "PackagePath": "staticwebassets\\Uploads\\Screenshot 2024-09-29 194036.png"
+    },
+    {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\css\\Article.css",
+      "PackagePath": "staticwebassets\\css\\Article.css"
+    },
+    {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\css\\Personal.css",
+      "PackagePath": "staticwebassets\\css\\Personal.css"
+    },
+    {
       "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
       "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\images\\angle-left.png",
@@ -21,8 +41,20 @@
       "PackagePath": "staticwebassets\\images\\bg-next-home.png"
     },
     {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\images\\bg_article.jpg",
+      "PackagePath": "staticwebassets\\images\\bg_article.jpg"
+    },
+    {
       "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\images\\bg_blue_home.jpg",
       "PackagePath": "staticwebassets\\images\\bg_blue_home.jpg"
+    },
+    {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\images\\bg_login.jpg",
+      "PackagePath": "staticwebassets\\images\\bg_login.jpg"
+    },
+    {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\images\\bia_person.jpg",
+      "PackagePath": "staticwebassets\\images\\bia_person.jpg"
     },
     {
       "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\images\\bs1.jpeg",
@@ -89,12 +121,24 @@
       "PackagePath": "staticwebassets\\images\\ic_search.png"
     },
     {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\images\\info-doc.JPG",
+      "PackagePath": "staticwebassets\\images\\info-doc.JPG"
+    },
+    {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\images\\logo-vnpay.png",
+      "PackagePath": "staticwebassets\\images\\logo-vnpay.png"
+    },
+    {
       "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\images\\logo_footer.png",
       "PackagePath": "staticwebassets\\images\\logo_footer.png"
     },
     {
       "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\images\\logo_vov.png",
       "PackagePath": "staticwebassets\\images\\logo_vov.png"
+    },
+    {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\images\\logo_vov1.png",
+      "PackagePath": "staticwebassets\\images\\logo_vov1.png"
     },
     {
       "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\images\\silde1.png",
@@ -131,6 +175,10 @@
     {
       "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\images\\whyus_protect.png",
       "PackagePath": "staticwebassets\\images\\whyus_protect.png"
+    },
+    {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
       "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\js\\site.js",

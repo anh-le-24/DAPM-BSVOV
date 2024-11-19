@@ -125,19 +125,30 @@
             background-color: #FF6969;
         }
 
-        button.edit{
-            background-color: #FF6500;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 4px;
-            font-size: 14px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            
+        .search-container {
+            margin-bottom: 20px;
+            text-align: center;
         }
-
-        button.edit:hover {
-            background-color: #FD8B51;
+        .search-container input[type="text"] {
+            padding: 10px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        .search-container button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
         }
 
         /* Image preview */
@@ -153,6 +164,13 @@
 </head>
 <body>
     <div class="duoi">
+        <div class="search-container">
+            <form action="~/Admin/SreachBacSi" >
+                <input type="text" name="tenbs" placeholder="Tìm kiếm bác sĩ..."  />
+                <button type="submit">Tìm kiếm</button>
+            </form>
+        </div>
+
         <h2>Danh Sách Bác Sĩ</h2>
         <table>
             <thead>
@@ -182,17 +200,11 @@
                     <td>@bs[21]</td>
                     <td>Đã duyệt</td>
                     <td>
-                        <form action="~/Admin/" method="post" style="display:inline;">
-                            <input type="hidden" name="id" value="@bs[0]" />
+                        <form action="~/Admin/XoaBacSi" method="post" style="display:inline;">
+                            <input type="hidden" name="mabs" value="@bs[0]" />
                             <button type="submit" class="delete">Xóa</button>
                         </form>
-                        <br/> <br/>
-                        <form action="~/Admin/" style="display:inline;">
-                            <input type="hidden" name="mabn" value="@bs[0]" />
-                            <button type="submit" class="edit">Sửa</button>
-                        </form>
                     </td>
-                    
                 </tr>
                 }
             </tbody>

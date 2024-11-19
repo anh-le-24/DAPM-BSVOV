@@ -140,6 +140,32 @@
             background-color: #FD8B51;
         }
 
+        .search-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .search-container input[type="text"] {
+            padding: 10px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        .search-container button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+
         /* Image preview */
         .image-preview {
             width: 50px;
@@ -153,6 +179,13 @@
 </head>
 <body>
     <div class="duoi">
+        <div class="search-container">
+            <form action="~/Admin/SreachBenhNhan" >
+                <input type="text" name="tenbn" placeholder="Tìm kiếm bệnh nhân..."  />
+                <button type="submit">Tìm kiếm</button>
+            </form>
+        </div>
+
         <h2>Danh Sách Bệnh Nhân</h2>
         <table>
             <thead>
@@ -181,7 +214,7 @@
                             <button type="submit" class="delete">Xóa</button>
                         </form>
                         <br/> <br/>
-                        <form action="~/Admin/" style="display:inline;">
+                        <form action="~/Admin/TimBenhNhan" method="post" style="display:inline;">
                             <input type="hidden" name="mabn" value="@bn[0]" />
                             <button type="submit" class="edit">Sửa</button>
                         </form>

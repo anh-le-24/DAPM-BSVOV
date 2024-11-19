@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NGAN HA\\DAPM-BSVOV\\DoAnCNPM.csproj": {}
+    "C:\\DAIHOC\\DAPM-BSVOV\\DoAnCNPM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NGAN HA\\DAPM-BSVOV\\DoAnCNPM.csproj": {
+    "C:\\DAIHOC\\DAPM-BSVOV\\DoAnCNPM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NGAN HA\\DAPM-BSVOV\\DoAnCNPM.csproj",
+        "projectUniqueName": "C:\\DAIHOC\\DAPM-BSVOV\\DoAnCNPM.csproj",
         "projectName": "DoAnCNPM",
-        "projectPath": "C:\\Users\\NGAN HA\\DAPM-BSVOV\\DoAnCNPM.csproj",
+        "projectPath": "C:\\DAIHOC\\DAPM-BSVOV\\DoAnCNPM.csproj",
         "packagesPath": "C:\\Users\\NGAN HA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NGAN HA\\DAPM-BSVOV\\obj\\",
+        "outputPath": "C:\\DAIHOC\\DAPM-BSVOV\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NGAN HA\\AppData\\Roaming\\NuGet\\NuGet.Config",

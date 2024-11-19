@@ -46,10 +46,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRE1LaG9hQmVuaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DAIHOC/DAPM-BSVOV/Views/Admin/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRXJyb3IuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/DAIHOC/DAPM-BSVOV/Views/Admin/HoSoBacSi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSG9Tb0JhY1NpLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,8 +58,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/DAIHOC/DAPM-BSVOV/Views/Admin/SreachBacSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3JlYWNoQmFjU2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DAIHOC/DAPM-BSVOV/Views/Admin/SreachBenhNhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3JlYWNoQmVuaE5oYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/DAIHOC/DAPM-BSVOV/Views/Admin/TimBaiViet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGltQmFpVmlldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DAIHOC/DAPM-BSVOV/Views/Admin/TimBenhNhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGltQmVuaE5oYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DAIHOC/DAPM-BSVOV/Views/Admin/TimBenhVien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGltQmVuaFZpZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DAIHOC/DAPM-BSVOV/Views/Admin/TimChuyenNganh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGltQ2h1eWVuTmdhbmguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DAIHOC/DAPM-BSVOV/Views/Admin/TimKhoaBenh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGltS2hvYUJlbmguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/DAIHOC/DAPM-BSVOV/Views/Home/AccountBank.cshtml]
@@ -120,6 +140,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/DAIHOC/DAPM-BSVOV/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DAIHOC/DAPM-BSVOV/Views/Shared/_ThongBao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UaG9uZ0Jhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/DAIHOC/DAPM-BSVOV/Views/Shared/_ValidationScriptsPartial.cshtml]

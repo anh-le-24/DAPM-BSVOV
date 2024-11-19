@@ -5,12 +5,28 @@
       "PackagePath": "staticwebassets\\DoAnCNPM.bundle.scp.css"
     },
     {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\1.png",
+      "PackagePath": "staticwebassets\\Uploads\\1.png"
+    },
+    {
       "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\3.jpg",
       "PackagePath": "staticwebassets\\Uploads\\3.jpg"
     },
     {
       "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\Screenshot 2024-09-29 194036.png",
       "PackagePath": "staticwebassets\\Uploads\\Screenshot 2024-09-29 194036.png"
+    },
+    {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\Screenshot 2024-09-29 194432.png",
+      "PackagePath": "staticwebassets\\Uploads\\Screenshot 2024-09-29 194432.png"
+    },
+    {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\quany.png",
+      "PackagePath": "staticwebassets\\Uploads\\quany.png"
+    },
+    {
+      "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\tudu.png",
+      "PackagePath": "staticwebassets\\Uploads\\tudu.png"
     },
     {
       "Id": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\css\\Article.css",

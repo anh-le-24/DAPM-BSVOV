@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PS57OuZuIUp234zlD/H9DHBuMHqi1IbRWj+OXcopHwM=",
+  "Hash": "6UDaeKf5aXjFtw6HFmzdUG/GNUCixDwiWbaR6cqQMeE=",
   "Source": "DoAnCNPM",
   "BasePath": "_content/DoAnCNPM",
   "Mode": "Default",
@@ -1955,6 +1955,25 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
+      "Identity": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\1.png",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "Uploads/1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\1.png"
+    },
+    {
       "Identity": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\3.jpg",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
@@ -1974,6 +1993,25 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\3.jpg"
     },
     {
+      "Identity": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\quany.png",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "Uploads/quany.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\quany.png"
+    },
+    {
       "Identity": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\Screenshot 2024-09-29 194036.png",
       "SourceId": "DoAnCNPM",
       "SourceType": "Discovered",
@@ -1991,6 +2029,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\Screenshot 2024-09-29 194036.png"
+    },
+    {
+      "Identity": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\Screenshot 2024-09-29 194432.png",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "Uploads/Screenshot 2024-09-29 194432.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Screenshot 2024-09-29 194432.png"
+    },
+    {
+      "Identity": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\Uploads\\tudu.png",
+      "SourceId": "DoAnCNPM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DAIHOC\\DAPM-BSVOV\\wwwroot\\",
+      "BasePath": "_content/DoAnCNPM",
+      "RelativePath": "Uploads/tudu.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\tudu.png"
     }
   ]
 }

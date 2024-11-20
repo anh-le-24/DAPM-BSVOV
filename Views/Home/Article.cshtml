@@ -23,6 +23,20 @@
 
     <div class="content title-content_arti">
         <h2>@ViewBag.ListBV[0][1]</h2>
+        @{
+            var url_raw = ViewBag.ListBV[0][4];
+            var url_embed = url_raw.Contains("watch?v=") ? url_raw.Replace("watch?v=", "embed/") : url_raw;
+        }
+        <div class="center">
+            <iframe width="400px" height="210px"
+                    src="@url_embed"
+                    title="YouTube video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+       
 
         <div class="content-article">
             <p>
@@ -30,5 +44,7 @@
             </p>
         </div>
     </div>
-</div>
     
+</div>
+
+

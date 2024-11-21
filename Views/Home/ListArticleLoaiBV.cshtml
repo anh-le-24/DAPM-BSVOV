@@ -11,19 +11,17 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
-                <li class="breadcrumb-item active" aria-current="page">@ViewBag.ListLBV[0][9]</li>
+                <li class="breadcrumb-item active" aria-current="page">Bài viết</li>
             </ol>
         </nav>
     </div>
-
-    @foreach(var a in ViewBag.ListLBV){
+    @if(ViewBag.ListLBV != null){
+        @foreach(var a in ViewBag.ListLBV){
         <div class="title-arti">
             <a href="~/Home/ArticleLoaiBV?MaBV=@a[0]">
                 @a[1]
             </a>
         </div>
+        }
     }
-    
-    
-
 </div>

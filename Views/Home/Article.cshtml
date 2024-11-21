@@ -1,6 +1,7 @@
 @{
     ViewData["Title"] = "Thông tin";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    
 }
 <link rel="stylesheet" href="~/css/Article.css" asp-append-version="true">
 
@@ -36,15 +37,15 @@
                     allowfullscreen>
             </iframe>
         </div>
-       
-
-        <div class="content-article">
-            <p>
-                @ViewBag.ListBV[0][2]
-            </p>
+        <div class="ck ck-editor__main" role="presentation">
+            <div class="article-content">
+                @Html.Raw(ViewBag.ListBV[0][2])
+            </div>
         </div>
+           
     </div>
-    
 </div>
+
+
 
 

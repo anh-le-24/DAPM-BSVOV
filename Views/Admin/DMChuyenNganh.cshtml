@@ -108,6 +108,21 @@
             background-color: #c82333;
         }
 
+        button.edit{
+            background-color: #FF6500;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            
+        }
+
+        button.edit:hover {
+            background-color: #FD8B51;
+        }
+
         /* Image preview */
         .image-preview {
             width: 50px;
@@ -154,15 +169,40 @@
                     <td>@cn[0]</td>
                     <td>@cn[1]</td>
                     <td>@cn[2]</td>
-                    <td><button type="button" class="delete">Xóa</button></td>
+                    <td>
+                        <form action="~/Admin/XoaChuyenNganh" method="post" style="display:inline;">
+                            <input type="hidden" name="macn" value="@cn[0]" />
+                            <button type="submit" class="delete">Xóa</button>
+                        </form>
+                        <br/> <br/>
+                        <form action="~/Admin/TimChuyenNganh?macn=@cn[0]" style="display:inline;">
+                            <input type="hidden" name="macn" value="@cn[0]" />
+                            <button type="submit" class="edit">Sửa</button>
+                        </form>
+                    </td>
                 </tr>
                 }
             </tbody>
         </table>
     </div>
 
-    <script src="js/script.js"></script>
+    <!-- Include partial view for notification -->
+    <partial name="_ThongBao" />
+
     <script>
+        // Kiểm tra và hiển thị thông báo nếu có từ TempData
+        @if (TempData["Message"] != null)
+        {
+            <text>
+            showThongBao("@Html.Raw(TempData["Message"])", true);
+            </text>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <text>
+            showThongBao("@Html.Raw(TempData["Error"])", false);
+            </text>
+        }
         document.getElementById('hinhanh').addEventListener('change', function (event) {
             const file = event.target.files[0];
             if (file) {
@@ -170,11 +210,12 @@
                 reader.onload = function (e) {
                     const imagePreview = document.getElementById('imagePreview');
                     imagePreview.src = e.target.result;
-                    imagePreview.style.display = 'block'; // Hiện hình ảnh
+                    imagePreview.style.display = 'block'; // Hiển thị ảnh xem trước
                 }
                 reader.readAsDataURL(file);
             }
         });
+
     </script>
 </body>
 </html>

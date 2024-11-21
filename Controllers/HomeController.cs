@@ -33,12 +33,20 @@ public class HomeController : Controller
         DataModel db = new DataModel();
         ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
 
+        if (!string.IsNullOrEmpty(taikhoan))
+        {
+            var MaND = taikhoan;
+            ViewBag.ListTB = db.get($"EXEC sp_GetThongBaoByMaND @MaND = {MaND}");
+        }
         return View();
     }
 
     public IActionResult Index()
     {
         LayoutShare();
+        DataModel db =new DataModel();
+        ViewBag.ListBV = db.get("EXEC getAllBenhVien");
+        ViewBag.ListBS5 = db.get("EXEC GetTop7Doctors");
         
         return View();
     }
@@ -337,6 +345,7 @@ public class HomeController : Controller
 
         return RedirectToAction("AccountBank", "Home");
     }
+    
     
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

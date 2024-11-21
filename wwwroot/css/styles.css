@@ -45,8 +45,9 @@ body {
 }
 
 .menu li a {
+    font-size: 16px; /* Đặt kích cỡ chữ cố định */
+    font-weight: 700; /* Luôn in đậm */
     color: #333;
-    font-weight: 500;
     text-decoration: none;
     padding: 10px 12px;
     display: flex;
@@ -61,6 +62,8 @@ body {
 
 .menu li a:hover,
 .menu li a.active {
+    font-size: 16px; /* Giữ nguyên kích cỡ chữ */
+    font-weight: 700; /* In đậm */
     background-color: #ff6b6b;
     color: white;
 }
@@ -78,10 +81,17 @@ body {
 }
 
 .submenu li a {
+    font-size: 14px; /* Đặt kích cỡ chữ cố định */
     padding: 6px 10px;
-    font-size: 14px;
     display: flex;
     align-items: center;
+    font-weight: 700; /* Luôn in đậm */
+}
+
+.submenu li a:hover,
+.submenu li a.active {
+    font-size: 14px; /* Giữ nguyên kích cỡ chữ */
+    font-weight: 700; /* In đậm */
 }
 
 .submenu li a i {

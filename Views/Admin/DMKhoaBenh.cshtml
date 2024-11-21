@@ -113,6 +113,21 @@
             background-color: #c82333;
         }
 
+        button.edit{
+            background-color: #FF6500;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            
+        }
+
+        button.edit:hover {
+            background-color: #FD8B51;
+        }
+
         /* Image preview */
         .image-preview {
             width: 50px;
@@ -163,10 +178,35 @@
                             <input type="hidden" name="id" value="@kb[0]" />
                             <button type="submit" class="delete">Xóa</button>
                         </form>
+                        <br/> <br/>
+                        <form action="~/Admin/TimKhoaBenh?makb=@kb[0]" style="display:inline;">
+                            <input type="hidden" name="makb" value="@kb[0]" />
+                            <button type="submit" class="edit">Sửa</button>
+                        </form>
                     </td>
                 </tr>
                 }
             </tbody>
         </table>
+    </div>
+
+    <!-- Include partial view for notification -->
+    <partial name="_ThongBao" />
+
+    <script>
+        // Kiểm tra và hiển thị thông báo nếu có từ TempData
+        @if (TempData["Message"] != null)
+        {
+            <text>
+            showThongBao("@Html.Raw(TempData["Message"])", true);
+            </text>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <text>
+            showThongBao("@Html.Raw(TempData["Error"])", false);
+            </text>
+        }
+    </script>
 </body>
 </html>

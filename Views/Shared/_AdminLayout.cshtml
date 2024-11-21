@@ -68,26 +68,30 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const menuItems = document.querySelectorAll('.menu > li > a.menu-item');
 
             menuItems.forEach(item => {
-                item.addEventListener('click', function(e) {
+                item.addEventListener('click', function (e) {
                     const submenu = this.nextElementSibling;
                     const arrowIcon = this.querySelector('.dropdown-arrow');
 
+                    // Hiển thị hoặc ẩn submenu (nếu có)
                     if (submenu) {
-                        e.preventDefault(); // Prevent default action if submenu exists
-                        
-                        // Toggle submenu visibility
+                        e.preventDefault();
                         submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-                        
-                        // Toggle arrow rotation
                         arrowIcon.classList.toggle('rotate');
                     }
+
+                    // Xóa lớp "active" khỏi tất cả các mục khác
+                    menuItems.forEach(menu => menu.classList.remove('active'));
+
+                    // Thêm lớp "active" vào mục hiện tại
+                    this.classList.add('active');
                 });
             });
         });
+
     </script>
     @RenderSection("Scripts", required: false)
 </body>

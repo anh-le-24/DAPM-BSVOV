@@ -47,7 +47,7 @@ public class HomeController : Controller
         DataModel db =new DataModel();
         ViewBag.ListBV = db.get("EXEC getAllBenhVien");
         ViewBag.ListBS5 = db.get("EXEC GetTop7Doctors");
-        
+                
         return View();
     }
     public IActionResult Article(string MaBV)

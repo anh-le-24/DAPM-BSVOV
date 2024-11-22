@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets/Uploads/0f94d40525d6f952e2d73f53882d7bf2.jpg"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/1.png",
+      "PackagePath": "staticwebassets/Uploads/1.png"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/2fdaf94208f54f4113d745b9a660696e.jpg",
       "PackagePath": "staticwebassets/Uploads/2fdaf94208f54f4113d745b9a660696e.jpg"
     },
@@ -65,12 +69,36 @@
       "PackagePath": "staticwebassets/Uploads/Screenshot 2024-09-29 194036.png"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/Screenshot 2024-09-29 194432.png",
+      "PackagePath": "staticwebassets/Uploads/Screenshot 2024-09-29 194432.png"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/ic-fb.png",
+      "PackagePath": "staticwebassets/Uploads/ic-fb.png"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/ic-ytb 2.png",
+      "PackagePath": "staticwebassets/Uploads/ic-ytb 2.png"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/info-doc.JPG",
+      "PackagePath": "staticwebassets/Uploads/info-doc.JPG"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/o.jpg",
       "PackagePath": "staticwebassets/Uploads/o.jpg"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/quany.png",
+      "PackagePath": "staticwebassets/Uploads/quany.png"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/raccoon_o.jpeg",
       "PackagePath": "staticwebassets/Uploads/raccoon_o.jpeg"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/tudu.png",
+      "PackagePath": "staticwebassets/Uploads/tudu.png"
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/Article.css",
@@ -137,34 +165,6 @@
       "PackagePath": "staticwebassets/images/bia_person.jpg"
     },
     {
-      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs1.jpeg",
-      "PackagePath": "staticwebassets/images/bs1.jpeg"
-    },
-    {
-      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs2.jpeg",
-      "PackagePath": "staticwebassets/images/bs2.jpeg"
-    },
-    {
-      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs3.jpeg",
-      "PackagePath": "staticwebassets/images/bs3.jpeg"
-    },
-    {
-      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs4.jpg",
-      "PackagePath": "staticwebassets/images/bs4.jpg"
-    },
-    {
-      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs5.jpg",
-      "PackagePath": "staticwebassets/images/bs5.jpg"
-    },
-    {
-      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs6.jpg",
-      "PackagePath": "staticwebassets/images/bs6.jpg"
-    },
-    {
-      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/bs7.png",
-      "PackagePath": "staticwebassets/images/bs7.png"
-    },
-    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/calader.png",
       "PackagePath": "staticwebassets/images/calader.png"
     },
@@ -193,6 +193,14 @@
       "PackagePath": "staticwebassets/images/hospital1.jpeg"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/ic-fb.png",
+      "PackagePath": "staticwebassets/images/ic-fb.png"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/ic-ytb.png",
+      "PackagePath": "staticwebassets/images/ic-ytb.png"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/ic_avatar.png",
       "PackagePath": "staticwebassets/images/ic_avatar.png"
     },
@@ -203,10 +211,6 @@
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/ic_search.png",
       "PackagePath": "staticwebassets/images/ic_search.png"
-    },
-    {
-      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/info-doc.JPG",
-      "PackagePath": "staticwebassets/images/info-doc.JPG"
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/images/logo-vnpay.png",

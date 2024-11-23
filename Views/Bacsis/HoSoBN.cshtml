@@ -17,6 +17,7 @@
         <table>
             <thead>
                 <tr>
+                    <th>Mã hồ sơ</th>
                     <th>Tên Bệnh Nhân</th>
                     <th>Số Điện Thoại</th>
                     <th>Địa Chỉ</th>
@@ -30,6 +31,7 @@
             @foreach (var hs in ViewBag.list){
                 <tbody id="patientTableBody">
                     <tr>
+                        <td>@hs[0]</td>
                         <td>@hs[2]</td>
                         <td>@hs[3]</td>
                         <td>@hs[4]</td>

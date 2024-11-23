@@ -86,8 +86,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGltS2hvYUJlbmguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ACER/DAPM-BSVOV/Views/Bacsis/DaBiHuy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjc2lzXERhQmlIdXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/DAPM-BSVOV/Views/Bacsis/DaHoanThanh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjc2lzXERhSG9hblRoYW5oLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ACER/DAPM-BSVOV/Views/Bacsis/DangkyBs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjc2lzXERhbmdreUJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/DAPM-BSVOV/Views/Bacsis/DaXacNhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjc2lzXERhWGFjTmhhbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ACER/DAPM-BSVOV/Views/Bacsis/DKTC.cshtml]
@@ -104,6 +116,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ACER/DAPM-BSVOV/Views/Bacsis/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjc2lzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/DAPM-BSVOV/Views/Bacsis/LichHenKham.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFjc2lzXExpY2hIZW5LaGFtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ACER/DAPM-BSVOV/Views/Home/AccountBank.cshtml]

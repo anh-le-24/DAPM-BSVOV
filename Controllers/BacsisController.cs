@@ -27,6 +27,7 @@ public class BacsisController : Controller
         _session = httpContextAccessor.HttpContext.Session;
     }
     
+    DataModel db = new DataModel();
     public IActionResult Index()
     {
         return View();
@@ -50,7 +51,11 @@ public class BacsisController : Controller
     }
 
 
-    public IActionResult DangKyBs(){
+    public IActionResult DangKyBs()
+    {
+        ViewBag.kb = db.get("select * from KHOABENH");
+        ViewBag.bv = db.get("select * from BENHVIEN");
+        ViewBag.cn = db.get("select * from CHUYENNGANH");
         return View();
     }
 
@@ -162,7 +167,8 @@ public class BacsisController : Controller
                 + giangDay + "', N'"
                 + hoiVienCongTac + "', 0 ,2 ;";
 
-            db.get(result);         
+            db.get(result);      
+            
 
         }
         catch (Exception ex)
@@ -183,6 +189,8 @@ public class BacsisController : Controller
     public IActionResult DKTC(){
         return View(); 
     }
+
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
@@ -215,4 +223,43 @@ public class BacsisController : Controller
         return RedirectToAction("HoSoBN", "Bacsis");
     }
 
+    public ActionResult LichHenKham()
+    {
+        ViewBag.list = db.get("EXEC Xemtatcalichhenchuaxacnhan");
+        return View();
+    }
+
+     public ActionResult DaXacNhan()
+    {
+        ViewBag.list = db.get("EXEC Xemtatcalichhendaxacnhan");
+        return View();
+    }
+     public ActionResult DaHoanThanh()
+    {
+        ViewBag.list = db.get("EXEC Xemtatcalichhendahoanthanh");
+        return View();
+    }
+
+     public ActionResult DaBiHuy()
+    {
+        ViewBag.list = db.get("EXEC Xemtatcalichhendahuy");
+        return View();
+    }
+
+    [HttpPost]
+    public ActionResult Updatecuochen(string id, string matt,string mand,string tieude,string noidung)
+    {
+         // Lấy thời gian hiện tại
+        DateTime currentDateTime = DateTime.Now;
+        db.get("Exec UpdateMaTTCHAndAddThongBao "+ id +"," + matt + ","+ mand +",N"+ tieude +","+ noidung +",'"+ currentDateTime.ToString("yyyy-MM-dd HH:mm:ss") +"',0");
+        return RedirectToAction("LichHenKham","Bacsis");
+    }
+
+     [HttpPost]
+    public ActionResult Updatehuy(string id, string matt)
+    {
+         // Lấy thời gian hiện tại
+        db.get("Exec UpdateMaTTCH "+ id +"," + matt);
+        return RedirectToAction("LichHenKham","Bacsis");
+    }
 }

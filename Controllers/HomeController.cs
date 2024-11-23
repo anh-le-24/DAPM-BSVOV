@@ -208,26 +208,29 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult UpdateUserInfo(string MaND, string TenND, string Email, 
                                         string NamSinh, string GioiTinh, 
-                                        string DiaChi, IFormFile Hinhcanhan)
+                                        string DiaChi, IFormFile Hinhcanhan) 
     {
         DataModel db = new DataModel();
         int manD = int.Parse(MaND);
         DateTime parsedDate = DateTime.Parse(NamSinh); 
         string formattedDate = parsedDate.ToString("yyyy-MM-dd");
-    
-        // lấy tên tệp
-        string nameFile = Path.GetFileName(Hinhcanhan.FileName);
 
-        // Đường dẫn để lưu tệp
-        string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Uploads");
-        Directory.CreateDirectory(uploadsFolder); // Tạo thư mục nếu chưa tồn tại
-        string filePath = Path.Combine(uploadsFolder, nameFile);
-        // Lưu tệp
-        using (var stream = new FileStream(filePath, FileMode.Create))
-        {
-            Hinhcanhan.CopyTo(stream);
+        string nameFile = "NULL";
+        if(Hinhcanhan != null){
+            // lấy tên tệp
+            nameFile = Path.GetFileName(Hinhcanhan.FileName);
+
+            // Đường dẫn để lưu tệp
+            string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Uploads");
+            Directory.CreateDirectory(uploadsFolder); // Tạo thư mục nếu chưa tồn tại
+            string filePath = Path.Combine(uploadsFolder, nameFile);
+            // Lưu tệp
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                Hinhcanhan.CopyTo(stream);
+            }
         }
-        
+ 
         db.get($"EXEC UpdateUserInfo {manD}, N'{TenND}', '{Email}', '{formattedDate}', N'{GioiTinh}', N'{DiaChi}', '{nameFile}' ");
 
         return RedirectToAction("PersonalPage", "Home");

@@ -1,0 +1,73 @@
+@{
+    ViewData["Title"] = "ThongBao";
+    Layout = "~/Views/Shared/Bs_Layout.cshtml";
+}
+
+<div class="container">
+    <h2>Danh sách thông báo</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Tiêu đề</th>
+                <th>Thời gian</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tb in ViewBag.ThongBaos)
+            {
+                <tr>
+                    <td>@tb[1]</td>
+                    <td>@tb[2]</td>
+                    <td>@tb[3].ToString("yyyy-MM-dd HH:mm:ss")</td>
+                    <td>
+                        <button class="btn btn-primary btn-detail" data-id="@tb[0]" data-title="@tb[1]" data-content="@tb[2]">
+                            Xem chi tiết
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal form -->
+<div class="modal" id="detailModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Chi tiết thông báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Tiêu đề:</strong> <span id="modalTitle"></span></p>
+                <p><strong>Nội dung:</strong></p>
+                <p id="modalContent"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // Sử dụng jQuery để xử lý khi bấm vào nút "Xem chi tiết"
+    $(document).ready(function () {
+        $('.btn-detail').click(function () {
+            // Lấy dữ liệu từ nút
+            var id = $(this).data('id');
+            var title = $(this).data('title');
+            var content = $(this).data('content');
+
+            // Hiển thị thông tin trong modal
+            $('#modalTitle').text(title);
+            $('#modalContent').text(content);
+
+            // Hiển thị modal
+            $('#detailModal').modal('show');
+        });
+    });
+</script>

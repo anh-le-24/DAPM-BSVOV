@@ -34,13 +34,10 @@
                     <div class="button-container">
                         <form action="~/Bacsis/Updatecuochen" method="post">
                             <input type="hidden" name="id" value="@appointment[0]"/>
-                            <input type="hidden" name="idnd" value="@appointment[2]"/>
-                            <input type="hidden" name="tieude" value="Thông báo cuộc hẹn khám"/>
-                            <input type="hidden" name="noidung" value="cuộc gọi khám của bạn Đã hoàn thành"/>
                             <input type="hidden" name="matt" value="4"/>
                             <button type="submit">Hoàn thành</button>
                         </form>                       
-                        <form action="~/Bacsis/Updatehuy" method="post">
+                        <form action="~/Bacsis/Updatecuochen" method="post">
                             <input type="hidden" name="id" value="@appointment[0]"/>
                             <input type="hidden" name="matt" value="3"/>
                             <button class="huy">Hủy</button>

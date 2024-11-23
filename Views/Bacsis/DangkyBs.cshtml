@@ -1,6 +1,5 @@
 @{
     ViewData["Title"] = "DangkyBs";
-    Layout = null;
     <link rel="stylesheet" href="~/css/Dangky.css" asp-append-version="true" />
 }
 
@@ -84,17 +83,47 @@
 
             <label for="namKinhNghiem">Năm kinh nghiệm <span class="required">(Bắt buộc nhập)</span></label>
             <input type="number" id="namKinhNghiem" name="namKinhNghiem" required>
-
-            <label for="noiCongTac">Nơi công tác <span class="required">(Bắt buộc nhập)</span></label>
-            <input type="number" id="noiCongTac" name="noiCongTac" placeholder="Hãy chọn bệnh viện công tác" required>
-
-            <label for="khoa">Khoa <span class="required">(Bắt buộc nhập)</span></label>
-            <select id="khoa" name="khoa" required>
-                <option value="2">Bại Não</option>
+            <!--Nơi công tác-->
+            <label for="noiCongTac">Nơi công tác <span class="required">(Bắt buộc chọn)</span></label>
+            <select id="noiCongTac" name="noiCongTac" required>
+                <option value="">-- Hãy chọn bệnh viện công tác --</option>
+                @foreach (var benhVien in ViewBag.bv)
+                {
+                    <option value="@benhVien[0]">@benhVien[1]</option>
+                }
             </select>
 
-            <label for="chuyenKhoa">Chuyên khoa <span class="required">(Bắt buộc nhập)</span></label>
-            <input type="text" id="chuyenKhoa" name="chuyenKhoa" required>
+            <label for="khoa">Khoa <span class="required">(Bắt buộc chọn)</span></label>
+            <select id="khoa" name="khoa" required>
+                <option value="">-- Hãy chọn khoa --</option>
+                @if (ViewBag.kb != null)
+                {
+                    foreach (var kb in ViewBag.kb)
+                    {
+                        <option value="@kb[0]">@kb[1]</option>
+                    }
+                }
+                else
+                {
+                    <option value="">Không có khoa nào</option>
+                }
+            </select>
+
+            <label for="chuyenKhoa">Chuyên khoa <span class="required">(Bắt buộc chọn)</span></label>
+            <select id="chuyenKhoa" name="chuyenKhoa" required>
+                <option value="">-- Hãy chọn chuyên khoa --</option>
+                @if (ViewBag.cn != null)
+                {
+                    foreach (var ck in ViewBag.cn)
+                    {
+                        <option value="@ck[1]">@ck[1]</option>
+                    }
+                }
+                else
+                {
+                    <option value="">Không có chuyên khoa nào</option>
+                }
+            </select>
 
             <label for="soChungChi">Số chứng chỉ hành nghề <span class="required">(Bắt buộc nhập)</span></label>
             <input type="text" id="soChungChi" name="soChungChi" required >
@@ -121,15 +150,32 @@
                 </div>
             </div>
 
-
             <label for="hocVi">Học vị</label>
-            <input type="text" id="hocVi" name="hocVi">
+            <select id="hocVi" name="hocVi">
+                <option value="">-- Hãy chọn học vị --</option>
+                <option value="Cử nhân">Cử nhân</option>
+                <option value="Thạc sĩ">Thạc sĩ</option>
+                <option value="Tiến sĩ">Tiến sĩ</option>
+                <option value="Giáo sư">Giáo sư</option>
+                <option value="Phó giáo sư">Phó giáo sư</option>
+            </select>
 
             <label for="hocHam">Học hàm</label>
-            <input type="text" id="hocHam" name="hocHam">
+            <select id="hocHam" name="hocHam">
+                <option value="">-- Hãy chọn học hàm --</option>
+                <option value="Phó giáo sư">Phó giáo sư</option>
+                <option value="Giáo sư">Giáo sư</option>
+            </select>
 
             <label for="chuyenMon">Chuyên môn <span class="required">(Bắt buộc nhập)</span></label>
-            <input type="text" id="chuyenMon" name="chuyenMon" value="Bác sĩ" required>
+            <select id="chuyenMon" name="chuyenMon" required>
+                <option value="">-- Hãy chọn chuyên môn --</option>
+                <option value="Bác sĩ">Bác sĩ</option>
+                <option value="Y tá">Y tá</option>
+                <option value="Dược sĩ">Dược sĩ</option>
+                <option value="Điều dưỡng viên">Điều dưỡng viên</option>
+            </select>
+
 
             <label for="cacBenhDieuTri">Các bệnh điều trị <span class="required">(Bắt buộc nhập)</span></label>
             <textarea id="cacBenhDieuTri" name="cacBenhDieuTri" required></textarea>
@@ -161,11 +207,20 @@
             <label for="quanLy">Quản lý</label>
             <textarea id="quanLy" name="quanLy" required></textarea>
 
-            <button type="submit" class="submit-button">Đăng ký</button>
+            <button type="submit" class="submit-button" >Đăng ký</button>
+
+            <a href="@Url.Action("Index","Home")" class="quaylai-button">Quay lại Trang chủ</a>
         </form>
     </div>
-</body>
-<script>
+    <script>
+        //Đăng ký thành công
+         function handleSubmit() {
+        // Hiển thị thông báo trong console
+        console.log("Đăng ký thành công, chờ đơn xác nhận từ người quản lý");
+
+        // Nếu muốn ngừng việc gửi form, bạn có thể thêm dòng này
+        event.preventDefault();
+    }
     // Hàm thiết lập xem trước ảnh
 function setupImagePreview(inputId, previewId) {
     const fileInput = document.getElementById(inputId);
@@ -278,3 +333,4 @@ phoneInput.addEventListener("input", function () {
 
 </script>
 
+</body>

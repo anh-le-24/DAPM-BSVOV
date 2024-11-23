@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets/Uploads/Screenshot 2024-09-29 194432.png"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/bg_dn.jpg",
+      "PackagePath": "staticwebassets/Uploads/bg_dn.jpg"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/ic-fb.png",
       "PackagePath": "staticwebassets/Uploads/ic-fb.png"
     },
@@ -85,6 +89,10 @@
       "PackagePath": "staticwebassets/Uploads/info-doc.JPG"
     },
     {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/o-1.jpg",
+      "PackagePath": "staticwebassets/Uploads/o-1.jpg"
+    },
+    {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/o.jpg",
       "PackagePath": "staticwebassets/Uploads/o.jpg"
     },
@@ -95,6 +103,14 @@
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/raccoon_o.jpeg",
       "PackagePath": "staticwebassets/Uploads/raccoon_o.jpeg"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/trolybacsi2.jpg",
+      "PackagePath": "staticwebassets/Uploads/trolybacsi2.jpg"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/trolybacsi3.jpg",
+      "PackagePath": "staticwebassets/Uploads/trolybacsi3.jpg"
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/Uploads/tudu.png",
@@ -111,6 +127,10 @@
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/DnBs.css",
       "PackagePath": "staticwebassets/css/DnBs.css"
+    },
+    {
+      "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/HenLichKham.css",
+      "PackagePath": "staticwebassets/css/HenLichKham.css"
     },
     {
       "Id": "/Users/luongdat/DAPM-BSVOV/wwwroot/css/HomeBs.css",

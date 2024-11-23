@@ -86,12 +86,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vVGltS2hvYUJlbmguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/luongdat/DAPM-BSVOV/Views/Bacsis/DaBiHuy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFjc2lzL0RhQmlIdXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/luongdat/DAPM-BSVOV/Views/Bacsis/DaHoanThanh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFjc2lzL0RhSG9hblRoYW5oLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/luongdat/DAPM-BSVOV/Views/Bacsis/DangkyBs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFjc2lzL0RhbmdreUJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/luongdat/DAPM-BSVOV/Views/Bacsis/DaXacNhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFjc2lzL0RhWGFjTmhhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/luongdat/DAPM-BSVOV/Views/Bacsis/DKTC.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFjc2lzL0RLVEMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/luongdat/DAPM-BSVOV/Views/Bacsis/DoanhThu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFjc2lzL0RvYW5oVGh1LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/luongdat/DAPM-BSVOV/Views/Bacsis/HomeBs.cshtml]
@@ -104,6 +120,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/luongdat/DAPM-BSVOV/Views/Bacsis/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFjc2lzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/luongdat/DAPM-BSVOV/Views/Bacsis/LichHenKham.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFjc2lzL0xpY2hIZW5LaGFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/luongdat/DAPM-BSVOV/Views/Bacsis/ThongBao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFjc2lzL1Rob25nQmFvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/luongdat/DAPM-BSVOV/Views/Home/AccountBank.cshtml]

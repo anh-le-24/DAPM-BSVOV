@@ -16,7 +16,6 @@ using Microsoft.AspNetCore.Identity;
 
 using Microsoft.Extensions.Logging;
 
-
 public class BacsisController : Controller
 {
     private readonly ILogger<BacsisController> _logger;
@@ -27,6 +26,7 @@ public class BacsisController : Controller
         _session = httpContextAccessor.HttpContext.Session;
     }
     
+    DataModel db = new DataModel();
     public IActionResult Index()
     {
         return View();
@@ -50,7 +50,11 @@ public class BacsisController : Controller
     }
 
 
-    public IActionResult DangKyBs(){
+    public IActionResult DangKyBs()
+    {
+        ViewBag.kb = db.get("select * from KHOABENH");
+        ViewBag.bv = db.get("select * from BENHVIEN");
+        ViewBag.cn = db.get("select * from CHUYENNGANH");
         return View();
     }
 
@@ -96,7 +100,7 @@ public class BacsisController : Controller
             if (hinhanh != null && hinhanh.Length > 0)
             {
                 string filename = Path.GetFileName(hinhanh.FileName); // Lấy tên tệp
-                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", filename); // Đường dẫn lưu tệp
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Uploads", filename); // Đường dẫn lưu tệp
                 using (var stream = new FileStream(path, FileMode.Create))
                 {
                     hinhanh.CopyTo(stream); // Lưu tệp
@@ -108,7 +112,7 @@ public class BacsisController : Controller
             if (cmtimagefront != null && cmtimagefront.Length > 0)
             {
                 string cmtFrontFileName = Path.GetFileName(cmtimagefront.FileName);
-                string cmtFrontPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", cmtFrontFileName);
+                string cmtFrontPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Uploads", cmtFrontFileName);
                 using (var stream = new FileStream(cmtFrontPath, FileMode.Create))
                 {
                     cmtimagefront.CopyTo(stream);
@@ -118,7 +122,7 @@ public class BacsisController : Controller
             if (cmtimageback != null && cmtimageback.Length > 0)
             {
                 string cmtBackFileName = Path.GetFileName(cmtimageback.FileName);
-                string cmtBackPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", cmtBackFileName);
+                string cmtBackPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Uploads", cmtBackFileName);
                 using (var stream = new FileStream(cmtBackPath, FileMode.Create))
                 {
                     cmtimageback.CopyTo(stream);
@@ -162,7 +166,8 @@ public class BacsisController : Controller
                 + giangDay + "', N'"
                 + hoiVienCongTac + "', 0 ,2 ;";
 
-            db.get(result);         
+            db.get(result);      
+            
 
         }
         catch (Exception ex)
@@ -183,6 +188,8 @@ public class BacsisController : Controller
     public IActionResult DKTC(){
         return View(); 
     }
+
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
@@ -198,21 +205,66 @@ public class BacsisController : Controller
     [HttpPost]
     public IActionResult ThemHs(string patientPhone, string patientDescription)
     {
-        DataModel db = new DataModel();
+
         ViewBag.list = db.get("exec AddPatientRecordByPhone '"+ patientPhone +"',N'" + patientDescription + "'");
         return RedirectToAction("HoSoBN", "Bacsis");
     }
     public IActionResult XoaHs(string id){
-        DataModel db = new DataModel();
+     
         ViewBag.list=db.get("EXEC DeletePatientRecord "+ id);
         return RedirectToAction("HoSoBN", "Bacsis");
     }
 
     [HttpPost]
     public IActionResult Suahoso(string patientId,string patientDescription){
-        DataModel db = new DataModel();
+      
         ViewBag.list=db.get("EXEC UpdatePatientRecord "+ patientId +",N'"+ patientDescription + "'");
         return RedirectToAction("HoSoBN", "Bacsis");
+    }
+
+    public ActionResult LichHenKham()
+    {
+        var userId = _session.GetString("userId");
+        ViewBag.list = db.get("EXEC Xemtatcalichhenchuaxacnhan " + userId);
+        return View();
+    }
+
+     public ActionResult DaXacNhan()
+    {
+        var userId = _session.GetString("userId");
+        ViewBag.list = db.get("EXEC Xemtatcalichhendaxacnhan " + userId);
+        return View();
+    }
+     public ActionResult DaHoanThanh()
+    {
+        var userId = _session.GetString("userId");
+        ViewBag.list = db.get("EXEC Xemtatcalichhendahoanthanh "  + userId);
+        return View();
+    }
+
+     public ActionResult DaBiHuy()
+    {
+         var userId = _session.GetString("userId");
+        ViewBag.list = db.get("EXEC Xemtatcalichhendahuy "  + userId);
+        return View();
+    }
+
+     [HttpPost]
+    public ActionResult Updatecuochen(string id, string matt)
+    {
+         // Lấy thời gian hiện tại
+        db.get("Exec UpdateMaTTCH "+ id +"," + matt);
+        return RedirectToAction("LichHenKham","Bacsis");
+    }
+
+     public ActionResult DoanhThu()
+    {
+        return View();
+    }
+     public ActionResult ThongBao()
+    {
+        ViewBag.ThongBaos = db.get("select * from THONGBAO");
+        return View();
     }
 
 }

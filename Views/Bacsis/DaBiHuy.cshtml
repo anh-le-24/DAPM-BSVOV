@@ -1,0 +1,37 @@
+
+@{
+    ViewData["Title"] = "DaBiHuy";
+    Layout = "~/Views/Shared/Bs_Layout.cshtml";
+    <link rel="stylesheet" href="~/css/HenLichKham.css" asp-append-version="true" />
+}
+<h2> Đã bị hủy </h2>
+<div class="container">
+    <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Mã Cuộc Hẹn</th>
+            <th>Tên Người Dùng</th>
+            <th>SĐT</th>
+            <th>Địa Chỉ</th>
+            <th>Giới tính</th>
+            <th>Thời Gian Hẹn</th>
+            <th>Mô Tả Bệnh</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var appointment in ViewBag.list)
+        {
+            <tr>
+                <td>@appointment[0]</td>
+                <td>@appointment[2]</td>
+                <td>@appointment[4]</td>
+                <td>@appointment[5]</td>
+                <td>@appointment[7]</td>
+                <td>@appointment[11]</td>
+                <td>@appointment[19]</td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/DoAnCNPM.styles.css" asp-append-version="true" />
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
     <link href="~/images/favicon.ico" type="image/x-icon" rel="icon"/>
 </head>
@@ -38,13 +40,34 @@
                         <img src="~/images/ic_search.png" class="ic-search"/>
                         <input type="text" name="q" id="search-input" value="" placeholder="Tìm kiếm..." autocomplete="off">
                     </div>
-                    <img class="item-right scale" src="~/images/ic_bell.png" style="width: 50px;" title="Thông báo"/>
+                    <div class="drop-nc">
+                        @if (ViewBag.TaiKhoan != null){
+                            <img class="item-right scale" src="~/images/ic_bell.png" style="width: 50px;" title="Thông báo"/>
+                            <div class="container-nc">
+                                <div class="card cart">
+                                    <label class="title">THÔNG BÁO</label>
+                                    <div class="steps">
+                                        @foreach(var a in ViewBag.ListTB){
+                                            <div class="step">
+                                                <div class="movein-noti">
+                                                    <span>@a[1]</span>
+                                                    <p>@a[2]</p>
+                                                    <span class="fm-time">@a[3]</span>
+                                                </div>
+                                                <hr>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
                     <div class="h-separator"></div>
                     <div class="fm-nav-item">
                         @if (ViewBag.TaiKhoan != null)
                         {
                             <a class="item-right scale" asp-controller="Home" asp-action="PersonalPage">
-                            <img src="~/images/ic_avatar.png" style="width: 50px;" title="Trang cá nhân"/>
+                                <img src="~/images/ic_avatar.png" style="width: 50px;" title="Trang cá nhân"/>
                             </a>
                             <div class="drop-menu" style="right: 10px; top: 60px">
                                 <div class="drop-content" style="padding: 0;">
@@ -120,8 +143,7 @@
                                         @for (var i = 0; i < count; i++)
                                         {
                                             <li>
-                                                <a href="~/Home/Article?MaBV=@int.Parse(ViewBag.listKB[i][0])" 
-                                                style="@(i == count - 1 ? "border-bottom:none;" : "")">
+                                                <a href="~/Home/Article?MaBV=@int.Parse(ViewBag.listKB[i][0])" style="@(i == count - 1 ? "border-bottom:none;" : "")">
                                                     @ViewBag.listKB[i][1]
                                                 </a>
                                             </li>
@@ -131,8 +153,7 @@
                                         @for (var i = count; i < ViewBag.listKB.Count; i++)
                                         {
                                             <li>
-                                                <a href="~/Home/Article?MaBV=@int.Parse(ViewBag.listKB[i][0])" 
-                                                style="@(i == ViewBag.listKB.Count - 1 ? "border-bottom:none;" : "")">
+                                                <a href="~/Home/Article?MaBV=@int.Parse(ViewBag.listKB[i][0])" style="@(i == ViewBag.listKB.Count - 1 ? "border-bottom:none;" : "")">
                                                     @ViewBag.listKB[i][1]
                                                 </a>
                                             </li>
@@ -140,8 +161,6 @@
                                     </ul>
                                 </div>
                             </div>
-
-                            
                         </li>
                         
                         <li class="fm-nav-item">
@@ -236,23 +255,43 @@
                     </div>
                 </div>
             </div>
-            <div class="cols-5 item-footer">
-                <h2>Dịch vụ</h2>
-            </div>
-            <div class="cols-5 item-footer">
-                <h2>Tải App VOVBacSi24</h2>
-                
-            </div>
-            <div class="cols-5 item-footer">
-                <h2>Theo dõi chúng tôi</h2>
-                
-            </div>
-            <div class="cols-5 item-footer">
-                <h2>Chứng chỉ</h2>
-                
-            </div>
-            
+            <div class="text-footer footer_1-item">
+                    <h2>Dịch vụ</h2>
+                    <ul class="no-list">
 
+                        <li class="menu-a">
+                            <a href="/vie/chuyen-khoa/" rel="nofollow" aria-label="Chuyên khoa">Chuyên khoa</a>
+                        </li>
+                        <li class="menu-a">
+                            <a href="/vie/dich-vu-y-te/">Gói dịch vụ</a>
+                        </li>
+                        <li class="menu-a">
+                            <a href="/vie/bao-hiem/">Bảo hiểm</a>
+                        </li>
+                        <li class="menu-a">
+                            <a href="/vie/dang-ky-kham/">Đặt lịch hẹn</a>
+                        </li>
+
+                    </ul>
+                </div>
+                
+                <div class="footer_1-item">
+                    <h2>Theo dõi chúng tôi</h2>
+                    <ul class="no-list flex">
+
+                        <li class="p-10 pt-0" style="margin-bottom: 50px;">
+                            <a href="https://www.youtube.com/user/VinmecHospital" rel="nofollow" aria-label="Youtube">
+                                <img class="social-icon" src="~/images/ic-ytb.png" alt="Youtube">
+                            </a>
+                        </li>
+
+                        <li class="p-10 pt-0">
+                            <a href="https://www.facebook.com/Vinmec/" rel="nofollow" aria-label="Facebook">
+                                <img class="social-icon" src="~/images/ic-fb.png" alt="Facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </div>
     </footer>
     <footer class="border-top text-muted " style="line-height: 30px; background-color: #f3f7fb; font-size: 12px;">

@@ -33,13 +33,21 @@ public class HomeController : Controller
         DataModel db = new DataModel();
         ViewBag.listKB = db.get("EXEC getAllKhoaBenh");
 
+        if (!string.IsNullOrEmpty(taikhoan))
+        {
+            var MaND = taikhoan;
+            ViewBag.ListTB = db.get($"EXEC sp_GetThongBaoByMaND @MaND = {MaND}");
+        }
         return View();
     }
 
     public IActionResult Index()
     {
         LayoutShare();
-
+        DataModel db =new DataModel();
+        ViewBag.ListBV = db.get("EXEC getAllBenhVien");
+        ViewBag.ListBS5 = db.get("EXEC GetTop7Doctors");
+                
         return View();
     }
     public IActionResult Article(string MaBV)
@@ -311,13 +319,34 @@ public class HomeController : Controller
     public IActionResult AccountBank()
     {
         LayoutShare();
-        
+        DataModel db = new DataModel();
+        var taikhoan = HttpContext.Session.GetString("taikhoan");
+        ViewData["TaiKhoan"] = taikhoan;
+
+        if (!string.IsNullOrEmpty(taikhoan))
+        {
+            var result = db.get("SELECT * from NGUOIDUNG where manD=" + taikhoan);
+            if (result != null && result.Count > 0)
+            {
+                ViewBag.UserInfo = result[0]; // Lấy dòng đầu tiên của kết quả
+            }
+        }
         return View();
     }
-    
+    [HttpPost]
+    public IActionResult AccountBankProcess(string SoDuTK)
+    {
+        var taikhoan = HttpContext.Session.GetString("taikhoan");
+        ViewData["TaiKhoan"] = taikhoan;
+        var MaND = taikhoan;
 
-    
+        DataModel db = new DataModel();
+        db.get($"EXEC NapTien {MaND}, {SoDuTK}");
 
+        return RedirectToAction("AccountBank", "Home");
+    }
+    
+    
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

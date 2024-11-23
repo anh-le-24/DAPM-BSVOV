@@ -136,36 +136,12 @@
         <div class="layout-content title-content">
             <h2 class="title-line" style="text-align: center;">Danh sách các bệnh viện hàng đầu Việt Nam</h2>     
             <div class="list-hospital" id="slide_hospotal" data-glide-el="track">
-                
-                <a href="#" class="item-hospital">
-                    <img src="~/images/hospital1.jpeg"/>
-                    <label>BV TW Quân Đội 108W Quân Đội 108</label>
-                </a>
-                <a href="#" class="item-hospital">
-                    <img src="~/images/hospital1.jpeg"/>
-                    <label>BV TW Quân Đội 108W Quân Đội 108</label>
-                </a>
-                <a href="#" class="item-hospital">
-                    <img src="~/images/hospital1.jpeg"/>
-                    <label>BV TW Quân Đội 108W Quân Đội 108</label>
-                </a>
-                <a href="#" class="item-hospital">
-                    <img src="~/images/hospital1.jpeg"/>
-                    <label>BV TW Quân Đội 108W Quân Đội 108</label>
-                </a>
-                <a href="#" class="item-hospital">
-                    <img src="~/images/hospital1.jpeg"/>
-                    <label>BV TW Quân Đội 108W Quân Đội 108</label>
-                </a>
-                <a href="#" class="item-hospital">
-                    <img src="~/images/hospital1.jpeg"/>
-                    <label>BV TW Quân Đội 108W Quân Đội 108</label>
-                </a>
-                <a href="#" class="item-hospital">
-                    <img src="~/images/hospital1.jpeg"/>
-                    <label>BV TW Quân Đội 108W Quân Đội 108</label>
-                </a>
-                
+                @foreach(var a in ViewBag.ListBV){
+                    <a href="#" class="item-hospital">
+                        <img src="~/Uploads/@a[2]"/>
+                        <label>@a[1]</label>
+                    </a>
+                }
             </div>        
         </div>
     </div>
@@ -178,49 +154,14 @@
                 <div class="list-clinic-large">
                     <div class="glide__track" data-glide-el="track">
                         <div class="glide__slides">
-                            <a href="#" class="item glide__slide" title="Bấm vào để xem chi tiết">
-                                <div class="card-doc-mainslide">
-                                    <img src="~/images/bs1.jpeg" />
-                                    <label>Bác sĩ 1</label>
-                                </div>
-                            </a>
-                            <a href="#" class="item glide__slide">
-                                <div class="card-doc-mainslide">
-                                    <img src="~/images/bs2.jpeg"/>
-                                    <label>Bác sĩ 2</label>
-                                </div>
-                            </a>
-                            <a href="#" class="item glide__slide">
-                                <div class="card-doc-mainslide">
-                                    <img src="~/images/bs3.jpeg"/>
-                                    <label>Bác sĩ 3</label>
-                                </div>
-                            </a>
-
-                            <a href="#" class="item glide__slide">
-                                <div class="card-doc-mainslide">
-                                    <img src="~/images/bs4.jpg"/>
-                                    <label>Bác sĩ 4</label>
-                                </div>
-                            </a>
-                            <a href="#" class="item glide__slide">
-                                <div class="card-doc-mainslide">
-                                    <img src="~/images/bs5.jpg">
-                                    <label>Bác sĩ 5</label>
-                                </div>
-                            </a>
-                            <a href="#" class="item glide__slide">
-                                <div class="card-doc-mainslide">
-                                    <img src="~/images/bs6.jpg">
-                                    <label>Bác sĩ 6</label>
-                                </div>
-                            </a>
-                            <a href="#" class="item glide__slide">
-                                <div class="card-doc-mainslide">
-                                    <img src="~/images/bs7.png" >
-                                    <label>Bác sĩ 7</label>
-                                </div>
-                            </a>
+                            @foreach(var a in ViewBag.ListBS5){
+                                <a href="~/Home/DetailDoctor?MaBS=@a[0]" class="item glide__slide" title="Bấm vào để xem chi tiết">
+                                    <div class="card-doc-mainslide">
+                                        <img src="~/Uploads/@a[2]" />
+                                        <label>@a[1]</label>
+                                    </div>
+                                </a>
+                            }
                         </div>
                     </div>
                     <div class="glide__arrows" data-glide-el="controls">
@@ -237,27 +178,11 @@
                 <div class="list-clinic-thumb">
                     <div class="glide__track" data-glide-el="track">
                         <div class="glide__slides">
-                            <figure class="item glide__slide img_slilde">
-                                <img class="" src="~/images/bs1.jpeg">
-                            </figure>
-                            <figure class="item glide__slide">
-                                <img class="img_slilde" src="~/images/bs2.jpeg">
-                            </figure>
-                            <figure class="item glide__slide">
-                                <img class="img_slilde" src="~/images/bs3.jpeg" >
-                            </figure>
-                            <figure class="item glide__slide">
-                                <img class="img_slilde" src="~/images/bs4.jpg">
-                            </figure>
-                            <figure class="item glide__slide">
-                                <img class="img_slilde" src="~/images/bs5.jpg">
-                            </figure>
-                            <figure class="item glide__slide">
-                                <img class="img_slilde" src="~/images/bs6.jpg">
-                            </figure>
-                            <figure class="item glide__slide">
-                                <img class="img_slilde" src="~/images/bs7.png">
-                            </figure>
+                            @foreach(var a in ViewBag.ListBS5){
+                                <figure class="item glide__slide img_slilde">
+                                    <img class="" src="~/Uploads/@a[2]">
+                                </figure>
+                            }
                         </div>
                     </div>
                 </div>

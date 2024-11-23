@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Đặt lịch";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <link rel="stylesheet" href="~/css/Article.css" asp-append-version="true">
 
@@ -29,9 +30,14 @@
     </div>
     <div class="sodu">
         <h3 class="">
+            @{
+                // Định dạng số tiền đẹp hơn
+                var amount1 = Convert.ToInt32(ViewBag.UserInfo[9]);
+                var SoTienUser = amount1.ToString("#,##0");  
+            }
             Số dư:
             <span style="color: #fff003;">
-                200.000 đ
+                @SoTienUser đ
             </span>
         </h3>
     </div>  
@@ -136,9 +142,16 @@
                 <label class="form-check-label" for="termsAgreement">Tôi đã đọc và xác nhận <a href="#">Điều khoản dịch vụ</a> của Bệnh viện .</label>
             </div>
             <input type="text" value="@bs[0]" name="MaBS" style="display: none;">
-
+            <div id="insufficientFundsModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: white; border: 1px solid #ccc; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 1000; min-width: 300px; border-radius: 8px;">
+                <h4 style="margin-bottom: 15px; color: #dc3545;">Thông báo</h4>
+                <p style="margin-bottom: 20px;">Bạn cần nạp thêm tiền để đặt khám</p>
+                <div style="display: flex; justify-content: space-between;">
+                    <button onclick="closeInsufficientFundsModal()" style="padding: 8px 15px; background-color: #6c757d; color: white; border: none; border-radius: 4px; cursor: pointer;">Đóng</button>
+                    <a href="~/Home/AccountBank" style="padding: 8px 15px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Nạp tiền</a>
+                </div>
+            </div>
             <div class="center" >
-                <button type="submit" class="btn-send-book" onclick="validateAndShowModal()">Đặt lịch khám</button>
+                <button type="button" class="btn-send-book" onclick="validateAndCheckBalance()">Đặt lịch khám</button>
             </div>
             
         </form>
@@ -156,19 +169,46 @@
 </div>
 
 <script>
-    window.onload = function() {
+     window.onload = function() {
         document.getElementById("loginForm").scrollIntoView({
             behavior: "smooth",
             block: "start"
         });
     };
 
-    function validateAndShowModal() {
+    function validateAndCheckBalance() {
         const form = document.getElementById('bookingForm');
         if (form.checkValidity()) {
-            // Form đã được điền đầy đủ
-            showModal();
+            // Lấy số tiền của người dùng và phí khám
+            const userBalance = @ViewBag.UserInfo[9];
+            const examFee = @bs[5];
+            
+            if (userBalance >= examFee) {
+                // Nếu đủ tiền thì hiện modal xác nhận và submit form
+                showModal();
+                form.submit();
+            } else {
+                // Nếu không đủ tiền thì hiện modal thông báo
+                showInsufficientFundsModal();
+            }
+        } else {
+            // Kích hoạt validation mặc định của form
+            form.reportValidity();
         }
+    }
+
+    function showInsufficientFundsModal() {
+        document.getElementById('insufficientFundsModal').style.display = 'block';
+        document.getElementById('modalOverlay').style.display = 'block';
+    }
+
+    function closeInsufficientFundsModal() {
+        document.getElementById('insufficientFundsModal').style.display = 'none';
+        document.getElementById('modalOverlay').style.display = 'none';
+    }
+
+    function redirectToAccountBank() {
+        window.location.href = '~/Home/AccountBank';
     }
 
     function showModal() {

@@ -26,7 +26,7 @@ namespace DoAnCNPM.Models
                     ArrayList row = new ArrayList();
                     for (int i = 0; i < r.FieldCount; i++)
                     {
-                        row.Add(r.GetValue(i).ToString());
+                        row.Add(Xulydulieu(r.GetValue(i).ToString()));
                     }
                     datalist.Add(row);
 
@@ -35,6 +35,14 @@ namespace DoAnCNPM.Models
             connection.Close();
 
             return datalist;
+        }
+        public string Xulydulieu( string text){
+            String s = text.Replace(",", "&44;");
+            s = s.Replace("\"","&34;");
+            s = s.Replace("'", "&39;");
+            s = s.Replace("\r", "");
+            s = s.Replace("\n", "");
+            return s;
         }
 
     }

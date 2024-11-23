@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Trang cá nhân";
+    Layout = "~/Views/Shared/_Layout.cshtml";
     
 }
 <link rel="stylesheet" href="~/css/Personal.css" asp-append-version="true">
@@ -46,9 +47,14 @@
                                         <button class="btn-changepass">Đổi mật khẩu</button>
                                     </div>
                                     <h3 style="color: white;">
+                                        @{
+                                            // Định dạng số tiền đẹp hơn
+                                            var amount = Convert.ToInt32(user[9]);
+                                            var SoTien = amount.ToString("#,##0");  
+                                        }
                                         Số dư:
                                         <span style="color: #fff003;">
-                                            @user[9]
+                                            @SoTien đ
                                         </span>
                                     </h3>
                                 }
@@ -57,7 +63,7 @@
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="card h-100 ">
+                <div class="card h-100 " style="min-width: 100%">
                     <div class="card-body ">
                         <h2 class="card-title">Thông tin cá nhân</h2>
                         <form asp-controller="Home" asp-action="UpdateUserInfo" method="post" enctype="multipart/form-data">

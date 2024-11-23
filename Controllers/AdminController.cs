@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using DoAnCNPM.Models;
+using Microsoft.AspNetCore.SignalR.Protocol;
 
 namespace DAPMBSVOV.Controllers
 {
@@ -38,11 +39,11 @@ namespace DAPMBSVOV.Controllers
         public IActionResult ThemBaiViet(string tieudebv, 
                                         string noidungbv, 
                                         string makb, 
-                                        string linkytb, 
-                                        string ngaydang, 
+                                        string linkytb,  
                                         string malbv, 
                                         string luotxem)
         {
+            DateTime ngaydang = DateTime.Now;
             DataModel db = new DataModel();
             ViewBag.list = db.get("EXEC AddBAIVIET N'" +tieudebv+ "', N'" +noidungbv+ "'," +makb+ ",'" +linkytb+ "','" +ngaydang+ "'," +malbv+ "," +luotxem+ ";");
             return RedirectToAction("DMBaiViet", "Admin"); 
@@ -79,11 +80,11 @@ namespace DAPMBSVOV.Controllers
                                         string tieudebv, 
                                         string noidungbv, 
                                         string makb, 
-                                        string linkytb, 
-                                        string ngaydang, 
+                                        string linkytb,  
                                         string malbv, 
                                         string luotxem)
         {
+            DateTime ngaydang = DateTime.Now;
             DataModel db = new DataModel();
             ViewBag.list = db.get("EXEC UpdateBAIVIET " +mabv+ ", N'" +tieudebv+ "', N'" +noidungbv+ "'," +makb+ ",'" +linkytb+ "','" +ngaydang+ "'," +malbv+ "," +luotxem+ ";");
             return RedirectToAction("DMBaiViet", "Admin"); 
@@ -356,10 +357,10 @@ namespace DAPMBSVOV.Controllers
         // End Bệnh viện
 
         // Bệnh nhân
-        public IActionResult HoSoBenhNhan(string mapq)
+        public IActionResult HoSoBenhNhan()
         {
             DataModel db = new DataModel();
-            ViewBag.list = db.get("EXEC GetPatientsByRole " +2+ ";");
+            ViewBag.list = db.get("EXEC GetPatientsWithoutDoctor");
             return View();
         }
 
@@ -373,40 +374,32 @@ namespace DAPMBSVOV.Controllers
         public IActionResult SreachBenhNhan(string tenbn)
         {
             DataModel db = new DataModel();
-            ViewBag.list = db.get("EXEC SreachPatientByName N'" +tenbn+ "';" );
+            ViewBag.list = db.get("EXEC SearchPatient N'" +tenbn+ "';" );
             return View();
         }
 
-        public IActionResult TimBenhNhan(string mabn)
-        {
-            DataModel db = new DataModel();
-            ViewBag.list = db.get("EXEC GetPatientDetailsByUser_Id " +mabn+ "';" );
-            return View();
-        }
 
         [HttpPost]
-        public IActionResult SuaBenhNhan(string mabn, 
-                                        string tenbn, 
-                                        string pass, 
-                                        string email, 
-                                        string sdt, 
-                                        string diachi,
-                                        string ngaysinh,
-                                        string gioitinh,
-                                        string avatar,
-                                        string sodutk,
-                                        string mahs,
-                                        string motabenh,
-                                        string hinhanhbenh )
+        public IActionResult XoaBenhNhan(string mabn) 
         {
             DataModel db = new DataModel();
-            ViewBag.list = db.get("EXEC UpdatePatientInfo " +mabn+ ", N'" +tenbn+ "','" +pass+ "','" 
-                                    +email+ "','" +sdt+ "', N'" +diachi+ "','" +ngaysinh+ "', N'" +gioitinh+ "','" +avatar+ "'," 
-                                    +sodutk+ "," +mahs+ ", N'" +motabenh+ "','" +hinhanhbenh+ "';" );
+            try
+            {
+                // Gọi stored procedure để xóa khoa bệnh
+                db.get("EXEC DeletePatientById " + mabn + ";");
+                TempData["Message"] = "Xóa bệnh nhân thành công!";
+            }
+            catch (Exception)
+            {
+                // Nếu xảy ra lỗi, thông báo lỗi liên quan đến khóa ngoại
+                TempData["Error"] = "Bệnh nhân được chọn không xóa được!!!!";
+            }
             return RedirectToAction("HoSoBenhNhan", "Admin");
         }
 
         // End Bệnh nhân
+
+
         // Bác sĩ
         public IActionResult HoSoBacSi(string mapq)
         {
@@ -430,13 +423,155 @@ namespace DAPMBSVOV.Controllers
         }
 
         [HttpPost]
-        public IActionResult XoaBacSi(string mabs)
+        public IActionResult XoaBacSi(string mabs) 
         {
             DataModel db = new DataModel();
-            ViewBag.list = db.get("EXEC DeleteDoctor " +mabs+ ";" );
-            return RedirectToAction("HoSoBacSi", "Admin");
+            try
+            {
+                // Gọi stored procedure để xóa khoa bệnh
+                db.get("EXEC DeleteDoctor " + mabs + ";");
+                TempData["Message"] = "Xóa bác sĩ thành công!";
+            }
+            catch (Exception)
+            {
+                // Nếu xảy ra lỗi, thông báo lỗi liên quan đến khóa ngoại
+                TempData["Error"] = "Bác sĩ được chọn không xóa được!!!!";
+            }
+            return RedirectToAction("HoSoBenhNhan", "Admin");
         }
+
+        public IActionResult DonDangKyBacSi()
+        {
+            DataModel db = new DataModel();
+            ViewBag.listDDK = db.get("EXEC GetPatientsByDoctor");
+            return View();
+        }
+
+        public IActionResult ChiTietDonDangKy(string mabs) 
+        {
+            DataModel db = new DataModel();
+            ViewBag.list = db.get("EXEC GetDoctorDetails " + mabs + ";");
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult DuyetBacSi(string mabs) {
+            DataModel db = new DataModel();
+            ViewBag.list = db.get("EXEC ConfirmDoctor " + mabs + ";");
+            return RedirectToAction("DonDangKyBacSi", "Admin");
+        }
+
+        [HttpPost]
+        public IActionResult HuyDonDangKy(string mabs)
+        {
+            DataModel db = new DataModel();
+            ViewBag.list = db.get("EXEC DeleteDoctorRegistration " + mabs + ";");
+            return RedirectToAction("DonDangKyBacSi", "Admin");
+        }
+
         // End Bác sĩ
+
+        //Lịch khám
+        public IActionResult LichKhamBenh()
+        {
+            DataModel db = new DataModel();
+            ViewBag.listLH = db.get("EXEC GetAppointmentDetails");
+            return View();
+        }
+
+        //End Lịch khám
+
+        //Đánh giá
+        public IActionResult DanhGiaPhanHoi() 
+        {
+            DataModel db = new DataModel();
+            ViewBag.listDG = db.get("EXEC GetAllRatings ");
+            return View();
+        }
+
+        //End Đánh giá
+
+        //Thống kê
+        public IActionResult ThongKe() 
+        {
+            DataModel db = new DataModel();
+            ViewBag.listTKLK = db.get("EXEC ThongKeLuotKhamTheoThang ");
+            ViewBag.listTKDT = db.get("EXEC ThongKeDoanhThuKhachTheoThang ");
+            return View();
+        }
+
+        //End Thống kê
+
+        //Thông báo
+        public IActionResult ThongBaoBV()
+        {
+            DataModel db = new DataModel();
+            ViewBag.listTB = db.get("EXEC LayDanhSachThongBao ");
+            ViewBag.listND = db.get("SELECT * from NGUOIDUNG ");
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult GuiThongBao(string tieudetb, string noidungtb, string thoigiantb, string mand)
+        {
+            try
+            {
+                // Chuyển đổi thời gian từ chuỗi thành kiểu DateTime
+                DateTime parsedTime = DateTime.Parse(thoigiantb);
+                
+                // Thực thi câu lệnh SQL để lưu thông báo
+                DataModel db = new DataModel();
+                db.get($"EXEC GuiThongBaoChoNguoiDung N'{tieudetb}', N'{noidungtb}', '{parsedTime}', '{mand}'");
+                
+                TempData["Message"] = "Thông báo đã được gửi thành công!";
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Có lỗi xảy ra khi gửi thông báo: " + ex.Message;
+            }
+
+            return RedirectToAction("ThongBaoBV", "Admin");
+        }
+
+
+        [HttpPost]
+        public IActionResult XoaThongBao(string matb)
+        {
+            DataModel db = new DataModel();
+            try
+            {
+                // Gọi stored procedure để xóa khoa bệnh
+                db.get("EXEC XoaThongBao " + matb + ";");
+                TempData["Message"] = "Xóa thông báo thành công!";
+            }
+            catch (Exception)
+            {
+                
+                TempData["Error"] = "Thông báo được chọn không xóa được!!!!";
+            }
+            return RedirectToAction("ThongBaoBV", "Admin");
+        }
+
+        //End Thông báo
+        
+
+        //Thanh toán
+        public IActionResult DSThanhToan()
+        {
+            DataModel db = new DataModel();
+            ViewBag.litsTT = db.get("EXEC LayDanhSachThanhToan");
+            return View();
+        }
+
+        [HttpPost]       
+        public IActionResult HoanPhiKham(string matt)
+        {
+            DataModel db = new DataModel();
+            ViewBag.list = db.get("EXEC HoanPhiKham " +matt);
+            return RedirectToAction("DSThanhToan", "Admin");
+        }
+
+        //End Thanh toán
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

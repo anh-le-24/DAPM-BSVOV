@@ -16,7 +16,6 @@ using Microsoft.AspNetCore.Identity;
 
 using Microsoft.Extensions.Logging;
 
-
 public class BacsisController : Controller
 {
     private readonly ILogger<BacsisController> _logger;
@@ -225,24 +224,28 @@ public class BacsisController : Controller
 
     public ActionResult LichHenKham()
     {
-        ViewBag.list = db.get("EXEC Xemtatcalichhenchuaxacnhan");
+        var userId = _session.GetString("userId");
+        ViewBag.list = db.get("EXEC Xemtatcalichhenchuaxacnhan " + userId);
         return View();
     }
 
      public ActionResult DaXacNhan()
     {
-        ViewBag.list = db.get("EXEC Xemtatcalichhendaxacnhan");
+        var userId = _session.GetString("userId");
+        ViewBag.list = db.get("EXEC Xemtatcalichhendaxacnhan " + userId);
         return View();
     }
      public ActionResult DaHoanThanh()
     {
-        ViewBag.list = db.get("EXEC Xemtatcalichhendahoanthanh");
+        var userId = _session.GetString("userId");
+        ViewBag.list = db.get("EXEC Xemtatcalichhendahoanthanh "  + userId);
         return View();
     }
 
      public ActionResult DaBiHuy()
     {
-        ViewBag.list = db.get("EXEC Xemtatcalichhendahuy");
+         var userId = _session.GetString("userId");
+        ViewBag.list = db.get("EXEC Xemtatcalichhendahuy "  + userId);
         return View();
     }
 

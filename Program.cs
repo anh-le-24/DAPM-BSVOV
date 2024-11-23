@@ -38,6 +38,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 // Định tuyến SignalR Hub
-app.MapHub<SignalingHub>("/signalhub");
+
 
 app.Run(); // Khởi chạy ứng dụng

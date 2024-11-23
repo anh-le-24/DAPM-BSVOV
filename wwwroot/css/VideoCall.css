@@ -1,0 +1,14 @@
+video {
+    width: 45%;
+    height: auto;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#localVideo {
+    float: left;
+}
+
+#remoteVideo {
+    float: right;
+}

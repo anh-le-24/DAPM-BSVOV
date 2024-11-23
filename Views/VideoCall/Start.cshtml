@@ -1,0 +1,129 @@
+@{
+    ViewData["Title"] = "Bắt đầu cuộc gọi";
+}
+
+<h2>Bắt đầu cuộc gọi video</h2>
+
+<!-- Hiển thị thông tin Room và User -->
+<div style="margin: 20px;">
+    <p><strong>Room ID:</strong> @Model.RoomId</p>
+    <p><strong>User ID:</strong> @Model.UserId</p>
+</div>
+
+<!-- Nút bắt đầu và kết thúc cuộc gọi -->
+<div style="margin: 20px;">
+    <button id="startCall" onclick="startVideoCall()" style="padding: 10px 20px; background-color: green; color: white;">Bắt đầu gọi</button>
+    <button id="endCall" onclick="endVideoCall()" style="padding: 10px 20px; background-color: red; color: white;">Kết thúc cuộc gọi</button>
+</div>
+
+<!-- Vùng hiển thị video -->
+<div style="display: flex; justify-content: space-around; margin: 20px;">
+    <div id="local_stream" style="width: 300px; height: 300px; background: black; text-align: center; color: white; line-height: 300px;">
+        Local Video
+    </div>
+    <div id="remote_stream" style="width: 300px; height: 300px; background: gray; text-align: center; color: white; line-height: 300px;">
+        Remote Video
+    </div>
+</div>
+
+<!-- Tích hợp SDK Agora -->
+<script src="https://cdn.agora.io/sdk/web/AgoraRTCSDK-4.0.0.js"></script>
+<script>
+    const client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
+    let localStream;
+
+    // Hàm bắt đầu cuộc gọi
+    function startVideoCall() {
+        const roomId = "@Model.RoomId"; // Lấy Room ID từ Model
+        const userId = "@Model.UserId"; // Lấy User ID từ Model
+
+        // Khởi tạo client với App ID
+        client.init("d1e6516d0c2048318f89674e69e15d61", () => {
+            console.log("AgoraRTC client initialized");
+
+            // Tham gia kênh
+            client.join(null, roomId, userId, (uid) => {
+                console.log(`User ${uid} joined room: ${roomId}`);
+
+                // Tạo local stream
+                localStream = AgoraRTC.createStream({
+                    streamID: uid,
+                    audio: true,
+                    video: true,
+                    screen: false
+                });
+
+                // Khởi tạo stream
+                localStream.init(() => {
+                    console.log("Local stream initialized");
+                    localStream.play("local_stream"); // Hiển thị video người dùng
+
+                    // Publish local stream
+                    client.publish(localStream, (err) => {
+                        if (err) {
+                            console.error("Publish error: ", err);
+                            alert("Không thể phát video, vui lòng thử lại!");
+                        } else {
+                            console.log("Local stream published");
+                        }
+                    });
+                }, (err) => {
+                    console.error("Local stream initialization error: ", err);
+                    alert("Không thể khởi tạo video, vui lòng kiểm tra camera/microphone!");
+                });
+
+                // Xử lý sự kiện khi nhận được remote stream
+                client.on("stream-added", (evt) => {
+                    const remoteStream = evt.stream;
+                    console.log("Remote stream added: ", remoteStream.getId());
+
+                    // Subscribe vào remote stream
+                    client.subscribe(remoteStream, (err) => {
+                        if (err) {
+                            console.error("Subscribe error: ", err);
+                            alert("Không thể nhận video từ người khác!");
+                        }
+                    });
+                });
+
+                client.on("stream-subscribed", (evt) => {
+                    const remoteStream = evt.stream;
+                    console.log("Remote stream subscribed");
+                    remoteStream.play("remote_stream"); // Hiển thị video từ người khác
+                });
+
+                // Xử lý khi remote stream bị gỡ
+                client.on("stream-removed", (evt) => {
+                    const remoteStream = evt.stream;
+                    console.log(`Remote stream removed: ${remoteStream.getId()}`);
+                    remoteStream.stop();
+                    document.getElementById("remote_stream").innerHTML = "Remote Video";
+                });
+            }, (err) => {
+                console.error("Join channel error: ", err);
+                alert("Không thể tham gia phòng, vui lòng kiểm tra Room ID và User ID!");
+            });
+        }, (err) => {
+            console.error("Client initialization error: ", err);
+            alert("Không thể khởi tạo cuộc gọi, vui lòng thử lại!");
+        });
+    }
+
+    // Hàm kết thúc cuộc gọi
+    function endVideoCall() {
+        if (localStream) {
+            localStream.stop(); // Dừng local stream
+            localStream.close(); // Đóng local stream
+        }
+
+        client.leave(() => {
+            console.log("Left the room");
+            document.getElementById("local_stream").innerHTML = "Local Video";
+            document.getElementById("remote_stream").innerHTML = "Remote Video";
+            alert("Bạn đã rời khỏi phòng!");
+        }, (err) => {
+            console.error("Leave channel error: ", err);
+            alert("Không thể rời khỏi phòng, vui lòng thử lại!");
+        });
+    }
+</script>

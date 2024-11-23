@@ -1,35 +1,43 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Thêm các dịch vụ cần thiết vào container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDistributedMemoryCache(); // Thêm dòng này
+builder.Services.AddDistributedMemoryCache(); // Cài đặt bộ nhớ đệm phân tán
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(30);
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Thời gian hết hạn của session
+    options.Cookie.HttpOnly = true; // Cookie chỉ có thể truy cập từ HTTP
+    options.Cookie.IsEssential = true; // Đảm bảo cookie cần thiết cho ứng dụng
 });
 builder.Services.AddHttpContextAccessor();
 
+// Thêm SignalR vào container
+builder.Services.AddSignalR();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Cấu hình pipeline yêu cầu HTTP.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    app.UseHsts();
+    app.UseExceptionHandler("/Home/Error"); // Xử lý lỗi khi ứng dụng không phải môi trường phát triển
+    app.UseHsts(); // Sử dụng HTTP Strict Transport Security (HSTS)
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseRouting();
+app.UseHttpsRedirection(); // Chuyển hướng tất cả các yêu cầu HTTP sang HTTPS
+app.UseStaticFiles(); // Cung cấp các tệp tĩnh (CSS, JavaScript, hình ảnh, v.v.)
+app.UseRouting(); // Cấu hình routing cho ứng dụng
 
-app.UseSession(); // Đảm bảo dòng này ở đây
+// Kích hoạt session middleware
+app.UseSession(); 
 
-app.UseAuthorization();
+app.UseAuthorization(); // Kích hoạt middleware kiểm tra quyền truy cập
 
+// Định tuyến các yêu cầu tới các controller
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.Run();
+// Định tuyến SignalR Hub
+app.MapHub<SignalingHub>("/signalhub");
+
+app.Run(); // Khởi chạy ứng dụng

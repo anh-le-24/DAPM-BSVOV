@@ -37,19 +37,26 @@ public class BacsisController : Controller
     {
         DataModel db = new DataModel();
         var list = db.get("EXEC CheckLoginBSs '" + TenDn + "','" + password + "'");
+
         if (list.Count > 0 && list[0] is ArrayList arrayList && arrayList.Count > 1)
         {
             var userId = arrayList[0]?.ToString() ?? "Unknown"; // Giả sử ID là phần tử thứ 2 trong ArrayList
             var tennd = arrayList[1]?.ToString() ?? "Unknown";
+            
+            // Lưu thông tin vào session
             _session.SetString("tennd", tennd);
             _session.SetString("userId", userId); // Lưu ID vào session
-            return RedirectToAction("HomeBs", "Bacsis");
+
+            return RedirectToAction("HomeBs", "Bacsis"); // Chuyển hướng đến trang chủ của bác sĩ
         }
         else
         {
-            return RedirectToAction("Index", "Bacsis");
+            // Nếu đăng nhập thất bại, tạo thông báo lỗi và trả về cho view
+            TempData["ErrorMessage"] = "Đăng nhập không thành công. Vui lòng kiểm tra lại số điện thoại hoặc mật khẩu.";
+            return RedirectToAction("Index", "Bacsis"); // Quay lại trang đăng nhập với thông báo lỗi
         }
     }
+
 
 
     public IActionResult DangKyBs()

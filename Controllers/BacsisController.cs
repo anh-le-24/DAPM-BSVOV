@@ -197,8 +197,8 @@ public class BacsisController : Controller
     }
     public IActionResult HoSoBN()
     {
-        DataModel db = new DataModel();
-        ViewBag.list = db.get("exec GetAllPatientRecords");
+        var userId = _session.GetString("userId");
+        ViewBag.list = db.get("EXEC sp_LayDanhSachHoSoTheoMaBacSi "+ userId);
         return View();
     }
 
@@ -261,10 +261,65 @@ public class BacsisController : Controller
     {
         return View();
     }
+  
      public ActionResult ThongBao()
     {
-        ViewBag.ThongBaos = db.get("select * from THONGBAO");
+         var userId = _session.GetString("userId");
+        ViewBag.ThongBaos = db.get("EXEC sp_GetThongBaoByMaND " + userId );
         return View();
+    }
+
+    // API để lấy tất cả lịch hẹn chưa xác nhận
+    [HttpGet]
+    public JsonResult GetAllUnconfirmedAppointments()
+    {
+        var userId = _session.GetString("userId");
+        var list = db.get($"EXEC Xemtatcalichhenchuaxacnhan {userId}");
+        return Json(list);
+    }
+
+    // API để lấy tất cả lịch hẹn đã xác nhận
+    [HttpGet]
+    public JsonResult GetAllConfirmedAppointments()
+    {
+        var userId = _session.GetString("userId");
+        var list = db.get($"EXEC Xemtatcalichhendaxacnhan {userId}");
+        return Json(list);
+    }
+
+    // API để lấy tất cả lịch hẹn đã hoàn thành
+    [HttpGet]
+    public JsonResult GetAllCompletedAppointments()
+    {
+        var userId = _session.GetString("userId");
+        var list = db.get($"EXEC Xemtatcalichhendahoanthanh {userId}");
+        return Json(list);
+    }
+
+    // API để lấy tất cả lịch hẹn đã bị hủy
+    [HttpGet]
+    public JsonResult GetAllCancelledAppointments()
+    {
+        var userId = _session.GetString("userId");
+        var list = db.get($"EXEC Xemtatcalichhendahuy {userId}");
+        return Json(list);
+    }
+
+    // API cập nhật trạng thái kết thúc của một lịch hẹn
+    [HttpPost]
+    public JsonResult UpdateAppointmentStatus(int id, string status)
+    {
+        db.get($"EXEC UpdateMaTTCH {id}, '{status}'");
+        return Json(new { success = true });
+    }
+
+    // API để lấy thông báo của bác sĩ
+    [HttpGet]
+    public JsonResult GetNotifications()
+    {
+        var userId = _session.GetString("userId");
+        var notifications = db.get($"EXEC sp_GetThongBaoByMaND {userId}");
+        return Json(notifications);
     }
 
 }

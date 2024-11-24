@@ -181,8 +181,15 @@ public class BacsisController : Controller
     }
 
 
-    public IActionResult HomeBs(){
+    public IActionResult HomeBs()
+    {
         return View();  
+    }
+    public IActionResult ThongKe(string nam)
+    {
+        var userId = _session.GetString("userId");
+        ViewBag.list = db.get("EXEC ThongKeCuocHenTheoThang " +  userId +","+ nam );
+        return View("HomeBs");
     }
 
     public IActionResult DKTC(){

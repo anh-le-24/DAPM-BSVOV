@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -18,15 +19,10 @@
             </div>
             <ul class="menu">
                 <li>
-                    <a href="#" class="menu-item">
-                        <i class="fas fa-user"></i>
-                        Quản lý tài khoản người dùng
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    <a href="@Url.Action("DonDangKyBacSi", "Admin")" class="menu-item">
+                        <i class="fas fa-address-card"></i>
+                        Xác nhận đăng ký bác sĩ
                     </a>
-                    <ul class="submenu">
-                        <li><a href="#"><i class="fas fa-user-injured"></i> Bệnh nhân</a></li>
-                        <li><a href="#"><i class="fas fa-user-md"></i> Bác sĩ</a></li>
-                    </ul>
                 </li>
                 <li>
                     <a href="#" class="menu-item">
@@ -52,11 +48,21 @@
                         <li><a href="@Url.Action("DMBenhVien", "Admin")"><i class="fas fa-clinic-medical"></i> Danh mục bệnh viện</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><i class="fas fa-calendar-alt"></i> Quản lý lịch khám</a></li>
-                <li><a href="#"><i class="fas fa-hospital"></i> Quản lý thông tin bệnh viện</a></li>
-                <li><a href="#"><i class="fas fa-history"></i> Quản lý lịch sử cuộc gọi</a></li>
-                <li><a href="#"><i class="fas fa-chart-bar"></i> Thống kê</a></li>
-                <li><a href="#"><i class="fas fa-comments"></i> Đánh giá và phản hồi của bệnh nhân</a></li>
+                <li><a href="@Url.Action("LichKhamBenh", "Admin")"><i class="fas fa-calendar-alt"></i> Xem danh sách lịch khám</a></li>
+                <li><a href="@Url.Action("DanhGiaPhanHoi", "Admin")"><i class="fas fa-comments"></i> Đánh giá và phản hồi của bệnh nhân</a></li>
+                <li>
+                    <a href="@Url.Action("DSThanhToan", "Admin")" class="menu-item">
+                        <i class="fas fa-credit-card"></i>
+                        Quản lý thanh toán
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("ThongBaoBV", "Admin")" class="menu-item">
+                        <i class="fas fa-bell"></i>
+                        Quản lý thông báo
+                    </a>
+                </li>
+                <li><a href="@Url.Action("ThongKe", "Admin")"><i class="fas fa-chart-bar"></i> Thống kê</a></li>
             </ul>
         </div>
 
@@ -91,7 +97,6 @@
                 });
             });
         });
-
     </script>
     @RenderSection("Scripts", required: false)
 </body>

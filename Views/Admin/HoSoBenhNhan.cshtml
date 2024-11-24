@@ -191,6 +191,7 @@
             <thead>
                 <tr>
                     <th>Mã Bệnh Nhân</th>
+                    <th>Mã Hồ Sơ</th>
                     <th>Tên Bệnh Nhân</th>
                     <th>Địa Chỉ</th>
                     <th>Giới Tính</th>
@@ -201,6 +202,7 @@
                 @foreach (var bn in ViewBag.list) {
                 <tr>
                     <td>@bn[0]</td>
+                    <td>@bn[9]</td>
                     <td>
                         <a href="~/Admin/ChiTietBenhNhan?id=@bn[0]">
                             @bn[1]
@@ -209,14 +211,9 @@
                     <td>@bn[4]</td>
                     <td>@bn[6]</td>
                     <td>
-                        <form action="~/Admin/" method="post" style="display:inline;">
-                            <input type="hidden" name="id" value="@bn[0]" />
-                            <button type="submit" class="delete">Xóa</button>
-                        </form>
-                        <br/> <br/>
-                        <form action="~/Admin/TimBenhNhan" method="post" style="display:inline;">
+                        <form action="~/Admin/XoaBenhNhan" method="post" style="display:inline;">
                             <input type="hidden" name="mabn" value="@bn[0]" />
-                            <button type="submit" class="edit">Sửa</button>
+                            <button type="submit" class="delete">Xóa</button>
                         </form>
                     </td>
                     
@@ -225,5 +222,37 @@
             </tbody>
         </table>
     </div>
+
+     <!-- Include partial view for notification -->
+    <partial name="_ThongBao" />
+
+    <script>
+        // Kiểm tra và hiển thị thông báo nếu có từ TempData
+        @if (TempData["Message"] != null)
+        {
+            <text>
+            showThongBao("@Html.Raw(TempData["Message"])", true);
+            </text>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <text>
+            showThongBao("@Html.Raw(TempData["Error"])", false);
+            </text>
+        }
+        document.getElementById('hinhanh').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const imagePreview = document.getElementById('imagePreview');
+                    imagePreview.src = e.target.result;
+                    imagePreview.style.display = 'block'; // Hiển thị ảnh xem trước
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+
+    </script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh mục Bài Viết</title>
+    <title>Sửa Bài Viết</title>
     <style>
         /* General styling */
         body {
@@ -82,7 +82,6 @@
             background-color: #0069d9; /* Darker blue on hover */
         }
 
-
         /* Table styling */
         table {
             width: 100%;
@@ -119,7 +118,6 @@
             margin-left: 10px;
         }
     </style>
-
 </head>
 <body>
     <div class="tren">
@@ -136,16 +134,16 @@
             </div>
             <div style="display: flex; align-items: center; margin-bottom: 15px;">
                 <label for="makb" style="margin-right: 10px;"><strong>Mã Khoa Bệnh:</strong></label>
-                    <select name="makb" id="makb">
-                        @foreach (var kb in ViewBag.listKB) {
-                            if (kb[0] == ViewBag.list[0][3]) {
-                                <option value="@kb[0]" selected>@kb[1]</option>
-                            }
-                            else {
-                                <option value="@kb[0]">@kb[1]</option>
-                            }
+                <select name="makb" id="makb">
+                    @foreach (var kb in ViewBag.listKB) {
+                        if (kb[0] == ViewBag.list[0][3]) {
+                            <option value="@kb[0]" selected>@kb[1]</option>
                         }
-                    </select>
+                        else {
+                            <option value="@kb[0]">@kb[1]</option>
+                        }
+                    }
+                </select>
             </div>
             <div style="margin-bottom: 15px;">
                 <label for="linkytb"><strong>Link Youtube:</strong></label>
@@ -153,21 +151,21 @@
             </div>
             <div style="display: flex; align-items: center; margin-bottom: 15px;">
                 <label for="ngaydang" style="margin-right: 10px;"><strong>Ngày Đăng:</strong></label>
-                <input type="date" name="ngaydang" id="ngaydang" value="@ViewBag.list[0][5]" required />
+                <input type="hidden" name="ngaydang" id="ngaydang" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
             </div>
 
             <div style="display: flex; align-items: center; margin-bottom: 15px;">
                 <label for="malbv" style="margin-right: 10px;"><strong>Mã Loại Bài Viết:</strong></label>
-                    <select name="malbv" id="malbv">
-                        @foreach (var lbv in ViewBag.listLBV) {
-                            if (lbv[0] == ViewBag.list[0][6]) {
-                                <option value="@lbv[0]" selected>@lbv[1]</option>
-                            }
-                            else {
-                                <option value="@lbv[0]">@lbv[1]</option>
-                            }
+                <select name="malbv" id="malbv">
+                    @foreach (var lbv in ViewBag.listLBV) {
+                        if (lbv[0] == ViewBag.list[0][6]) {
+                            <option value="@lbv[0]" selected>@lbv[1]</option>
                         }
-                    </select>
+                        else {
+                            <option value="@lbv[0]">@lbv[1]</option>
+                        }
+                    }
+                </select>
             </div>
             <div style="display: flex; align-items: center; margin-bottom: 15px;">
                 <label for="luotxem" style="margin-right: 10px;"><strong>Lượt xem:</strong></label>
@@ -177,21 +175,24 @@
                 <button type="submit">Sửa Bài Viết</button>
                 <button type="button" class="back-button" onclick="window.location.href='DMBaiViet'">Quay về danh sách</button>
             </div>
-
         </form>
     </div>
 
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+    <script>
+        // Initialize CKEditor on the textarea
+        document.addEventListener("DOMContentLoaded", function() {
+            ClassicEditor
+                .create(document.querySelector('textarea[name="noidungbv"]'))
+                .catch(error => {
+                    console.error(error);
+                });
 
-        <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
-        <script>
-            // Initialize CKEditor on the textarea
-            document.addEventListener("DOMContentLoaded", function() {
-                ClassicEditor
-                    .create(document.querySelector('textarea[name="noidungbv"]'))
-                    .catch(error => {
-                        console.error(error);
-                    });
-            });
-        </script>
+            // Set the "ngaydang" input to today's date when the form is loaded
+            const ngayDangInput = document.getElementById('ngaydang');
+            const today = new Date().toISOString().split('T')[0];
+            ngayDangInput.value = today;  // Automatically set today's date
+        });
+    </script>
 </body>
 </html>

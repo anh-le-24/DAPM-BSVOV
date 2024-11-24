@@ -108,6 +108,7 @@ body {
 }
 
 .main-content {
+    flex-grow: 1; /* Cho phép phần nội dung chính chiếm không gian còn lại */
     flex: 1;
     padding: 30px;
     overflow-y: auto;

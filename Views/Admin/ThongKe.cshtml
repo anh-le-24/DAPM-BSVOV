@@ -1,0 +1,73 @@
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml"; // Sử dụng layout chung
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thống Kê Lượt Khám và Doanh Thu</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Thống Kê Lượt Khám Theo Tháng</h2>
+    <canvas id="luotKhamChart" width="400" height="200"></canvas>
+
+    <h2>Thống Kê Doanh Thu Khám Theo Tháng</h2>
+    <canvas id="doanhThuChart" width="400" height="200"></canvas>
+
+    <script>
+        // Dữ liệu cho Biểu Đồ Lượt Khám
+        var luotKhamData = {
+            labels: @Html.Raw(Json.Serialize(ViewBag.listTKLK.Select())),
+            datasets: [{
+                label: 'Số Lượt Khám',
+                data: @Html.Raw(Json.Serialize(ViewBag.listTKLK.Select())),
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        };
+
+        // Tạo Biểu Đồ Lượt Khám (Bar Chart)
+        var ctx = document.getElementById('luotKhamChart').getContext('2d');
+        var luotKhamChart = new Chart(ctx, {
+            type: 'bar',  // Biểu đồ cột (Bar)
+            data: luotKhamData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Dữ liệu cho Biểu Đồ Doanh Thu
+        var doanhThuData = {
+            labels: @Html.Raw(Json.Serialize(ViewBag.listTKDT.Select())),
+            datasets: [{
+                label: 'Doanh Thu (VND)',
+                data: @Html.Raw(Json.Serialize(ViewBag.listTKDT.Select())),
+                backgroundColor: 'rgba(255, 159, 64, 0.2)',
+                borderColor: 'rgba(255, 159, 64, 1)',
+                borderWidth: 1
+            }]
+        };
+
+        // Tạo Biểu Đồ Doanh Thu (Bar Chart)
+        var ctx2 = document.getElementById('doanhThuChart').getContext('2d');
+        var doanhThuChart = new Chart(ctx2, {
+            type: 'bar',  // Biểu đồ cột (Bar)
+            data: doanhThuData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

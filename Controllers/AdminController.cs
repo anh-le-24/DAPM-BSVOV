@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using DoAnCNPM.Models;
 using Microsoft.AspNetCore.SignalR.Protocol;
+using System.Collections;
+using Newtonsoft.Json;
+using System.Globalization;
 
 namespace DAPMBSVOV.Controllers
 {
@@ -70,18 +73,49 @@ namespace DAPMBSVOV.Controllers
             return View(); 
         }
         [HttpPost]
-        public IActionResult ThemBaiViet(string tieudebv, 
-                                        string noidungbv, 
-                                        string makb, 
-                                        string linkytb,  
-                                        string malbv, 
-                                        string luotxem)
+    public IActionResult ThemBaiViet(string tieudebv, string noidungbv, string makb, 
+        string linkytb, string malbv)
+    {
+        try
         {
-            DateTime ngaydang = DateTime.Now;
+            // Validation đầu vào cơ bản
+            if (string.IsNullOrEmpty(tieudebv) || string.IsNullOrEmpty(noidungbv) 
+                || string.IsNullOrEmpty(malbv))
+            {
+                TempData["Error"] = "Vui lòng điền đầy đủ thông tin bắt buộc";
+                return RedirectToAction("DMBaiViet");
+            }
+
             DataModel db = new DataModel();
-            ViewBag.list = db.get("EXEC AddBAIVIET N'" +tieudebv+ "', N'" +noidungbv+ "'," +makb+ ",'" +linkytb+ "','" +ngaydang+ "'," +malbv+ "," +luotxem+ ";");
-            return RedirectToAction("DMBaiViet", "Admin"); 
+            DateTime ngaydang = DateTime.Now;
+            
+            // Xử lý giá trị null cho makb và linkytb
+            string maKhoaBenhParam = string.IsNullOrEmpty(makb) || makb == "NULL" ? "NULL" : makb;
+            string linkYoutubeParam = string.IsNullOrEmpty(linkytb) ? "NULL" : $"'{linkytb}'";
+
+            // Escape các ký tự đặc biệt trong nội dung và tiêu đề
+            tieudebv = tieudebv.Replace("'", "''");
+            noidungbv = noidungbv.Replace("'", "''");
+
+            string query = $@"EXEC AddBAIVIET 
+                @TieuDeBV = N'{tieudebv}',
+                @NoiDung = N'{noidungbv}',
+                @MaKB = {maKhoaBenhParam},
+                @LinkYtb = {linkYoutubeParam},
+                @NgayDang = '{ngaydang:yyyy-MM-dd}',
+                @MaLBV = {malbv},
+                @LuotXem = 0";
+
+            ViewBag.list = db.get(query);
+
+            return RedirectToAction("DMBaiViet", "Admin");
         }
+        catch (Exception ex)
+        {
+            // Xử lý lỗi
+            return RedirectToAction("DMBaiViet", "Admin");
+        }
+    }
 
         [HttpPost]
         public IActionResult XoaBaiViet(string id)
@@ -93,11 +127,22 @@ namespace DAPMBSVOV.Controllers
 
         public IActionResult TimBaiViet(string mabv)
         {
-            DataModel db = new DataModel();
-            ViewBag.list = db.get("EXEC FindBAIVIET_ID " +mabv+ ";");            
-            ViewBag.listLBV = db.get("SELECT * from LOAIBAIVIET");
-            ViewBag.listKB = db.get("SELECT * from KHOABENH");
-            return View(); 
+            try
+            {
+                DataModel db = new DataModel();
+                // Lấy thông tin bài viết cần sửa
+                ViewBag.list = db.get($"SELECT * FROM BAIVIET WHERE MaBV = {mabv}");
+                // Lấy danh sách khoa bệnh và loại bài viết để populate dropdown
+                ViewBag.listKB = db.get("SELECT * FROM KHOABENH");
+                ViewBag.listLBV = db.get("SELECT * FROM LOAIBAIVIET");
+                
+                return View(); // Trả về view sửa bài viết
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Có lỗi xảy ra khi tìm bài viết";
+                return RedirectToAction("DMBaiViet");
+            }
         }
 
         public IActionResult ChiTietBaiViet(string mabv)
@@ -110,18 +155,48 @@ namespace DAPMBSVOV.Controllers
         }
 
         [HttpPost]
-        public IActionResult SuaBaiViet(string mabv,
-                                        string tieudebv, 
-                                        string noidungbv, 
-                                        string makb, 
-                                        string linkytb,  
-                                        string malbv, 
-                                        string luotxem)
+        public IActionResult SuaBaiViet(string mabv, string tieudebv, string noidungbv,
+            string makb, string linkytb, string malbv, string luotxem)
         {
-            DateTime ngaydang = DateTime.Now;
-            DataModel db = new DataModel();
-            ViewBag.list = db.get("EXEC UpdateBAIVIET " +mabv+ ", N'" +tieudebv+ "', N'" +noidungbv+ "'," +makb+ ",'" +linkytb+ "','" +ngaydang+ "'," +malbv+ "," +luotxem+ ";");
-            return RedirectToAction("DMBaiViet", "Admin"); 
+            try
+            {
+                // Validation đầu vào
+                if (string.IsNullOrEmpty(mabv) || string.IsNullOrEmpty(tieudebv) 
+                    || string.IsNullOrEmpty(noidungbv) || string.IsNullOrEmpty(malbv))
+                {
+                    TempData["Error"] = "Vui lòng điền đầy đủ thông tin bắt buộc";
+                    return RedirectToAction("TimBaiViet", new { mabv = mabv });
+                }
+
+                DataModel db = new DataModel();
+                DateTime ngaydang = DateTime.Now;
+
+                // Xử lý các giá trị null và escape ký tự đặc biệt
+                string maKhoaBenhParam = string.IsNullOrEmpty(makb) ? "NULL" : makb;
+                string linkYoutubeParam = string.IsNullOrEmpty(linkytb) ? "NULL" : $"'{linkytb.Replace("'", "''")}'";
+                tieudebv = tieudebv.Replace("'", "''");
+                noidungbv = noidungbv.Replace("'", "''");
+
+                string query = $@"EXEC UpdateBAIVIET 
+                    @MaBV = {mabv},
+                    @TieuDeBV = N'{tieudebv}',
+                    @NoiDung = N'{noidungbv}',
+                    @MaKB = {maKhoaBenhParam},
+                    @LinkYtb = {linkYoutubeParam},
+                    @NgayDang = '{ngaydang:yyyy-MM-dd}',
+                    @MaLBV = {malbv},
+                    @LuotXem = {luotxem}";
+
+                ViewBag.list = db.get(query);
+                
+                TempData["Success"] = "Cập nhật bài viết thành công";
+                return RedirectToAction("DMBaiViet");
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Có lỗi xảy ra khi cập nhật bài viết";
+                return RedirectToAction("TimBaiViet", new { mabv = mabv });
+            }
         }
         // End Bài viết
 
@@ -529,8 +604,10 @@ namespace DAPMBSVOV.Controllers
         public IActionResult ThongKe() 
         {
             DataModel db = new DataModel();
-            ViewBag.listTKLK = db.get("EXEC ThongKeLuotKhamTheoThang ");
-            ViewBag.listTKDT = db.get("EXEC ThongKeDoanhThuKhachTheoThang ");
+
+            ViewBag.listTKLK = JsonConvert.SerializeObject(db.get("EXEC ThongKeLuotKhamTheoThang"));
+            ViewBag.listTKDT = JsonConvert.SerializeObject(db.get("EXEC ThongKeDoanhThuKhachTheoThang"));
+
             return View();
         }
 

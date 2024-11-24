@@ -36,18 +36,27 @@ public class BacsisController : Controller
     public IActionResult KTBS(string TenDn, string password)
     {
         DataModel db = new DataModel();
-        var list = db.get("EXEC CheckLoginBS '" + TenDn + "','" + password + "'");
+        var list = db.get("EXEC CheckLoginBSs '" + TenDn + "','" + password + "'");
+
         if (list.Count > 0 && list[0] is ArrayList arrayList && arrayList.Count > 1)
         {
             var userId = arrayList[0]?.ToString() ?? "Unknown"; // Giả sử ID là phần tử thứ 2 trong ArrayList
+            var tennd = arrayList[1]?.ToString() ?? "Unknown";
+            
+            // Lưu thông tin vào session
+            _session.SetString("tennd", tennd);
             _session.SetString("userId", userId); // Lưu ID vào session
-            return RedirectToAction("HomeBs", "Bacsis");
+
+            return RedirectToAction("HomeBs", "Bacsis"); // Chuyển hướng đến trang chủ của bác sĩ
         }
         else
         {
-            return RedirectToAction("Index", "Bacsis");
+            // Nếu đăng nhập thất bại, tạo thông báo lỗi và trả về cho view
+            TempData["ErrorMessage"] = "Đăng nhập không thành công. Vui lòng kiểm tra lại số điện thoại hoặc mật khẩu.";
+            return RedirectToAction("Index", "Bacsis"); // Quay lại trang đăng nhập với thông báo lỗi
         }
     }
+
 
 
     public IActionResult DangKyBs()
@@ -181,8 +190,18 @@ public class BacsisController : Controller
     }
 
 
-    public IActionResult HomeBs(){
+    public IActionResult HomeBs()
+    {
+        var userId = _session.GetString("userId");
+        ViewBag.luong = db.get("exec sp_XemThongTinNguoiDung "+userId);
         return View();  
+    }
+    public IActionResult ThongKe(string nam)
+    {
+        var userId = _session.GetString("userId");
+        ViewBag.luong = db.get("exec sp_XemThongTinNguoiDung "+userId);
+        ViewBag.list = db.get("EXEC ThongKeCuocHenTheoThang " +  userId +","+ nam );
+        return View("HomeBs");
     }
 
     public IActionResult DKTC(){
@@ -197,6 +216,7 @@ public class BacsisController : Controller
     }
     public IActionResult HoSoBN()
     {
+        
         var userId = _session.GetString("userId");
         ViewBag.list = db.get("EXEC sp_LayDanhSachHoSoTheoMaBacSi "+ userId);
         return View();
@@ -225,27 +245,27 @@ public class BacsisController : Controller
     public ActionResult LichHenKham()
     {
         var userId = _session.GetString("userId");
-        ViewBag.list = db.get("EXEC Xemtatcalichhenchuaxacnhan " + userId);
+        ViewBag.list = db.get("EXEC GetAllCuocHenByMaND " + userId);
         return View();
     }
 
      public ActionResult DaXacNhan()
     {
         var userId = _session.GetString("userId");
-        ViewBag.list = db.get("EXEC Xemtatcalichhendaxacnhan " + userId);
+        ViewBag.list = db.get("EXEC GetAllCuocHenByMaNDDaXN " + userId);
         return View();
     }
      public ActionResult DaHoanThanh()
     {
         var userId = _session.GetString("userId");
-        ViewBag.list = db.get("EXEC Xemtatcalichhendahoanthanh "  + userId);
+        ViewBag.list = db.get("EXEC GetAllCuocHenByMaNDDaHT "  + userId);
         return View();
     }
 
      public ActionResult DaBiHuy()
     {
          var userId = _session.GetString("userId");
-        ViewBag.list = db.get("EXEC Xemtatcalichhendahuy "  + userId);
+        ViewBag.list = db.get("EXEC GetAllCuocHenByMaNDDaHuy "  + userId);
         return View();
     }
 
@@ -257,6 +277,14 @@ public class BacsisController : Controller
         return RedirectToAction("LichHenKham","Bacsis");
     }
 
+    [HttpPost]
+    public ActionResult UpdatecuochenTT(string id,string matt)
+    {
+        var userId = _session.GetString("userId");
+        db.get("Exec UpdateMaTTCH "+ id +"," + matt);
+        db.get("Exec UpdateSoDuTKForUserAndDoctor "+ userId +"," + id);
+        return RedirectToAction("LichHenKham","Bacsis");
+    }
      public ActionResult DoanhThu()
     {
         return View();

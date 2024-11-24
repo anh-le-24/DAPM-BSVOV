@@ -8,6 +8,7 @@ body {
     flex-direction: column;
 }
 
+/* Header */
 header {
     background-color: #0288d1;
     color: white;
@@ -85,6 +86,7 @@ main {
     margin-left: 250px;
     padding: 80px 20px 20px 20px;
     width: calc(100% - 250px);  /* Điều chỉnh chiều rộng chính để không bị tràn qua sidebar */
+    transition: margin-left 0.3s;
 }
 
 /* Bảng dữ liệu */
@@ -112,6 +114,7 @@ table tr:hover {
     background-color: #f1f1f1;
 }
 
+/* Nút cơ bản */
 button {
     background-color: #0288d1;
     color: white;
@@ -156,19 +159,6 @@ button:hover {
         padding-top: 80px; /* Bổ sung không gian cho header */
     }
 }
-button {
-    background-color: #0288d1;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0277bd;
-}
 
 /* Tách hai nút */
 .button-container {
@@ -184,6 +174,3 @@ button.huy {
 button.huy:hover {
     background-color: darkred;
 }
-
-
-

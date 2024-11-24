@@ -151,6 +151,26 @@
             background-color: #0056b3;
         }
 
+        /* Styling for status button */
+        button.status-button {
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            color: white;
+        }
+
+        /* Specific styling for 'Đã duyệt' button */
+        button.status-button.approved {
+            background-color: #00712D; /* Màu xanh lá cho trạng thái 'Đã duyệt' */
+        }
+
+        button.status-button.approved:hover {
+            background-color: #218838; /* Màu xanh lá đậm khi hover */
+        }
+
         /* Image preview */
         .image-preview {
             width: 50px;
@@ -198,7 +218,10 @@
                     <td>@bs[16]</td>
                     <td>@bs[31]</td>
                     <td>@bs[21]</td>
-                    <td>Đã duyệt</td>
+                    <td>
+                        <button class="status-button approved">Đã duyệt</button>
+                    </td>
+
                     <td>
                         <form action="~/Admin/XoaBacSi" method="post" style="display:inline;">
                             <input type="hidden" name="mabs" value="@bs[0]" />
@@ -210,5 +233,37 @@
             </tbody>
         </table>
     </div>
+
+     <!-- Include partial view for notification -->
+    <partial name="_ThongBao" />
+
+    <script>
+        // Kiểm tra và hiển thị thông báo nếu có từ TempData
+        @if (TempData["Message"] != null)
+        {
+            <text>
+            showThongBao("@Html.Raw(TempData["Message"])", true);
+            </text>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <text>
+            showThongBao("@Html.Raw(TempData["Error"])", false);
+            </text>
+        }
+        document.getElementById('hinhanh').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const imagePreview = document.getElementById('imagePreview');
+                    imagePreview.src = e.target.result;
+                    imagePreview.style.display = 'block'; // Hiển thị ảnh xem trước
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+
+    </script>
 </body>
 </html>

@@ -131,6 +131,9 @@
         </div>
     </div>
 </div>
+<div id="success-message" style="display: none; margin-top: 20px; color: green; font-weight: bold;">
+    Đã cập nhật thành công!
+</div>
 
 <script>
     
@@ -145,4 +148,25 @@
 
 
     document.getElementById('birthYear').value = formatDate(rawDate);
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        // Lấy form và phần tử hiển thị thông báo
+        const form = document.querySelector("form[asp-action='UpdateUserInfo']");
+        const successMessage = document.getElementById("success-message");
+
+        form.addEventListener("submit", function (event) {
+            // Ngăn form gửi request ngay lập tức
+            event.preventDefault();
+
+            // Hiển thị thông báo
+            successMessage.style.display = "block";
+
+            // Gửi form sau khi thông báo hiển thị xong (3 giây)
+            setTimeout(() => {
+                successMessage.style.display = "none";
+                form.submit(); // Gửi form sau khi thông báo biến mất
+            }, 3000);
+        });
+    });
+
 </scrip>

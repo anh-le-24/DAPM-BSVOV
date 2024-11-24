@@ -102,7 +102,6 @@
             background-color: #0069d9; /* Darker blue on hover */
         }
 
-
     </style>
 </head>
 <body>
@@ -114,7 +113,7 @@
         <!-- Thông tin cá nhân -->
         <section class="profile-section">
             <div class="profile-image">
-                <img src="~/images/@ViewBag.list[0][32]" alt="Ảnh cá nhân">
+                <img src="@Url.Content("~/Uploads/" + @ViewBag.list[0][32])" alt="Ảnh cá nhân">
             </div>
             <ul>
                 <li><strong>Họ và tên:</strong> @ViewBag.list[0][26]</li>
@@ -125,6 +124,32 @@
                 <li><strong>Giới tính:</strong> @ViewBag.list[0][31]</li>
             </ul>
         </section>
+
+        <section class="info-section">
+            <h2>Ảnh Giấy Tờ và Chứng Chỉ</h2>
+            <div class="info-images">
+                <h3>CCCD:</h3>
+                <div>
+                    <p><strong>CCCD Mặt Trước:</strong></p>
+                    <img src="@Url.Content("~/Uploads/" + @ViewBag.list[0][4])" alt="CCCD Mặt Trước" class="document-image">
+                </div>
+                <div>
+                    <p><strong>CCCD Mặt Sau:</strong></p>
+                    <img src="@Url.Content("~/Uploads/" + @ViewBag.list[0][5])" alt="CCCD Mặt Sau" class="document-image">
+                </div>
+
+                <h3>Chứng Chỉ:</h3>
+                <div>
+                    <p><strong>Chứng Chỉ Mặt Trước:</strong></p>
+                    <img src="@Url.Content("~/Uploads/" + @ViewBag.list[0][12])" alt="Chứng Chỉ Mặt Trước" class="document-image">
+                </div>
+                <div>
+                    <p><strong>Chứng Chỉ Mặt Sau:</strong></p>
+                    <img src="@Url.Content("~/Uploads/" + @ViewBag.list[0][13])" alt="Chứng Chỉ Mặt Sau" class="document-image">
+                </div>
+            </div>
+        </section>
+
 
         <!-- Thông tin chuyên môn và kinh nghiệm -->
         <section class="info-section">

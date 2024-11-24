@@ -113,7 +113,7 @@
         <!-- Thông tin cá nhân -->
         <section class="profile-section">
             <div class="profile-image">
-                <img src="~/images/@ViewBag.list[0][32]" alt="Ảnh cá nhân">
+                <img src="@Url.Content("~/Uploads/" + @ViewBag.list[0][32])" alt="Ảnh cá nhân">
             </div>
             <ul>
                 <li><strong>Họ và tên:</strong> @ViewBag.list[0][26]</li>

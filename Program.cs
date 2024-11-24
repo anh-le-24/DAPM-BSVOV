@@ -29,6 +29,11 @@ app.UseSession(); // Đảm bảo dòng này ở đây
 app.UseAuthorization();
 
 app.MapControllerRoute(
+    name: "admin",
+    pattern: "Admin/{action=AdminLogin}/{id?}",
+    defaults: new { controller = "Admin" });
+
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 

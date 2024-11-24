@@ -22,9 +22,43 @@ namespace DAPMBSVOV.Controllers
 
         public IActionResult Index()
         {
+            if (TempData["AdminLoggedIn"] is not bool isLoggedIn || !isLoggedIn)
+            {
+                return RedirectToAction("AdminLogin");
+            }
+
             DataModel db = new DataModel();
-            return View(); // Trả về view 'Index.cshtml'
+            return View();
         }
+
+        public IActionResult AdminLogin() 
+        {
+            DataModel db = new DataModel();
+            return View(); 
+        }
+
+
+        [HttpPost]
+        public IActionResult XuLyAdminLogin(string sdt, string password)
+        {
+            DataModel db = new DataModel();
+            ViewBag.list = db.get("EXEC CheckAdminLogin '" + sdt + "', '" + password + "';");
+            
+            if (ViewBag.list != null && ViewBag.list.Count > 0)
+            {
+                // Đăng nhập thành công
+                TempData["AdminLoggedIn"] = true; // Lưu trạng thái đăng nhập
+                TempData["Success"] = "Đăng nhập thành công!";
+                return RedirectToAction("Index", "Admin");
+            }
+            else
+            {
+                // Đăng nhập thất bại
+                TempData["Error"] = "Số điện thoại hoặc mật khẩu không chính xác!";
+                return RedirectToAction("AdminLogin", "Admin");
+            }
+        }
+
 
         // Bài viết
         public IActionResult DMBaiViet()
@@ -455,9 +489,9 @@ namespace DAPMBSVOV.Controllers
         }
 
         [HttpPost]
-        public IActionResult DuyetBacSi(string mabs) {
+        public IActionResult DuyetBacSi(string mabs, string sotienkham) {
             DataModel db = new DataModel();
-            ViewBag.list = db.get("EXEC ConfirmDoctor " + mabs + ";");
+            ViewBag.list = db.get("EXEC ConfirmDoctor " + mabs + "," + sotienkham + ";");
             return RedirectToAction("DonDangKyBacSi", "Admin");
         }
 

@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ACER\DAPM-BSVOV
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ACER/DAPM-BSVOV/Views/Admin/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ACER/DAPM-BSVOV/Views/Admin/ChiTietBacSi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2hpVGlldEJhY1NpLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

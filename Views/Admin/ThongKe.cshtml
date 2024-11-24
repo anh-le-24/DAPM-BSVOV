@@ -1,73 +1,119 @@
 @{
     Layout = "~/Views/Shared/_AdminLayout.cshtml"; // Sử dụng layout chung
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thống Kê Lượt Khám và Doanh Thu</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-    <h2>Thống Kê Lượt Khám Theo Tháng</h2>
+
+<div>
+    <h3>Lượt Khám Theo Tháng</h3>
     <canvas id="luotKhamChart" width="400" height="200"></canvas>
+</div>
 
-    <h2>Thống Kê Doanh Thu Khám Theo Tháng</h2>
+<div>
+    <h3>Doanh Thu Theo Tháng</h3>
     <canvas id="doanhThuChart" width="400" height="200"></canvas>
+</div>
 
-    <script>
-        // Dữ liệu cho Biểu Đồ Lượt Khám
-        var luotKhamData = {
-            labels: @Html.Raw(Json.Serialize(ViewBag.listTKLK.Select())),
-            datasets: [{
-                label: 'Số Lượt Khám',
-                data: @Html.Raw(Json.Serialize(ViewBag.listTKLK.Select())),
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1
-            }]
-        };
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Lấy dữ liệu từ ViewBag
+    var luotKhamData = @Html.Raw(Json.Serialize(ViewBag.listTKLK));
+    var doanhThuData = @Html.Raw(Json.Serialize(ViewBag.listTKDT));
 
-        // Tạo Biểu Đồ Lượt Khám (Bar Chart)
-        var ctx = document.getElementById('luotKhamChart').getContext('2d');
-        var luotKhamChart = new Chart(ctx, {
-            type: 'bar',  // Biểu đồ cột (Bar)
+    // Tạo mảng tháng
+    var thangLabels = [];
+    for (var i = 1; i <= 12; i++) {
+        thangLabels.push(i);
+    }
+
+    // Tạo dữ liệu cho biểu đồ lượt khám
+    var luotKhamChartData = {
+        labels: thangLabels,
+        datasets: [{
+            label: 'Lượt Khám',
             data: luotKhamData,
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+        }]
+    };
+
+    // Tạo biểu đồ lượt khám
+    var ctxLuotKham = document.getElementById('luotKhamChart').getContext('2d');
+    var luotKhamChart = new Chart(ctxLuotKham, {
+        type: 'bar',
+        data: luotKhamChartData,
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Giá trị'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Tháng'
                     }
                 }
+            },
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Thống Kê Lượt Khám Theo Tháng'
+                }
             }
-        });
+        }
+    });
+    
 
-        // Dữ liệu cho Biểu Đồ Doanh Thu
-        var doanhThuData = {
-            labels: @Html.Raw(Json.Serialize(ViewBag.listTKDT.Select())),
-            datasets: [{
-                label: 'Doanh Thu (VND)',
-                data: @Html.Raw(Json.Serialize(ViewBag.listTKDT.Select())),
-                backgroundColor: 'rgba(255, 159, 64, 0.2)',
-                borderColor: 'rgba(255, 159, 64, 1)',
-                borderWidth: 1
-            }]
-        };
-
-        // Tạo Biểu Đồ Doanh Thu (Bar Chart)
-        var ctx2 = document.getElementById('doanhThuChart').getContext('2d');
-        var doanhThuChart = new Chart(ctx2, {
-            type: 'bar',  // Biểu đồ cột (Bar)
+    // Tạo dữ liệu cho biểu đồ doanh thu
+    var doanhThuChartData = {
+        labels: thangLabels,
+        datasets: [{
+            label: 'Doanh Thu',
             data: doanhThuData,
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1
+        }]
+    };
+
+    // Tạo biểu đồ doanh thu
+    var ctxDoanhThu = document.getElementById('doanhThuChart').getContext('2d');
+    var doanhThuChart = new Chart(ctxDoanhThu, {
+        type: 'bar',
+        data: doanhThuChartData,
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Giá trị'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Tháng'
                     }
                 }
+            },
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Thống Kê Doanh Thu Theo Tháng'
+                }
             }
-        });
-    </script>
-</body>
-</html>
+        }
+    });
+</script>

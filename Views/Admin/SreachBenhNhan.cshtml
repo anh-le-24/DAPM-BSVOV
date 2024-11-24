@@ -133,7 +133,7 @@
         @if (ViewBag.list.Count > 0) {
         <section class="profile">
             <div class="profile-image">
-                <img src="~/images/@ViewBag.list[0][7]" alt="Ảnh bệnh nhân">
+                <img src="@Url.Content("~/Uploads/" + @ViewBag.list[0][7])" alt="Ảnh bệnh nhân">
             </div>
             <div class="profile-details">
                 <h2>Thông Tin Cá Nhân</h2>
@@ -160,7 +160,7 @@
             <!-- Hình ảnh bệnh nếu có -->
             <div class="disease-image">
                 @if (!string.IsNullOrEmpty(ViewBag.list[0][10])) {
-                    <img src="~/images/@ViewBag.list[0][12]" alt="Hình ảnh bệnh" />
+                    <img src="@Url.Content("~/Uploads/" + @ViewBag.list[0][12])" alt="Hình ảnh bệnh" />
                     }
                 else {
                     <p>Không có hình ảnh bệnh.</p>

@@ -34,6 +34,11 @@ app.UseAuthorization(); // Kích hoạt middleware kiểm tra quyền truy cập
 
 // Định tuyến các yêu cầu tới các controller
 app.MapControllerRoute(
+    name: "admin",
+    pattern: "Admin/{action=AdminLogin}/{id?}",
+    defaults: new { controller = "Admin" });
+
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 

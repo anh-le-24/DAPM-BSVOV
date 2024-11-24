@@ -13,6 +13,7 @@
 </style>
 <!-- Thêm Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<span>Tổng Thu nhập: @ViewBag.luong[0][9]</span>
 
 <h2>Thống Kê Cuộc Hẹn Khám</h2>
 
@@ -20,10 +21,9 @@
 <form method="get" action="@Url.Action("ThongKe", "Bacsis")">
     <div class="form-group">
         <label for="Nam">Chọn Năm:</label>
-        <input type="text" class="form-control" id="Nam" name="nam" placeholder="Nhập Năm" />
+        <input type="text" class="form-control" value="2024" id="Nam" name="nam" placeholder="Nhập Năm" />
     </div>
 
-   
     <button type="submit" class="btn btn-primary">Thống Kê</button>
 </form>
 

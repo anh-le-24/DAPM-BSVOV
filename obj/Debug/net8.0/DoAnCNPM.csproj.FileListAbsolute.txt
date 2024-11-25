@@ -71,6 +71,7 @@
 /Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/DoAnCNPM.genruntimeconfig.cache
 /Users/luongdat/DAPM-BSVOV/obj/Debug/net8.0/ref/DoAnCNPM.dll
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 4408187d7eaa9ef53fd3e5e41259a5c48fdb2e4d
 =======
 >>>>>>> e24df83601c273134f56cca831eb32f63fc7ed30
@@ -146,3 +147,5 @@ C:\Users\ACER\DAPM-BSVOV\obj\Debug\net8.0\refint\DoAnCNPM.dll
 C:\Users\ACER\DAPM-BSVOV\obj\Debug\net8.0\DoAnCNPM.pdb
 C:\Users\ACER\DAPM-BSVOV\obj\Debug\net8.0\DoAnCNPM.genruntimeconfig.cache
 C:\Users\ACER\DAPM-BSVOV\obj\Debug\net8.0\ref\DoAnCNPM.dll
+=======
+>>>>>>> becb223c1a954eff48bf56dda8f7edecb5b6ccc6
